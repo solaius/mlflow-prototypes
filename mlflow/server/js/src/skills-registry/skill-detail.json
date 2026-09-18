@@ -1,0 +1,261 @@
+{
+  "root": { "props": {} },
+  "content": [
+    {
+      "type": "DuBoisHeader",
+      "props": {
+        "id": "header",
+        "title": "rh-team/summarize-docs",
+        "breadcrumbs": [
+          {
+            "type": "DuBoisBreadcrumb",
+            "props": {
+              "id": "breadcrumb",
+              "items": [{ "label": "Skills" }],
+              "includeTrailingCaret": true
+            }
+          }
+        ],
+        "titleAddOns": [
+          {
+            "type": "IconLabel",
+            "props": { "id": "skill-icon", "text": "", "icon": "gear" }
+          }
+        ],
+        "buttons": [
+          {
+            "type": "OverflowMenu",
+            "props": {
+              "id": "overflow-menu",
+              "items": []
+            }
+          },
+          {
+            "type": "DuBoisButton",
+            "props": {
+              "id": "btn-add-version",
+              "label": "Add version",
+              "icon": "plus",
+              "type": "primary",
+              "size": "middle",
+              "danger": false,
+              "disabled": false
+            }
+          }
+        ]
+      }
+    },
+    { "type": "DuBoisSpacer", "props": { "id": "spacer-1", "size": "xs" } },
+    {
+      "type": "DuBoisTypography",
+      "props": {
+        "id": "description",
+        "text": "Summarizes documentation files and generates concise reference guides.",
+        "variant": "paragraph",
+        "color": "secondary"
+      }
+    },
+    { "type": "DuBoisSpacer", "props": { "id": "spacer-2", "size": "sm" } },
+    {
+      "type": "FlexRow",
+      "props": {
+        "id": "tags-row",
+        "gap": 24,
+        "justifyContent": "flex-start",
+        "alignItems": "center",
+        "content": [
+          {
+            "type": "FlexRow",
+            "props": {
+              "id": "tags-section",
+              "gap": 4,
+              "justifyContent": "flex-start",
+              "alignItems": "center",
+              "content": [
+                {
+                  "type": "DuBoisTypography",
+                  "props": { "id": "tags-label", "text": "Tags", "variant": "text", "color": "secondary" }
+                },
+                {
+                  "type": "DuBoisTag",
+                  "props": { "id": "tag-team", "label": "team:rh-ai", "color": "lime", "closable": false }
+                },
+                {
+                  "type": "DuBoisTag",
+                  "props": { "id": "tag-domain", "label": "domain:docs", "color": "charcoal", "closable": false }
+                }
+              ]
+            }
+          },
+          {
+            "type": "FlexRow",
+            "props": {
+              "id": "aliases-section",
+              "gap": 4,
+              "justifyContent": "flex-start",
+              "alignItems": "center",
+              "content": [
+                {
+                  "type": "DuBoisTypography",
+                  "props": { "id": "aliases-label", "text": "Aliases", "variant": "text", "color": "secondary" }
+                },
+                {
+                  "type": "DuBoisTag",
+                  "props": { "id": "alias-champion", "label": "champion → v3", "color": "turquoise", "closable": false }
+                },
+                {
+                  "type": "DuBoisTag",
+                  "props": { "id": "alias-latest", "label": "latest → v3", "color": "turquoise", "closable": false }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    },
+    { "type": "DuBoisSpacer", "props": { "id": "spacer-3", "size": "md" } },
+    { "type": "Divider", "props": { "id": "divider-1" } },
+    {
+      "type": "ListDetailLayout",
+      "props": {
+        "id": "version-layout",
+        "listWidth": 340,
+        "list": [
+          {
+            "type": "FlexColumn",
+            "props": {
+              "id": "version-list",
+              "gap": 0,
+              "content": [
+                {
+                  "type": "DuBoisTypography",
+                  "props": { "id": "versions-heading", "text": "Versions", "variant": "text", "bold": true }
+                },
+                { "type": "DuBoisSpacer", "props": { "id": "vl-spacer-1", "size": "sm" } },
+                {
+                  "type": "ListItem",
+                  "props": {
+                    "id": "version-3",
+                    "title": "Version 3",
+                    "subtitle": "2026-07-25 14:30 · champion, latest",
+                    "selected": true,
+                    "showChevron": false
+                  }
+                },
+                {
+                  "type": "ListItem",
+                  "props": {
+                    "id": "version-2",
+                    "title": "Version 2",
+                    "subtitle": "2026-07-20 09:15",
+                    "selected": false,
+                    "showChevron": false
+                  }
+                },
+                {
+                  "type": "ListItem",
+                  "props": {
+                    "id": "version-1",
+                    "title": "Version 1",
+                    "subtitle": "2026-07-15 11:00",
+                    "selected": false,
+                    "showChevron": false
+                  }
+                }
+              ]
+            }
+          }
+        ],
+        "detail": [
+          {
+            "type": "FlexColumn",
+            "props": {
+              "id": "version-detail",
+              "gap": 0,
+              "content": [
+                {
+                  "type": "FlexRow",
+                  "props": {
+                    "id": "version-header",
+                    "gap": 8,
+                    "justifyContent": "space-between",
+                    "alignItems": "center",
+                    "content": [
+                      {
+                        "type": "DuBoisTypography",
+                        "props": { "id": "version-title", "text": "Viewing version 3", "variant": "title", "level": 3 }
+                      },
+                      {
+                        "type": "DuBoisButton",
+                        "props": {
+                          "id": "btn-delete-version",
+                          "label": "Delete version",
+                          "icon": "trash",
+                          "type": "primary",
+                          "size": "middle",
+                          "danger": true,
+                          "disabled": false
+                        }
+                      }
+                    ]
+                  }
+                },
+                { "type": "DuBoisSpacer", "props": { "id": "vd-spacer-1", "size": "md" } },
+                {
+                  "type": "KeyValueGrid",
+                  "props": {
+                    "id": "version-metadata",
+                    "labelWidth": 160,
+                    "rows": [
+                      { "label": "Registered at:", "value": "2026-07-25 14:30:00" },
+                      { "label": "Status:", "value": "Published" },
+                      { "label": "Created by:", "value": "pdouble" },
+                      { "label": "Commit message:", "value": "Improved summary quality for large repos" },
+                      { "label": "Aliases:", "value": "champion → v3, latest → v3" },
+                      { "label": "Source:", "value": "https://github.com/rh-team/skills-repo" },
+                      { "label": "Artifact location:", "value": "mlflow-artifacts:/skills/rh-team/summarize-docs/3" },
+                      { "label": "Reference URIs:", "value": "skills:/rh-team/summarize-docs/3" }
+                    ]
+                  }
+                },
+                { "type": "DuBoisSpacer", "props": { "id": "vd-spacer-2", "size": "lg" } },
+                {
+                  "type": "DuBoisTypography",
+                  "props": { "id": "manifest-heading", "text": "SKILL.md", "variant": "title", "level": 4 }
+                },
+                { "type": "DuBoisSpacer", "props": { "id": "vd-spacer-3", "size": "xs" } },
+                {
+                  "type": "DuBoisTypography",
+                  "props": {
+                    "id": "manifest-caption",
+                    "text": "The SKILL.md manifest defines the skill's behavior, triggers, and instructions.",
+                    "variant": "paragraph",
+                    "color": "secondary"
+                  }
+                },
+                { "type": "DuBoisSpacer", "props": { "id": "vd-spacer-4", "size": "sm" } },
+                {
+                  "type": "CodeBlock",
+                  "props": {
+                    "id": "manifest-frontmatter",
+                    "language": "yaml",
+                    "code": "---\nname: summarize-docs\ndescription: Summarizes documentation files\ntriggers:\n  - docs\n  - summarize\n  - documentation\n---"
+                  }
+                },
+                { "type": "DuBoisSpacer", "props": { "id": "vd-spacer-5", "size": "sm" } },
+                {
+                  "type": "DuBoisTypography",
+                  "props": {
+                    "id": "manifest-body",
+                    "text": "When invoked, scan the repository for documentation files (.md, .rst, .txt) and generate a concise reference guide. Focus on API documentation, configuration options, and getting-started guides.",
+                    "variant": "paragraph"
+                  }
+                }
+              ]
+            }
+          }
+        ]
+      }
+    }
+  ]
+}

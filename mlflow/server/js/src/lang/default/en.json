@@ -67,6 +67,10 @@
     "defaultMessage": "Python",
     "description": "Tab label for the runnable Python code-snippet path in the eval-runs empty state"
   },
+  "+Fu7k4": {
+    "defaultMessage": "Reference URIs:",
+    "description": "Plugin version pane metadata label"
+  },
   "+HgSTK": {
     "defaultMessage": "Use these code examples to call your endpoint. Choose between unified APIs for seamless model switching or passthrough APIs for provider-specific features.",
     "description": "Endpoint usage modal description"
@@ -74,6 +78,10 @@
   "+IMUVk": {
     "defaultMessage": "{count, plural, one {# tool call} other {# tool calls}}",
     "description": "Count of tool calls the assistant made in a turn"
+  },
+  "+KEcaM": {
+    "defaultMessage": "Source repository is required.",
+    "description": "Agent plugins > create plugin > required source URI error"
   },
   "+LLlvi": {
     "defaultMessage": "Source Run",
@@ -90,6 +98,10 @@
   "+Pzzlu": {
     "defaultMessage": "Last updated",
     "description": "Header for the dataset last-updated column"
+  },
+  "+SnT99": {
+    "defaultMessage": "No MCP servers registered",
+    "description": "MCP registry table > empty state title"
   },
   "+T+iqa": {
     "defaultMessage": "Select baseline run",
@@ -163,6 +175,14 @@
     "defaultMessage": "Max",
     "description": "Column title for the column displaying the maximum metric values for a metric"
   },
+  "+hyeXP": {
+    "defaultMessage": "Name",
+    "description": "Section title for agent name"
+  },
+  "+hzi+U": {
+    "defaultMessage": "Alias references",
+    "description": "MCP registry > server page > alias URI chips label"
+  },
   "+kOR9h": {
     "defaultMessage": "Save",
     "description": "Queue settings: save button"
@@ -183,13 +203,25 @@
     "defaultMessage": "Fallback",
     "description": "Gateway > Endpoint details > Label on connector between fallback model sections"
   },
+  "+nuvWx": {
+    "defaultMessage": "Trace ID",
+    "description": "Traces table > trace ID header"
+  },
   "+o0xUA": {
     "defaultMessage": "An error occurred while attempting to fetch trace data (ID: {traceId}). Please ensure that the MLflow tracking server is running, and that the trace data exists. Error details:",
     "description": "An error message explaining that an error occurred while fetching trace data"
   },
+  "+qK6Pi": {
+    "defaultMessage": "Traces associated with this agent via the logged_model_id bridge to experiment tracking. Filter by version to see how behavior changed.",
+    "description": "Agent traces tab description"
+  },
   "+tURAJ": {
     "defaultMessage": "Cancel",
     "description": "Button text for canceling evaluation"
+  },
+  "+u6a2L": {
+    "defaultMessage": "Agent plugin not found",
+    "description": "Agent plugins > plugin not found title"
   },
   "+w9a+1": {
     "defaultMessage": "Open runs in this group in the new tab",
@@ -275,6 +307,10 @@
     "defaultMessage": "Git commit",
     "description": "Column label for the git commit hash the trace was produced on"
   },
+  "/Hbux9": {
+    "defaultMessage": "All tags",
+    "description": "Agent registry tag filter > all tags option"
+  },
   "/HeTx7": {
     "defaultMessage": "Create",
     "description": "Create webhook confirm button"
@@ -290,6 +326,10 @@
   "/K6wBr": {
     "defaultMessage": "Input data or prompt template have changed since last evaluation of the output",
     "description": "Experiment page > new run modal > dirty output (out of sync with new data)"
+  },
+  "/LVnFk": {
+    "defaultMessage": "Skills",
+    "description": "Section title for skill refs"
   },
   "/LfvdB": {
     "defaultMessage": "Average",
@@ -371,6 +411,10 @@
     "defaultMessage": "No existing model definitions. Create a new one below.",
     "description": "Message when no existing model definitions"
   },
+  "/ckoZe": {
+    "defaultMessage": "Latest Eval Run",
+    "description": "Contract > latest eval heading"
+  },
   "/g45Xz": {
     "defaultMessage": "Share and manage machine learning models.",
     "description": "Default text for model registry onboarding on the model list page"
@@ -411,6 +455,10 @@
     "defaultMessage": "{totalTokens} total tokens",
     "description": "Experiment page > artifact compare view > results table > total number of evaluated tokens"
   },
+  "/p0HFY": {
+    "defaultMessage": "{count} agent(s) reference \"{query}\"",
+    "description": "Dependency query > result count"
+  },
   "/pO3oR": {
     "defaultMessage": "Failed to save question: {error}",
     "description": "Review question modal: error toast shown when saving a question fails"
@@ -430,6 +478,10 @@
   "/v6KuF": {
     "defaultMessage": "Automatically log traces for LlamaIndex queries by calling the {code} function. For example:",
     "description": "Description of how to log traces for the LlamaIndex package using MLflow autologging. This message is followed by a code example."
+  },
+  "/v9qPB": {
+    "defaultMessage": "Sandbox and policy enforcement",
+    "description": "Runtime boundary panel > policy title"
   },
   "/vhBCt": {
     "defaultMessage": "Show exceptions",
@@ -475,6 +527,10 @@
     "defaultMessage": "Select a framework and follow the instructions to log traces with MLflow.",
     "description": "Helper text shown at the top of the log traces drawer"
   },
+  "04WcG0": {
+    "defaultMessage": "Version",
+    "description": "Section title for the new version"
+  },
   "050N3C": {
     "defaultMessage": "Evaluate and improve the quality, cost, latency of your GenAI app",
     "description": "Title of the empty state for the evaluation runs page"
@@ -483,9 +539,17 @@
     "defaultMessage": "Close guidance",
     "description": "Aria label for closing the detect issues guidance popover"
   },
+  "05bny+": {
+    "defaultMessage": "Version is required.",
+    "description": "Agent plugins > add version > required version error"
+  },
   "075RKh": {
     "defaultMessage": "Loaded {name} v{version} with settings",
     "description": "Success toast shown on the playground after loading a prompt version that also applied stored settings"
+  },
+  "07NsW9": {
+    "defaultMessage": "Registered skills ({count})",
+    "description": "Agent version pane > pinned skills heading"
   },
   "07nYAU": {
     "defaultMessage": "Compared IDs:",
@@ -498,6 +562,10 @@
   "0BIVHk": {
     "defaultMessage": "Response follows instructions, constraints, policies, and formatting",
     "description": "Issue category description for adherence"
+  },
+  "0BMvoc": {
+    "defaultMessage": "Agent card",
+    "description": "Agent version pane > agent card heading"
   },
   "0Bee6A": {
     "defaultMessage": "No retrieval logged",
@@ -519,9 +587,17 @@
     "defaultMessage": "Model",
     "description": "Run page > Overview > Logged models > Unknown model flavor"
   },
+  "0IQwV2": {
+    "defaultMessage": "Model name",
+    "description": "Label for model name column"
+  },
   "0IVF6w": {
     "defaultMessage": "Delete logged model",
     "description": "A header of the modal used for deleting logged models"
+  },
+  "0If38j": {
+    "defaultMessage": "Commit SHA",
+    "description": "Label for the source revision input"
   },
   "0LfePE": {
     "defaultMessage": "Automatically evaluate new traces using this scorer",
@@ -530,6 +606,10 @@
   "0M7VVC": {
     "defaultMessage": "Irrelevant",
     "description": "Evaluation results > relevancy assessment > negative value label. Displayed if evaluation result is considered as irrelevant to the query."
+  },
+  "0MH3Ir": {
+    "defaultMessage": "Skill repository is required.",
+    "description": "Skills registry > create skill > required source URI error"
   },
   "0NomdE": {
     "defaultMessage": "This trace is already in this queue, and you don't have permission to remove it.",
@@ -558,6 +638,10 @@
   "0T1I+b": {
     "defaultMessage": "MLflow documentation",
     "description": "Link to tracing documentation"
+  },
+  "0TsD9u": {
+    "defaultMessage": "No skills registered",
+    "description": "Skills registry table > empty state title"
   },
   "0W7Pi4": {
     "defaultMessage": "Tag{count, plural, =0 {} other { · #}}",
@@ -603,6 +687,10 @@
     "defaultMessage": "+ Save current view...",
     "description": "Menu item that opens the modal to save the current view"
   },
+  "0k8Bfr": {
+    "defaultMessage": "v{version}",
+    "description": "MCP registry card > latest version label"
+  },
   "0ktvTS": {
     "defaultMessage": "Trace archival retention unit",
     "description": "Label for trace archival retention unit selector"
@@ -639,6 +727,10 @@
     "defaultMessage": "Alerts",
     "description": "Tab label for budget alerts"
   },
+  "0vOpTn": {
+    "defaultMessage": "Skills",
+    "description": "Skills registry list page title"
+  },
   "0vwlO5": {
     "defaultMessage": "Each message has a role that tells the model who is speaking:",
     "description": "Intro line for the playground role-selector help popover"
@@ -663,9 +755,17 @@
     "defaultMessage": "LLM judge feedback",
     "description": "Label for the button to add LLM judge feedback to the trace"
   },
+  "1+KFoG": {
+    "defaultMessage": "Add model",
+    "description": "Add model button"
+  },
   "1/M8+x": {
     "defaultMessage": "X-axis:",
     "description": "Label text for x-axis in scatter plot comparison in MLflow"
+  },
+  "1/Q1/I": {
+    "defaultMessage": "No registered skills pinned. An agent describes its own capabilities on its card, so a Skill Registry entry is enrichment rather than a prerequisite.",
+    "description": "Agent version pane > no pinned skills"
   },
   "128VYg": {
     "defaultMessage": "User",
@@ -678,6 +778,10 @@
   "13vJft": {
     "defaultMessage": "View Examples",
     "description": "Experiment page > new run modal > prompt examples button"
+  },
+  "15bIoS": {
+    "defaultMessage": "Version",
+    "description": "Label for skill version column"
   },
   "16BvfJ": {
     "defaultMessage": "{timeSince, plural, =1 {1 year} other {# years}} ago",
@@ -710,6 +814,10 @@
   "1FCO3Y": {
     "defaultMessage": "Questions are locked once the queue has traces attached.",
     "description": "Queue settings: questions frozen hint"
+  },
+  "1I7yy3": {
+    "defaultMessage": "Skill name",
+    "description": "Label for skill name column"
   },
   "1IExHV": {
     "defaultMessage": "Delete",
@@ -759,6 +867,10 @@
     "defaultMessage": "Save",
     "description": "Button to save issue changes"
   },
+  "1Xrt6P": {
+    "defaultMessage": "Compare with",
+    "description": "Compare view > right picker label"
+  },
   "1YGQOY": {
     "defaultMessage": "Duplicate run",
     "description": "Experiment page > artifact compare view > run column header > \"duplicate run\" button label"
@@ -778,6 +890,10 @@
   "1b3c+B": {
     "defaultMessage": "No dataset",
     "description": "Label for the ungrouped metrics column group in the logged model column selector"
+  },
+  "1bKd67": {
+    "defaultMessage": "Avg latency",
+    "description": "Summary card > latency label"
   },
   "1dpbMP": {
     "defaultMessage": "Delete {count, plural, one {# Endpoint} other {# Endpoints}}",
@@ -811,6 +927,14 @@
     "defaultMessage": "Creator",
     "description": "Lable name for the creator under details tab on the model view page"
   },
+  "1jZ/CQ": {
+    "defaultMessage": "Lifecycle history ({count})",
+    "description": "Agent version pane > lifecycle history heading"
+  },
+  "1jbM1V": {
+    "defaultMessage": "Status:",
+    "description": "MCP version pane metadata label"
+  },
   "1kXqgv": {
     "defaultMessage": "Cancel",
     "description": "Delete review queue: cancel button"
@@ -827,6 +951,10 @@
     "defaultMessage": "Show less",
     "description": "Link that collapses an expanded list when clicked"
   },
+  "1pMvEM": {
+    "defaultMessage": "Register",
+    "description": "Submit button on the create MCP server screen"
+  },
   "1rqKJk": {
     "defaultMessage": "View details",
     "description": "Link to the issue detection run overview from the completion notification"
@@ -834,6 +962,10 @@
   "1tVKvm": {
     "defaultMessage": "Change message role",
     "description": "Aria label for the dropdown that swaps a chat message role on the playground page"
+  },
+  "1uRQLm": {
+    "defaultMessage": "Version is required.",
+    "description": "Agent registry > create agent > required version error"
   },
   "1uyr/n": {
     "defaultMessage": "View {count} {count, plural, one {issue} other {issues}}",
@@ -858,6 +990,10 @@
   "2/B9Zg": {
     "defaultMessage": "added {when} by {user}",
     "description": "Evaluation review > assessments > detailed history > added history entry"
+  },
+  "24brxk": {
+    "defaultMessage": "Spans",
+    "description": "Traces table > span count header"
   },
   "25EUlg": {
     "defaultMessage": "The code snippets below demonstrate how to load the logged model.",
@@ -975,6 +1111,10 @@
     "defaultMessage": "Stage",
     "description": "Guardrail stage column header"
   },
+  "2Wt0ha": {
+    "defaultMessage": "logged_model_id:",
+    "description": "Contract bridge field label"
+  },
   "2XH9oW": {
     "defaultMessage": "Back",
     "description": "Back button"
@@ -1055,6 +1195,10 @@
     "defaultMessage": "LLM-as-a-judge (Optimized)",
     "description": "Label for memory-augmented LLM scorer type"
   },
+  "2o+U4G": {
+    "defaultMessage": "Icon",
+    "description": "Section title for the server icon"
+  },
   "2oFAO4": {
     "defaultMessage": "Share",
     "description": "Text for share button on experiment view page header"
@@ -1075,6 +1219,14 @@
     "defaultMessage": "Source",
     "description": "Permissions table column header for the source (role name or 'Direct')"
   },
+  "2qkydo": {
+    "defaultMessage": "View evaluations",
+    "description": "Contract > view evaluations button"
+  },
+  "2rHESK": {
+    "defaultMessage": "Agent Plugins",
+    "description": "Agent plugins list page title"
+  },
   "2rfZ/+": {
     "defaultMessage": "Endpoint",
     "description": "Label for the endpoint-selection section in the run evaluation modal"
@@ -1091,9 +1243,21 @@
     "defaultMessage": "Git commit",
     "description": "Usage overview > metrics filter > git commit column option label"
   },
+  "2yoeY0": {
+    "defaultMessage": "Tags",
+    "description": "MCP registry > server page > tags label"
+  },
+  "2zk+PO": {
+    "defaultMessage": "New versions register against the skill's existing repository.",
+    "description": "Hint for the locked skill repository field on the add version screen"
+  },
   "2zy+D5": {
     "defaultMessage": "Add new tag",
     "description": "Experiment tracking > experiment page > runs > add new tag button"
+  },
+  "31WSWs": {
+    "defaultMessage": "Certification",
+    "description": "Governance roadmap panel > certification track title"
   },
   "3253th": {
     "defaultMessage": "Trace archival retention update failed",
@@ -1106,6 +1270,10 @@
   "35bW7o": {
     "defaultMessage": "Step 2: Run the judge",
     "description": "Step 2 title for custom code judge creation"
+  },
+  "35gmSd": {
+    "defaultMessage": "Change status",
+    "description": "Confirm button in the status-transition modal"
   },
   "36g3aR": {
     "defaultMessage": "Edit",
@@ -1131,9 +1299,17 @@
     "defaultMessage": "Cancel",
     "description": "Cancel button text in the run evaluation modal"
   },
+  "3FIunz": {
+    "defaultMessage": "Delete",
+    "description": "Confirm button in the delete version modal"
+  },
   "3JAJtl": {
     "defaultMessage": "Current password",
     "description": "Label for the current-password field"
+  },
+  "3Kxrkl": {
+    "defaultMessage": "Surfaced via logged_model_id",
+    "description": "Contract > surfaced data heading"
   },
   "3MZ6H+": {
     "defaultMessage": "Submit",
@@ -1146,6 +1322,10 @@
   "3NBvz7": {
     "defaultMessage": "Cancel",
     "description": "experiment page > edit experiment modal > cancel button"
+  },
+  "3OmBQt": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button in the delete version modal"
   },
   "3PBIB8": {
     "defaultMessage": "Appearance, product feedback, telemetry, and workspace demo data.",
@@ -1163,6 +1343,10 @@
     "defaultMessage": "Download data",
     "description": "String for the download csv button to download metrics from this run offline in a CSV format"
   },
+  "3UuBZe": {
+    "defaultMessage": "Metric",
+    "description": "Compare eval > metric column"
+  },
   "3VURvw": {
     "defaultMessage": "No metrics or parameters available",
     "description": "Message displayed when no metrics or params are available in the compare runs chart configure modal"
@@ -1171,9 +1355,17 @@
     "defaultMessage": "Views",
     "description": "Label for the saved views dropdown button in the experiment header"
   },
+  "3W7aQQ": {
+    "defaultMessage": "Description:",
+    "description": "MCP version pane metadata label"
+  },
   "3X52Jw": {
     "defaultMessage": "This tab displays all the traces logged to this logged model. MLflow supports automatic tracing for many popular generative AI frameworks. Follow the steps below to log your first trace. For more information about MLflow Tracing, visit the <a>MLflow documentation</a>.",
     "description": "Message that explains the function of the 'Traces' tab in logged model page. This message is followed by a tutorial explaining how to get started with MLflow Tracing."
+  },
+  "3XVEvq": {
+    "defaultMessage": "Add version",
+    "description": "Button to add a new version to an agent plugin"
   },
   "3YddwH": {
     "defaultMessage": "Traffic split percentages must total 100%",
@@ -1218,6 +1410,10 @@
   "3sDV5K": {
     "defaultMessage": "Description",
     "description": "experiment page > edit experiment modal > description label"
+  },
+  "3sQf8v": {
+    "defaultMessage": "No agents found referencing \"{query}\".",
+    "description": "Dependency query > no results"
   },
   "3v2Y8K": {
     "defaultMessage": "AI Gateway",
@@ -1387,9 +1583,25 @@
     "defaultMessage": "After your script runs, open the MLflow UI to review the recorded traces.",
     "description": "Introductory text for viewing traces in the MLflow UI"
   },
+  "4Vvz/t": {
+    "defaultMessage": "Slug",
+    "description": "Label for the server slug input"
+  },
+  "4VxbiG": {
+    "defaultMessage": "New version v{version}",
+    "description": "Page title for the add skill version screen"
+  },
+  "4XIuHn": {
+    "defaultMessage": "Agents",
+    "description": "Sidebar link for agent registry tab"
+  },
   "4YBr1I": {
     "defaultMessage": "Name",
     "description": "Roles table name header"
+  },
+  "4Z03MN": {
+    "defaultMessage": "Comma-separated skill references as name/version (e.g., rh-dev/code-review/1).",
+    "description": "Hint for the plugin skill members input"
   },
   "4a2Kqx": {
     "defaultMessage": "View trace",
@@ -1411,6 +1623,10 @@
     "defaultMessage": "{count, plural, one {# reviewer} other {# reviewers}} selected",
     "description": "Queue settings: reviewers dropdown selected-count summary"
   },
+  "4daHRD": {
+    "defaultMessage": "DNS-style: namespace/name.",
+    "description": "Hint for the agent name input"
+  },
   "4e1JWO": {
     "defaultMessage": "Delete question?",
     "description": "Manage review questions: delete confirmation title"
@@ -1426,6 +1642,10 @@
   "4idqpX": {
     "defaultMessage": "Add",
     "description": "Add button text in editable tags table view in MLflow"
+  },
+  "4kGhQc": {
+    "defaultMessage": "A server's only remaining version can't be deleted.",
+    "description": "Tooltip explaining why the delete-version button is disabled"
   },
   "4kSYNV": {
     "defaultMessage": "No issues found",
@@ -1446,6 +1666,10 @@
   "4qjOWx": {
     "defaultMessage": "Tools",
     "description": "Section header for tool definitions inside the playground settings drawer"
+  },
+  "4ss3Tg": {
+    "defaultMessage": "Add tag",
+    "description": "Add tag button"
   },
   "4tpkvx": {
     "defaultMessage": "Show change from baseline",
@@ -1510,6 +1734,10 @@
   "5GCYzy": {
     "defaultMessage": "Experiment Runs - Databricks",
     "description": "Title on a page used to manage MLflow experiments runs"
+  },
+  "5HK2Yc": {
+    "defaultMessage": "Create skill",
+    "description": "Page title for the create skill screen"
   },
   "5K6npM": {
     "defaultMessage": "Analyze with Assistant",
@@ -1579,6 +1807,10 @@
     "defaultMessage": "Function",
     "description": "Display text for the 'function' role in a GenAI chat message."
   },
+  "5ZnBBX": {
+    "defaultMessage": "Agents deployed out of band carry no registry record, so surfacing them requires reconciling cluster state against this registry — work that happens where the cluster is observed.",
+    "description": "Runtime boundary panel > unregistered agents description"
+  },
   "5aZ7nE": {
     "defaultMessage": "Artifact location copied",
     "description": "Tooltip displayed after experiment artifact location was successfully copied to clipboard"
@@ -1602,6 +1834,14 @@
   "5jXYY4": {
     "defaultMessage": "Detailed assessments",
     "description": "Evaluation review > assessments > detailed assessments > title"
+  },
+  "5kU0X/": {
+    "defaultMessage": "MCP servers",
+    "description": "Section title for MCP server refs"
+  },
+  "5kuvUW": {
+    "defaultMessage": "Remove",
+    "description": "Remove model button"
   },
   "5lsHqm": {
     "defaultMessage": "Cancel",
@@ -1639,6 +1879,10 @@
     "defaultMessage": "This key will be saved for reuse.",
     "description": "Text indicating API key will be saved for reuse"
   },
+  "6+T4LG": {
+    "defaultMessage": "Server name",
+    "description": "Label for MCP server name column"
+  },
   "60b0vW": {
     "defaultMessage": "Always show spans with exceptions, regardless of filter conditions",
     "description": "Tooltip for a span filter setting that enables showing spans with exceptions"
@@ -1659,6 +1903,10 @@
     "defaultMessage": "Run your application and traces will appear here automatically. For more information, visit the <a>MLflow Tracing documentation</a>.",
     "description": "Step 3 description for traces onboarding"
   },
+  "63Tlzq": {
+    "defaultMessage": "Automated checks confirm the published tool surface matches server_json.",
+    "description": "Governance roadmap panel > verification track description"
+  },
   "64SfR8": {
     "defaultMessage": "enter a model identifier",
     "description": "Link text to switch to direct model identifier input"
@@ -1666,6 +1914,10 @@
   "656rRX": {
     "defaultMessage": "Go back to <link>the home page.</link>",
     "description": "Default error message for error views in MLflow"
+  },
+  "66TVnr": {
+    "defaultMessage": "MCP Registry entries this version pins for its tool surface. These versions are semver because server.json declares its own.",
+    "description": "Agent version pane > pinned MCP servers caption"
   },
   "6AUuoS": {
     "defaultMessage": "Run judge on {isTraces, select, true {traces} other {sessions}}",
@@ -1678,6 +1930,14 @@
   "6BqLF2": {
     "defaultMessage": "Search for a field",
     "description": "Placeholder for search input in schema table"
+  },
+  "6Cqxlz": {
+    "defaultMessage": "Created by:",
+    "description": "MCP version pane metadata label"
+  },
+  "6HOskR": {
+    "defaultMessage": "Last modified",
+    "description": "Column title for the last modified timestamp in the skills registry list"
   },
   "6HjFD0": {
     "defaultMessage": "Key name",
@@ -1699,6 +1959,14 @@
     "defaultMessage": "Max. tokens: {max_tokens}",
     "description": "Experiment page > artifact compare view > run column header prompt metadata > max tokens parameter"
   },
+  "6LLnJe": {
+    "defaultMessage": "The A2A agent card stored on this version, immutable once registered.",
+    "description": "Agent version pane > agent card caption"
+  },
+  "6OXH+Q": {
+    "defaultMessage": "Register an agent to version its card and record the skills and MCP servers it depends on.",
+    "description": "Agent registry table > empty state description"
+  },
   "6Q/0BO": {
     "defaultMessage": "The retrieval groundedness LLM judge returns a binary evaluation and written rationale on whether the generated response is factually consistent with the agent's retrieved context.",
     "description": "Evaluation results > known type of evaluation result assessment > description of retrieval groundedness judge."
@@ -1706,6 +1974,10 @@
   "6SXoSp": {
     "defaultMessage": "Model definition",
     "description": "Label for model definition selector"
+  },
+  "6SaXE9": {
+    "defaultMessage": "Version",
+    "description": "Traces table > version header"
   },
   "6T5Q0d": {
     "defaultMessage": "Open dataset record {recordId} — expectations",
@@ -1730,6 +2002,10 @@
   "6WitMT": {
     "defaultMessage": "Alert sends a webhook notification. <link>Learn how to set up webhooks.</link>",
     "description": "Tooltip explaining budget exceeded actions and webhook setup"
+  },
+  "6XQ6JM": {
+    "defaultMessage": "Commit message",
+    "description": "Section title for the initial version commit message"
   },
   "6XfILf": {
     "defaultMessage": "Contour chart",
@@ -1762,6 +2038,14 @@
   "6csnxr": {
     "defaultMessage": "Delete",
     "description": "Gateway > Endpoints list > Delete button"
+  },
+  "6dgzp2": {
+    "defaultMessage": "+ Add MCP server reference",
+    "description": "Button to add a new MCP server reference row"
+  },
+  "6dvX5H": {
+    "defaultMessage": "A server named \"{name}\" is already registered.",
+    "description": "MCP registry > create server > duplicate name inline error"
   },
   "6ejdmD": {
     "defaultMessage": "Requests",
@@ -1803,6 +2087,10 @@
     "defaultMessage": "Automatically log traces for Bedrock conversations by calling the {code} function. For example:",
     "description": "Description of how to log traces for the Bedrock package using MLflow autologging. This message is followed by a code example."
   },
+  "6ulQWq": {
+    "defaultMessage": "The git repository the skill content will be registered from. Without it, the registry doesn't know what it's registering.",
+    "description": "Hint for the skill source repository input"
+  },
   "6vII7y": {
     "defaultMessage": "Cancel",
     "description": "A cancel label for the modal used for deleting logged models"
@@ -1827,6 +2115,10 @@
     "defaultMessage": "Failed to load attachment",
     "description": "Error message when trace attachment fails to load"
   },
+  "7+QJ5L": {
+    "defaultMessage": "Path",
+    "description": "Label for the source path input"
+  },
   "7+XQ3q": {
     "defaultMessage": "Correctness",
     "description": "Evaluation results > known type of evaluation result assessment > correctness assessment. Used to indicate if the result is correct in context of LLMs evaluation. Label displayed if user provided custom value, e.g. \"Correctness: mostly yes, have gaps\""
@@ -1838,6 +2130,10 @@
   "70Oj6o": {
     "defaultMessage": "Share review link",
     "description": "Review queue share dropdown: copies a link that opens the first pending trace for review"
+  },
+  "70s4K0": {
+    "defaultMessage": "server.json",
+    "description": "MCP version pane server_json heading"
   },
   "71dHIO": {
     "defaultMessage": "Classical ML",
@@ -1859,6 +2155,10 @@
     "defaultMessage": "Off",
     "description": "Runs charts > line chart > ignore outliers > off setting label"
   },
+  "76y4DX": {
+    "defaultMessage": "Register a server to version it and publish access endpoints.",
+    "description": "MCP registry grid > empty state description"
+  },
   "79dD5F": {
     "defaultMessage": "There was an error submitting your note.",
     "description": "Error message text when saving an editable note in MLflow"
@@ -1866,6 +2166,10 @@
   "7AbOaV": {
     "defaultMessage": "A unique name to identify this API key for reuse across endpoints",
     "description": "Hint text explaining API key name field"
+  },
+  "7DehbQ": {
+    "defaultMessage": "An agent plugin named \"{name}\" is already registered.",
+    "description": "Agent plugins > create plugin > duplicate name inline error"
   },
   "7Dhfxy": {
     "defaultMessage": "Fail",
@@ -1983,6 +2287,10 @@
     "defaultMessage": "Trace Archival Retention",
     "description": "Label for displaying the experiment trace archival retention"
   },
+  "7h3Ei0": {
+    "defaultMessage": "What this plugin bundles and when to use it.",
+    "description": "Placeholder for the plugin description input"
+  },
   "7hHw+R": {
     "defaultMessage": "Instructions",
     "description": "Section header for judge instructions"
@@ -1990,6 +2298,10 @@
   "7hf/6q": {
     "defaultMessage": "Or create a prompt manually",
     "description": "CTA on the prompts empty state to create a prompt as an alternative to the agent path"
+  },
+  "7hlILP": {
+    "defaultMessage": "MCP Registry entries this agent connects to.",
+    "description": "Hint for MCP server refs"
   },
   "7jsqqe": {
     "defaultMessage": "{timeSince, plural, =1 {1 minute} other {# minutes}} ago",
@@ -2055,6 +2367,10 @@
     "defaultMessage": "Create prompt",
     "description": "Label for the create prompt button on the registered prompts page"
   },
+  "7xMLFX": {
+    "defaultMessage": "Comma-separated keywords for discovery.",
+    "description": "Hint for the plugin keywords input"
+  },
   "7yW27D": {
     "defaultMessage": "Total Count",
     "description": "Column header for total count"
@@ -2075,6 +2391,10 @@
     "defaultMessage": "Provide one or more function definitions for the model to call.",
     "description": "Help text shown under the Add tools button in the playground settings drawer before any tools are added"
   },
+  "8/PhHI": {
+    "defaultMessage": "red-hat-ai",
+    "description": "Placeholder for the plugin organization input"
+  },
   "801Xh4": {
     "defaultMessage": "Save tags",
     "description": "Key-value tag editor modal > Manage Tag save button"
@@ -2086,6 +2406,10 @@
   "80LQWB": {
     "defaultMessage": "Run example training code:",
     "description": "Instruction for running example training code in order to log MLflow 3 models"
+  },
+  "80ZqdI": {
+    "defaultMessage": "MCP server not found",
+    "description": "MCP registry > server not found title"
   },
   "80neA7": {
     "defaultMessage": "Request",
@@ -2106,6 +2430,10 @@
   "83wDn8": {
     "defaultMessage": "Total",
     "description": "Label for the total tokensin the tooltip for the tokens cell."
+  },
+  "87MMcv": {
+    "defaultMessage": "Agent Plugins",
+    "description": "Agent plugins breadcrumb root"
   },
   "88bRGB": {
     "defaultMessage": "Select record {recordId}",
@@ -2131,6 +2459,10 @@
     "defaultMessage": "None",
     "description": "Cell value when there's no content"
   },
+  "8EohKE": {
+    "defaultMessage": "Display name",
+    "description": "Section title for the display name"
+  },
   "8GmtjT": {
     "defaultMessage": "Clear the search",
     "description": "Link text to clear the search filter on the V2 dataset records list"
@@ -2147,6 +2479,10 @@
     "defaultMessage": "The provided value is not valid JSON",
     "description": "Error message for invalid JSON in an assessment edit form"
   },
+  "8LrEIO": {
+    "defaultMessage": "Status",
+    "description": "Traces table > status header"
+  },
   "8Mwwrq": {
     "defaultMessage": "No matching users",
     "description": "Review queue: no users match the owner search"
@@ -2154,6 +2490,10 @@
   "8Oqhz5": {
     "defaultMessage": "Copy failed — clipboard unavailable.",
     "description": "Error toast shown when copying a saved experiment view share link fails"
+  },
+  "8Q6tXn": {
+    "defaultMessage": "New version",
+    "description": "Page title for the add agent plugin version screen"
   },
   "8Rlf8s": {
     "defaultMessage": "— The model decides whether to call one or more tools (default).",
@@ -2175,6 +2515,10 @@
     "defaultMessage": "Value",
     "description": "Default text for value placeholder in editable tags table form in MLflow"
   },
+  "8XhsvK": {
+    "defaultMessage": "Version",
+    "description": "Evals table > version header"
+  },
   "8XrJnT": {
     "defaultMessage": "Delete section",
     "description": "Experiment page > compare runs > chart section > delete section label"
@@ -2190,6 +2534,10 @@
   "8biXJJ": {
     "defaultMessage": "Select output type",
     "description": "Placeholder for output type selection"
+  },
+  "8eHEuT": {
+    "defaultMessage": "Commit message",
+    "description": "Section title for the version commit message"
   },
   "8eVxXM": {
     "defaultMessage": "Cancel",
@@ -2263,6 +2611,10 @@
     "defaultMessage": "Prompts",
     "description": "Label for the prompts tab in the MLflow experiment navbar"
   },
+  "9/ZC6L": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button on the create agent plugin screen"
+  },
   "90097b": {
     "defaultMessage": "Masked Key",
     "description": "Masked API key label"
@@ -2274,6 +2626,10 @@
   "917MAH": {
     "defaultMessage": "Trace archival retention must be at most {maxLength} characters.",
     "description": "Validation error for trace archival retention exceeding the maximum length"
+  },
+  "91VtrJ": {
+    "defaultMessage": "Error rate",
+    "description": "Summary card > error rate label"
   },
   "93BFzC": {
     "defaultMessage": "Outputs",
@@ -2290,6 +2646,10 @@
   "961sxj": {
     "defaultMessage": "Success Rate",
     "description": "Label for success rate statistic"
+  },
+  "96xaFL": {
+    "defaultMessage": "Models",
+    "description": "Agent version diff > models heading"
   },
   "97xY+o": {
     "defaultMessage": "Loading endpoints...",
@@ -2355,6 +2715,10 @@
     "defaultMessage": "Select as compared version",
     "description": "Label for selecting compared prompt version in the comparison view"
   },
+  "9IyIEl": {
+    "defaultMessage": "No skill named {skillName} is registered.",
+    "description": "Skills registry > skill not found description"
+  },
   "9J8zoa": {
     "defaultMessage": "An error occurred while rendering this component.",
     "description": "Description for default error message in experiment datasets UI"
@@ -2374,6 +2738,10 @@
   "9Klofr": {
     "defaultMessage": "Add tool",
     "description": "Label for the button that appends another tool definition card in the playground Tools section"
+  },
+  "9Lnl5R": {
+    "defaultMessage": "An agent's only remaining version can't be deleted.",
+    "description": "Tooltip explaining why the delete-version button is disabled"
   },
   "9MHcPE": {
     "defaultMessage": "Overview",
@@ -2447,6 +2815,10 @@
     "defaultMessage": "Select Categories",
     "description": "Header for the category selection step in issue detection modal"
   },
+  "9jX37n": {
+    "defaultMessage": "Model",
+    "description": "Column title for the primary model the agent uses"
+  },
   "9kTEoo": {
     "defaultMessage": "Is the app's response grounded in retrieved information?",
     "description": "Hint for RetrievalGroundedness template"
@@ -2470,6 +2842,10 @@
   "9qUuQ6": {
     "defaultMessage": "Average of {count} values",
     "description": "Tooltip for numeric assessment average in session header"
+  },
+  "9qaYmV": {
+    "defaultMessage": "Evaluations",
+    "description": "Agent page > evals view toggle"
   },
   "9tg3Dx": {
     "defaultMessage": "Description not updated",
@@ -2527,6 +2903,10 @@
     "defaultMessage": "avg per request",
     "description": "Subtitle for average tokens per request in gateway"
   },
+  "A0T8nn": {
+    "defaultMessage": "Reference URIs:",
+    "description": "Skill version pane metadata label"
+  },
   "A0m0mR": {
     "defaultMessage": "You're viewing a shared view. Your changes won't be saved unless you override your own saved view.",
     "description": "Experiment page > shared view banner > explanation that the shared view is read-only"
@@ -2538,6 +2918,10 @@
   "A3bM/D": {
     "defaultMessage": "Assistant",
     "description": "Tooltip for assistant button"
+  },
+  "A5Kjdz": {
+    "defaultMessage": "Delete version",
+    "description": "Header for the delete MCP version modal"
   },
   "A6c78D": {
     "defaultMessage": "Child runs loading",
@@ -2591,6 +2975,10 @@
     "defaultMessage": "Created {date}",
     "description": "Gateway > Endpoint bindings drawer > Created date"
   },
+  "AFuHao": {
+    "defaultMessage": "Registered agents are versioned assets: each version pins an immutable A2A agent card and the registered skills and MCP servers it depends on.",
+    "description": "Agent registry list page subtitle"
+  },
   "AGLzB5": {
     "defaultMessage": "my-api-key",
     "description": "Placeholder for secret name input"
@@ -2602,6 +2990,10 @@
   "AHaom4": {
     "defaultMessage": "No assessments available",
     "description": "Message shown when there are no assessments to display"
+  },
+  "AIQuJk": {
+    "defaultMessage": "Parsed: {skills} declared skill(s).",
+    "description": "Agent card parsed preview"
   },
   "AIun3p": {
     "defaultMessage": "e.g. get_weather",
@@ -2622,6 +3014,10 @@
   "AOoWxS": {
     "defaultMessage": "Error",
     "description": "Title for error fallback component in prompts management UI"
+  },
+  "APv1Gd": {
+    "defaultMessage": "v{version}",
+    "description": "MCP registry > version number rendered as v followed by the semver string"
   },
   "APwgn9": {
     "defaultMessage": "Identifying issues from traces...",
@@ -2655,6 +3051,10 @@
     "defaultMessage": "Response from the endpoint after clicking Send request.",
     "description": "Response body tooltip"
   },
+  "Ad9V2a": {
+    "defaultMessage": "No registered agent pins this version.",
+    "description": "Skill version pane > no agents using this skill version"
+  },
   "AeRhuI": {
     "defaultMessage": "Conversational guidelines",
     "description": "Evaluation results > known type of evaluation result assessment > conversational guidelines assessment. Used to indicate if the assistant adheres to the guidelines throughout a conversation."
@@ -2670,6 +3070,10 @@
   "AgjhWE": {
     "defaultMessage": "See less",
     "description": "Model trace explorer > selected span > code snippet > see less button"
+  },
+  "AglefM": {
+    "defaultMessage": "Delta",
+    "description": "Compare eval > delta column"
   },
   "AhfXyS": {
     "defaultMessage": "Previous",
@@ -2710,6 +3114,10 @@
   "AtT85I": {
     "defaultMessage": "← Use an endpoint instead",
     "description": "Link to switch from direct model to endpoint selection"
+  },
+  "Atq+KE": {
+    "defaultMessage": "No traces found. Traces appear when the agent version has a logged_model_id linking to experiment tracking.",
+    "description": "Traces tab > empty state"
   },
   "AupQl+": {
     "defaultMessage": "Killed",
@@ -2871,9 +3279,17 @@
     "defaultMessage": "Install the OpenTelemetry SDK and instrument your application. Spans will be exported to MLflow via OTLP using the env vars set above.",
     "description": "Step 2 description for OpenTelemetry traces onboarding"
   },
+  "BXmNa+": {
+    "defaultMessage": "server.json",
+    "description": "Section title for the server_json payload"
+  },
   "BY1k4W": {
     "defaultMessage": "Original logged model: {originalModelLink}",
     "description": "Tooltip text with link to the original logged model"
+  },
+  "BZ1qKo": {
+    "defaultMessage": "Skills",
+    "description": "Agent version diff > skills heading"
   },
   "BZ5364": {
     "defaultMessage": "(cache read)",
@@ -2882,6 +3298,10 @@
   "BZLX5c": {
     "defaultMessage": "Track experiments, parameters, and metrics throughout training.",
     "description": "Home page quick action description for training models"
+  },
+  "BZfIxs": {
+    "defaultMessage": "Base version",
+    "description": "Compare view > left picker label"
   },
   "BaNRkH": {
     "defaultMessage": "Webhooks",
@@ -2915,9 +3335,21 @@
     "defaultMessage": "Instructions",
     "description": "Label for guardrail judge instructions"
   },
+  "BilyA0": {
+    "defaultMessage": "What this agent does and when to use it.",
+    "description": "Placeholder for the agent description input"
+  },
   "BkDhmT": {
     "defaultMessage": "Chat",
     "description": "Label for the chat tab of the model trace explorer."
+  },
+  "BlXnXO": {
+    "defaultMessage": "Tags",
+    "description": "Agent registry > agent page > tags label"
+  },
+  "Blvjc6": {
+    "defaultMessage": "Add version",
+    "description": "Label for the add skill version button"
   },
   "Bnruyp": {
     "defaultMessage": "500",
@@ -2926,6 +3358,10 @@
   "Boj6Fm": {
     "defaultMessage": "Version {version}",
     "description": "Model registry > model version alias select > Indicator for alias of a particular version"
+  },
+  "Bp/pwh": {
+    "defaultMessage": "All teams",
+    "description": "Agent registry team filter > all teams option"
   },
   "BpAyCF": {
     "defaultMessage": "Only the top {evalResultsCount} results are shown",
@@ -2983,9 +3419,17 @@
     "defaultMessage": "Evaluation",
     "description": "Label for the evaluation section in the MLflow experiment navbar"
   },
+  "C0kgjo": {
+    "defaultMessage": "Revision",
+    "description": "Label for the source revision input"
+  },
   "C1y/A6": {
     "defaultMessage": "Assertions",
     "description": "Assertions column header"
+  },
+  "C3KVRp": {
+    "defaultMessage": "Carried over from v{version} — edit to change",
+    "description": "Subtitle for editable model refs section"
   },
   "C4y1fv": {
     "defaultMessage": "-∞",
@@ -2994,6 +3438,10 @@
   "C5WOXw": {
     "defaultMessage": "Click to select a model",
     "description": "Placeholder for model selection"
+  },
+  "C5g1i+": {
+    "defaultMessage": "Compare versions",
+    "description": "Agent page > compare view toggle"
   },
   "C6/J2o": {
     "defaultMessage": "Create Budget Policy",
@@ -3006,6 +3454,10 @@
   "C6aBjm": {
     "defaultMessage": "New question",
     "description": "Review queue: create new question link in dropdown"
+  },
+  "C6pxlD": {
+    "defaultMessage": "Delete agent plugin",
+    "description": "Header for the delete plugin modal"
   },
   "C83vFj": {
     "defaultMessage": "Latency",
@@ -3027,9 +3479,17 @@
     "defaultMessage": "Custom judge",
     "description": "Label indicating a custom judge scorer"
   },
+  "CBeRI9": {
+    "defaultMessage": "Version",
+    "description": "Section title for plugin version"
+  },
   "CBnbqy": {
     "defaultMessage": "Next",
     "description": "Evaluation review > assessments > next button"
+  },
+  "CBztRV": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button in the delete skill modal"
   },
   "CDBd4J": {
     "defaultMessage": "Unified API",
@@ -3039,6 +3499,14 @@
     "defaultMessage": "System Metrics",
     "description": "Experiment tracking > runs charts > cards > RunsChartsDifferenceChartCard > system metrics heading"
   },
+  "CFg+m5": {
+    "defaultMessage": "Evaluations",
+    "description": "Agent evals tab heading"
+  },
+  "CHypHl": {
+    "defaultMessage": "Description",
+    "description": "Column title for the agent description in the agent registry list"
+  },
   "CIpiSM": {
     "defaultMessage": "Allow",
     "description": "Button to allow a tool-call permission request"
@@ -3046,6 +3514,10 @@
   "CKwhUr": {
     "defaultMessage": "Move to Todo",
     "description": "Review focused view: send a completed/declined trace back to the to-do list"
+  },
+  "CN5h4A": {
+    "defaultMessage": "Version {version}",
+    "description": "Version rail entry heading"
   },
   "CO81il": {
     "defaultMessage": "No usage data available",
@@ -3059,9 +3531,17 @@
     "defaultMessage": "GenAI apps & agents",
     "description": "A short label for custom experiments automatically identified as being focused on generative AI app and agent development"
   },
+  "CPeBiW": {
+    "defaultMessage": "+ Add model dependency",
+    "description": "Button to add a new model dependency row"
+  },
   "CRr6Tx": {
     "defaultMessage": "Create and manage judges",
     "description": "Title for the empty state of the judges page"
+  },
+  "CRy96P": {
+    "defaultMessage": "All versions",
+    "description": "Evals tab > all versions filter"
   },
   "CTEh+b": {
     "defaultMessage": "Cancel",
@@ -3127,6 +3607,10 @@
     "defaultMessage": "Add section above",
     "description": "Experiment page > compare runs > chart section > add section above label"
   },
+  "Cfiipf": {
+    "defaultMessage": "Score trend across versions",
+    "description": "Evals tab > score trend heading"
+  },
   "Cj58gM": {
     "defaultMessage": "Setup MLflow Assistant",
     "description": "Title for the MLflow Assistant setup wizard"
@@ -3159,6 +3643,10 @@
     "defaultMessage": "Issue detection failed",
     "description": "Issue detection progress > Step label when failed"
   },
+  "Cr6TBp": {
+    "defaultMessage": "Git URI",
+    "description": "Label for the source URI input"
+  },
   "CruI7o": {
     "defaultMessage": "Latest version",
     "description": "Column title for latest model version in the registered model page"
@@ -3186,6 +3674,10 @@
   "D0jMS6": {
     "defaultMessage": "Register model",
     "description": "Label for a CTA button for registering a ML model version from a logged model"
+  },
+  "D1oKVM": {
+    "defaultMessage": "Tags:",
+    "description": "MCP version pane metadata label"
   },
   "D2PQiu": {
     "defaultMessage": "An error occurred while fetching your roles.",
@@ -3226,6 +3718,10 @@
   "DCkSC3": {
     "defaultMessage": "Promote",
     "description": "Confirmation text to promote the model"
+  },
+  "DFdE4h": {
+    "defaultMessage": "Versions",
+    "description": "Column title for the version rail on the agent plugin detail page"
   },
   "DHFf28": {
     "defaultMessage": "Or {enterManually}",
@@ -3287,6 +3783,18 @@
     "defaultMessage": "Used for HMAC signature verification of incoming webhook requests.",
     "description": "Webhook secret field description"
   },
+  "DYf76V": {
+    "defaultMessage": "MCP Servers",
+    "description": "MCP registry list page title"
+  },
+  "DZ1DDP": {
+    "defaultMessage": "MCP Servers",
+    "description": "Sidebar link for MCP registry tab"
+  },
+  "DZKrEC": {
+    "defaultMessage": "Viewing version {version}",
+    "description": "Title of the skill detail pane for the currently selected version"
+  },
   "DaF+KK": {
     "defaultMessage": "Y axis",
     "description": "Label for Y axis in scatter chart configurator in compare runs chart config modal"
@@ -3323,6 +3831,14 @@
     "defaultMessage": "Download attachment ({contentType})",
     "description": "Download link for trace attachment with unknown content type"
   },
+  "DnE1OQ": {
+    "defaultMessage": "Description",
+    "description": "Column title for the skill description in the skills registry list"
+  },
+  "DtETxd": {
+    "defaultMessage": "Plugin name is required.",
+    "description": "Agent plugins > create plugin > required name error"
+  },
   "DutAb5": {
     "defaultMessage": "Search to find more queues",
     "description": "Add to review queue: hint that more custom queues are searchable"
@@ -3343,9 +3859,29 @@
     "defaultMessage": "The request failed. Please try again.",
     "description": "Fallback error message shown inside an input modal when submission fails without details"
   },
+  "DziK6b": {
+    "defaultMessage": "Beyond this registry",
+    "description": "Runtime boundary panel title"
+  },
+  "DzxdDP": {
+    "defaultMessage": "from MLflow tracing",
+    "description": "Contract > traces source"
+  },
+  "E+XC7C": {
+    "defaultMessage": "Register agent",
+    "description": "Page title for the register agent screen"
+  },
   "E+bByS": {
     "defaultMessage": "My queues",
     "description": "Review queue sidebar: show-only-owned-queues filter"
+  },
+  "E0TnSQ": {
+    "defaultMessage": "Evaluated",
+    "description": "Evals table > timestamp header"
+  },
+  "E2QVk3": {
+    "defaultMessage": "{skillCount, plural, one {# skill} other {# skills}} · {mcpCount} MCP",
+    "description": "Agent registry list > count of pinned skills and MCP servers on the latest version"
   },
   "E4Te7L": {
     "defaultMessage": "Experiment load error: {errorMessage}",
@@ -3370,6 +3906,10 @@
   "E7mv3b": {
     "defaultMessage": "Save",
     "description": "Text for saving changes on rows in editable form table in MLflow"
+  },
+  "E8lxyQ": {
+    "defaultMessage": "Are you sure you want to delete version {version}? This action cannot be undone.",
+    "description": "Content of the delete MCP version confirmation modal"
   },
   "E9fsRD": {
     "defaultMessage": "Show span tree",
@@ -3419,9 +3959,21 @@
     "defaultMessage": "Edit budget policy",
     "description": "Gateway > Budgets list > Edit budget policy button aria label"
   },
+  "EES+12": {
+    "defaultMessage": "SemVer version string. Must not already exist on this plugin.",
+    "description": "Hint for the new version input"
+  },
+  "EHuBNu": {
+    "defaultMessage": "Tags",
+    "description": "Section title for tags"
+  },
   "EI7moF": {
     "defaultMessage": "Last year",
     "description": "Option for the start select dropdown to filter runs since the last 1 year"
+  },
+  "EIjKLz": {
+    "defaultMessage": "Status:",
+    "description": "Plugin version pane metadata label"
   },
   "EK5JxG": {
     "defaultMessage": "Parameters",
@@ -3434,6 +3986,10 @@
   "ELI1bm": {
     "defaultMessage": "{reviewed} of {total} reviewed ({percentage}%)",
     "description": "Review focused view: queue progress summary"
+  },
+  "EMmPqN": {
+    "defaultMessage": "Composition timeline",
+    "description": "Agent composition timeline > heading"
   },
   "EN0lUA": {
     "defaultMessage": "Columns",
@@ -3462,6 +4018,10 @@
   "ESmLOR": {
     "defaultMessage": "Using regular expression quick filter. The following query will be used: {filterSample}",
     "description": "Experiment page > control bar > search filter > a label displayed when user has entered a simple query that will be automatically transformed into RLIKE SQL query before being sent to the API"
+  },
+  "ETEV/g": {
+    "defaultMessage": "Commit message",
+    "description": "Section title for commit message"
   },
   "ETbUBU": {
     "defaultMessage": "Rough cost: under $0.5 for ~100 traces, actual cost varies by selected model. <link>See benchmark</link>.",
@@ -3551,6 +4111,10 @@
     "defaultMessage": "LLM Connections",
     "description": "Sidebar link: Settings > LLM Connections"
   },
+  "F3n0mR": {
+    "defaultMessage": "Locked",
+    "description": "Read-only field qualifier"
+  },
   "F4K195": {
     "defaultMessage": "No evaluation datasets found",
     "description": "Empty state for the evaluation datasets page"
@@ -3575,6 +4139,10 @@
     "defaultMessage": "Overview",
     "description": "Label for the overview tab on the logged model details page"
   },
+  "FBc9Zq": {
+    "defaultMessage": "{count} regressed",
+    "description": "Compare view > regression count"
+  },
   "FBlbEZ": {
     "defaultMessage": "Remove message",
     "description": "Aria label for the button that removes a message from the playground messages panel"
@@ -3594,6 +4162,10 @@
   "FKnUSV": {
     "defaultMessage": "Open assistant",
     "description": "Canonical button label for opening the MLflow assistant from an agent action card"
+  },
+  "FMJSpx": {
+    "defaultMessage": "Version {version} is already registered for this agent.",
+    "description": "Agent registry > add version > duplicate version error"
   },
   "FMi127": {
     "defaultMessage": "No datasets match \"{query}\"",
@@ -3630,6 +4202,10 @@
   "FZubuU": {
     "defaultMessage": "Input an experiment name",
     "description": "Input placeholder to enter experiment name for create experiment"
+  },
+  "FZyIUJ": {
+    "defaultMessage": "Create",
+    "description": "Submit button on the add version screen"
   },
   "FbAMd+": {
     "defaultMessage": "Error",
@@ -3779,6 +4355,10 @@
     "defaultMessage": "The trace variable is not supported when running the judge on a sample of traces",
     "description": "Tooltip message when instructions contain trace variable"
   },
+  "GJs8S1": {
+    "defaultMessage": "Namespace",
+    "description": "Label for the server namespace input"
+  },
   "GKVTw4": {
     "defaultMessage": "JSON",
     "description": "JSON select menu option for assessment data type"
@@ -3786,6 +4366,10 @@
   "GKiPV1": {
     "defaultMessage": "Start Time:",
     "description": "Text for start time row header in the main table in the model comparison\n                page"
+  },
+  "GN5OFy": {
+    "defaultMessage": "Viewing version {version}",
+    "description": "Title of the agent plugin detail pane for the currently selected version"
   },
   "GRaplV": {
     "defaultMessage": "Context sufficiency",
@@ -3891,6 +4475,10 @@
     "defaultMessage": "null",
     "description": "Null value in the evaluations table."
   },
+  "H60lSD": {
+    "defaultMessage": "Agent not found",
+    "description": "Agent registry > agent not found title"
+  },
   "H7JwOl": {
     "defaultMessage": "Delete version",
     "description": "A label for a button to delete prompt version on the prompt details page"
@@ -3910,6 +4498,10 @@
   "HGBit9": {
     "defaultMessage": "Temperature: {temperature}",
     "description": "Experiment page > artifact compare view > run column header prompt metadata > temperature parameter"
+  },
+  "HGEtf4": {
+    "defaultMessage": "Whether instances of this agent are running, suspended or unreachable, and on which cluster and namespace.",
+    "description": "Runtime boundary panel > runtime state description"
   },
   "HGG+BI": {
     "defaultMessage": "Y-axis Log Scale:",
@@ -3935,9 +4527,17 @@
     "defaultMessage": "Status",
     "description": "Label for the status section"
   },
+  "HOXJc9": {
+    "defaultMessage": "Last modified",
+    "description": "Column title for the last modified timestamp in the agent plugins list"
+  },
   "HQXWk2": {
     "defaultMessage": "Select the LLM-as-a-judge scorers to run on the selected traces.",
     "description": "Description for the judge selection section in the run evaluation modal"
+  },
+  "HQid/L": {
+    "defaultMessage": "What this server exposes and when to use it.",
+    "description": "Placeholder for the server description input"
   },
   "HRSBco": {
     "defaultMessage": "Save model settings with this version",
@@ -3970,6 +4570,10 @@
   "HYQHVk": {
     "defaultMessage": "See more",
     "description": "Model trace explorer > selected span > code snippet > see more button"
+  },
+  "HYn7kz": {
+    "defaultMessage": "Change status",
+    "description": "Label for the agent version status transition menu"
   },
   "HZdpLU": {
     "defaultMessage": "Only alphanumeric characters, underscores, hyphens, and dots are allowed",
@@ -4006,6 +4610,10 @@
   "HdEgbb": {
     "defaultMessage": "Error",
     "description": "Error status in the evaluations table."
+  },
+  "HdQX6H": {
+    "defaultMessage": "value",
+    "description": "Placeholder for a tag value input"
   },
   "HeNa8H": {
     "defaultMessage": "All",
@@ -4051,6 +4659,10 @@
     "defaultMessage": "Add record",
     "description": "Primary button text for adding a new dataset record on the V2 dataset records page"
   },
+  "HoM/2U": {
+    "defaultMessage": "A plugin's only remaining version can't be deleted.",
+    "description": "Tooltip explaining why the delete-version button is disabled"
+  },
   "Hq/PKm": {
     "defaultMessage": "Enter a model identifier (e.g., openai:/gpt-4.1-mini). Scorers using direct models must configure API keys in your local environment.",
     "description": "Hint text for direct model input"
@@ -4074,6 +4686,10 @@
   "Hvznjh": {
     "defaultMessage": "Assistant",
     "description": "Display text for the 'assistant' role in a GenAI chat message."
+  },
+  "Hwtaf1": {
+    "defaultMessage": "BOM",
+    "description": "BOM qualifier"
   },
   "HyBP+D": {
     "defaultMessage": "Tags",
@@ -4102,6 +4718,10 @@
   "IARcQx": {
     "defaultMessage": "Manage workspace {name}",
     "description": "Aria label on the gear icon for managing a workspace"
+  },
+  "IAdlMG": {
+    "defaultMessage": "Skills",
+    "description": "Column title for member count in the agent plugins list"
   },
   "IAyAgH": {
     "defaultMessage": "Move up",
@@ -4179,6 +4799,10 @@
     "defaultMessage": "Are you sure you want to delete the dataset \"{name}\"? This action cannot be undone.",
     "description": "Body for the V2 evaluation dataset delete confirmation modal"
   },
+  "ITf9sA": {
+    "defaultMessage": "Skill references",
+    "description": "Section title for editable skill refs"
+  },
   "IUAmWX": {
     "defaultMessage": "No common artifacts to display.",
     "description": "Text shown when there are no common artifacts between the runs"
@@ -4227,6 +4851,10 @@
     "defaultMessage": "Add variable",
     "description": "Button text for adding variables"
   },
+  "IivtM3": {
+    "defaultMessage": "Viewing version {version}",
+    "description": "Title of the MCP server detail pane for the currently selected version"
+  },
   "Ik96R6": {
     "defaultMessage": "Edit",
     "description": "Text for the edit button next to the description section title on\n             the model version view page"
@@ -4250,6 +4878,10 @@
   "InNAAD": {
     "defaultMessage": "Name is required",
     "description": "Validation error when no prompt name is provided in the playground save-prompt-version modal"
+  },
+  "IpJAox": {
+    "defaultMessage": "Latest version",
+    "description": "Column title for the latest server version in the MCP registry list"
   },
   "IsIgE2": {
     "defaultMessage": "Automatically log traces for Gemini conversations by calling the {code} function. For example:",
@@ -4287,6 +4919,10 @@
     "defaultMessage": "Specify sequences that signal the model to stop generating text.",
     "description": "Experiment page > prompt lab > stop parameter help text"
   },
+  "J2ekWJ": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button on the create MCP server screen"
+  },
   "J3NI3e": {
     "defaultMessage": "Assistant",
     "description": "Sidebar button for AI assistant"
@@ -4303,9 +4939,17 @@
     "defaultMessage": "Provider",
     "description": "Filter section label for provider"
   },
+  "J8389j": {
+    "defaultMessage": "Workspace:",
+    "description": "MCP version pane metadata label"
+  },
   "J961B2": {
     "defaultMessage": "Filters{numFilters}",
     "description": "Evaluation review > evaluations list > filter dropdown button"
+  },
+  "JB1czt": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button in the delete agent modal"
   },
   "JBZ+Q+": {
     "defaultMessage": "Delete saved view",
@@ -4330,6 +4974,10 @@
   "JGQ5B2": {
     "defaultMessage": "Add",
     "description": "Model registry > model version table > metadata column > 'add' button label"
+  },
+  "JI4emG": {
+    "defaultMessage": "Status:",
+    "description": "Agent version pane metadata label"
   },
   "JJ43Fa": {
     "defaultMessage": "Error",
@@ -4358,6 +5006,10 @@
   "JPd7WA": {
     "defaultMessage": "Key must be unique",
     "description": "Error message for unique key in trace tag assignment modal"
+  },
+  "JTe8+w": {
+    "defaultMessage": "Agent Plugins",
+    "description": "Sidebar link for agent plugins tab"
   },
   "JUTcIz": {
     "defaultMessage": "Time created",
@@ -4419,6 +5071,10 @@
     "defaultMessage": "Evaluate all",
     "description": "Experiment page > artifact compare view > run column header > \"Evaluate all\" button label"
   },
+  "JndCWP": {
+    "defaultMessage": "Name",
+    "description": "Column title for the agent name in the agent registry list"
+  },
   "JnidmZ": {
     "defaultMessage": "Add row",
     "description": "Experiment page > artifact compare view > \"add new row\" modal title"
@@ -4454,6 +5110,10 @@
   "Jxhb2w": {
     "defaultMessage": "We've automatically detected the experiment type to be ''{kindLabel}''. {isEditable, select, true {You can either confirm or change the type.} other {}}",
     "description": "Popover message for inferred experiment kind"
+  },
+  "Jz6wkj": {
+    "defaultMessage": "Total traces",
+    "description": "Summary card > traces label"
   },
   "K1JLVU": {
     "defaultMessage": "Latency",
@@ -4495,6 +5155,10 @@
     "defaultMessage": "Track every version of your app's code and prompts to understand how quality changes over time. {learnMoreLink}",
     "description": "Empty state description displayed when no models are logged in the genai logged models list page"
   },
+  "KDTM4W": {
+    "defaultMessage": "Agent name is required.",
+    "description": "Agent registry > create agent > required name error"
+  },
   "KDxbQI": {
     "defaultMessage": "An error occurred while rendering the trace",
     "description": "Description for default error message in the Trace Explorer UI"
@@ -4503,6 +5167,10 @@
     "defaultMessage": "Traces",
     "description": "Title for the traces chart"
   },
+  "KEbPDZ": {
+    "defaultMessage": "An agent named \"{name}\" is already registered.",
+    "description": "Agent registry > create agent > duplicate name inline error"
+  },
   "KGMbzq": {
     "defaultMessage": "Commit message:",
     "description": "A label for the commit message in the prompt details page"
@@ -4510,6 +5178,10 @@
   "KIlp8v": {
     "defaultMessage": "No models selected",
     "description": "Label for selector when no models are selected"
+  },
+  "KJO8zr": {
+    "defaultMessage": "Initial: {skillCount, plural, one {# skill} other {# skills}}, {mcpCount} MCP {mcpCount, plural, one {server} other {servers}}, {modelCount, plural, one {# model} other {# models}}",
+    "description": "Composition timeline > initial version summary"
   },
   "KJbYrw": {
     "defaultMessage": "Loaded {childRuns} child {childRuns, plural, =1 {run} other {runs}}",
@@ -4587,6 +5259,10 @@
     "defaultMessage": "The dataset may have been deleted, or you may not have access to it.",
     "description": "Body shown when the V2 evaluation dataset detail page fails to fetch its dataset"
   },
+  "KgnWwg": {
+    "defaultMessage": "Path: {path}",
+    "description": "Plugin version pane source path"
+  },
   "Kkr/RI": {
     "defaultMessage": "Configure charts",
     "description": "Experiment page > view controls > global settings for line chart view > dropdown button label"
@@ -4594,6 +5270,10 @@
   "Kkuttk": {
     "defaultMessage": "Assessment",
     "description": "Evaluation review > evaluations list > assessment sort option label prefix"
+  },
+  "KmyEBS": {
+    "defaultMessage": "Artifact location:",
+    "description": "Skill version pane metadata label"
   },
   "KoMa6+": {
     "defaultMessage": "Select visible columns",
@@ -4627,6 +5307,10 @@
     "defaultMessage": "API key details",
     "description": "Header for API key details section"
   },
+  "KwndzU": {
+    "defaultMessage": "Carried over from v{version} — edit to change",
+    "description": "Subtitle for editable skill refs section"
+  },
   "Kwz1fc": {
     "defaultMessage": "Artifacts",
     "description": "Label for the artifacts tab on the logged model details page"
@@ -4651,9 +5335,17 @@
     "defaultMessage": "Trace status: OK, ERROR, or IN_PROGRESS",
     "description": "Tooltip description for the State column in the traces table"
   },
+  "L+rlJ/": {
+    "defaultMessage": "Skill repository",
+    "description": "Section title for the skill source repository"
+  },
   "L/4iQO": {
     "defaultMessage": "Delete",
     "description": "Label for the delete experiments action on the experiments list page"
+  },
+  "L/D5UW": {
+    "defaultMessage": "Register MCP server",
+    "description": "Page title for the create MCP server screen"
   },
   "L/U++H": {
     "defaultMessage": "Runs",
@@ -4679,6 +5371,10 @@
     "defaultMessage": "Provider",
     "description": "Dimension toggle option for provider"
   },
+  "L7X7HJ": {
+    "defaultMessage": "Composition",
+    "description": "Summary card > composition label"
+  },
   "L8czct": {
     "defaultMessage": "Latency Comparison",
     "description": "Title for the tool latency comparison chart"
@@ -4691,6 +5387,10 @@
     "defaultMessage": "Endpoint",
     "description": "Run page > Overview > Endpoint used for issue detection"
   },
+  "LCji4d": {
+    "defaultMessage": "Source:",
+    "description": "Agent version pane metadata label"
+  },
   "LED2z5": {
     "defaultMessage": "To disable or enable this display, call {disableFunction} or {enableFunction} and re-run the cell",
     "description": "Content in an info popover that instructs the user on how to disable the display. The disable and enable functions are code snippets with the real function names"
@@ -4698,6 +5398,10 @@
   "LEiN8m": {
     "defaultMessage": "Tags",
     "description": "Experiment page > group by runs control > tags section label"
+  },
+  "LHARkW": {
+    "defaultMessage": "Version",
+    "description": "Label for MCP version column"
   },
   "LIgbTd": {
     "defaultMessage": "Retrieval Relevance",
@@ -4723,6 +5427,10 @@
     "defaultMessage": "Displaying Runs from {numExperiments} Experiments",
     "description": "Breadcrumb nav item to link to the compare-experiments page on compare runs page"
   },
+  "LNyIRW": {
+    "defaultMessage": "Organization scope for the plugin. Leave blank for unscoped plugins.",
+    "description": "Hint for the plugin organization input"
+  },
   "LOJumx": {
     "defaultMessage": "Prompt",
     "description": "Column label for linked prompts"
@@ -4735,9 +5443,21 @@
     "defaultMessage": "Select the type of guardrail you want to create.",
     "description": "Step 1 subtitle"
   },
+  "LRqDyT": {
+    "defaultMessage": "What changed in this version",
+    "description": "Placeholder for the new version commit message input"
+  },
+  "LSXtG4": {
+    "defaultMessage": "Cross-registry dependency query",
+    "description": "Dependency query heading"
+  },
   "LTbwXS": {
     "defaultMessage": "Artifact evaluation",
     "description": "A tooltip for the view mode switcher in the experiment view, corresponding to artifact evaluation view"
+  },
+  "LUY2p/": {
+    "defaultMessage": "All statuses",
+    "description": "Placeholder for the agent registry status filter"
   },
   "LWkwgO": {
     "defaultMessage": "Added {count, plural, one {# trace} other {# traces}} to review.",
@@ -4775,6 +5495,10 @@
     "defaultMessage": "Download as SVG",
     "description": "Experiment page > compare runs tab > chart header > download as SVG option"
   },
+  "LkdYpn": {
+    "defaultMessage": "Verification",
+    "description": "Governance roadmap panel > verification track title"
+  },
   "Ll6vbT": {
     "defaultMessage": "Model versions in the `{currentStage}` stage will be moved to the `Archived` stage.",
     "description": "Tooltip text for transitioning existing model versions in stage to archived\n     in the model versions page"
@@ -4782,6 +5506,10 @@
   "LmHxvf": {
     "defaultMessage": "Only alphanumeric characters, underscores, hyphens, and dots are allowed",
     "description": "Validation error for an invalid prompt name in the playground save-prompt-version modal"
+  },
+  "Lp1gqo": {
+    "defaultMessage": "Use alphanumerics, dots, dashes, or underscores only — no leading or trailing separators.",
+    "description": "MCP registry > create server > invalid name characters error"
   },
   "LpdcPw": {
     "defaultMessage": "Model versions",
@@ -4843,6 +5571,14 @@
     "defaultMessage": "Version {version}",
     "description": "Model registry > models table > aliases column > version indicator"
   },
+  "M1ovud": {
+    "defaultMessage": "All tags",
+    "description": "Placeholder for the agent registry tag filter"
+  },
+  "M2urE/": {
+    "defaultMessage": "What the agent says it can do, taken from its own card. Deliberately separate from the pinned registry entries above — the two lists answer different questions.",
+    "description": "Agent version pane > A2A declared skills caption"
+  },
   "M3c7bs": {
     "defaultMessage": "Tags",
     "description": "Column label for tags"
@@ -4854,6 +5590,10 @@
   "M65Hoy": {
     "defaultMessage": "Search traces by id, request, or response",
     "description": "Placeholder text for the search input in the trace results table"
+  },
+  "M6EwLA": {
+    "defaultMessage": "Registry model (name + version) or external model identifier (e.g. gpt-4o, llama-3.1-70b).",
+    "description": "Hint for model refs"
   },
   "M8GzoA": {
     "defaultMessage": "Trace archival location cannot use the proxy-only `mlflow-artifacts:` scheme.",
@@ -4887,6 +5627,10 @@
     "defaultMessage": "Year",
     "description": "Time unit: year"
   },
+  "MHYzWV": {
+    "defaultMessage": "Skill Registry entries this agent uses. Soft references — works even if the skill isn't registered yet.",
+    "description": "Hint for skill refs"
+  },
   "MJGFlf": {
     "defaultMessage": "Loading endpoints...",
     "description": "Loading endpoints message"
@@ -4902,6 +5646,14 @@
   "ML7TiJ": {
     "defaultMessage": "Could not save your review: {error}",
     "description": "Review focused view: error toast when saving a review fails"
+  },
+  "MLSlZu": {
+    "defaultMessage": "Scorers",
+    "description": "Evals table > scorers header"
+  },
+  "MMMuON": {
+    "defaultMessage": "Skill Registry entries this version pins. Versions are integers assigned by the Skill Registry.",
+    "description": "Hint for skill references section"
   },
   "MNCAQh": {
     "defaultMessage": "Calls",
@@ -4943,6 +5695,10 @@
     "defaultMessage": "Supported formats: image, text, markdown, html, pdf, audio, video, geojson files",
     "description": "Text to explain users which formats are supported to display the artifacts"
   },
+  "MYW29t": {
+    "defaultMessage": "v{version}",
+    "description": "Skills registry > version number rendered as v followed by the integer version"
+  },
   "MZCW9F": {
     "defaultMessage": "Labeling schemas",
     "description": "Label for the labeling schemas tab in the MLflow experiment navbar"
@@ -4950,6 +5706,10 @@
   "MZNjYJ": {
     "defaultMessage": "Actions ({count})",
     "description": "Actions dropdown button label with count of selected sessions"
+  },
+  "MahZpY": {
+    "defaultMessage": "Are you sure you want to change \"{serverName}\" to {status}?",
+    "description": "Content of the status-transition confirm modal"
   },
   "MatV9u": {
     "defaultMessage": "Create",
@@ -4962,6 +5722,10 @@
   "Me7xpG": {
     "defaultMessage": "Create",
     "description": "Button label for creating an assessment"
+  },
+  "MezQQL": {
+    "defaultMessage": "Use the form namespace/name, for example sre/incident-commander.",
+    "description": "Agent registry > create agent > malformed name inline error"
   },
   "MgFOU5": {
     "defaultMessage": "Inputs",
@@ -4999,6 +5763,10 @@
     "defaultMessage": "Could not remove traces: {error}",
     "description": "Review queue: error toast when removing traces from a queue fails"
   },
+  "MkiHo+": {
+    "defaultMessage": "Reference URIs:",
+    "description": "MCP version pane metadata label"
+  },
   "Mmrsqt": {
     "defaultMessage": "Failed to load webhooks",
     "description": "Error message informing the user that webhooks did not load successfully"
@@ -5035,6 +5803,10 @@
     "defaultMessage": "View details",
     "description": "Link to the issue detection run page from the failure notification"
   },
+  "N+wURv": {
+    "defaultMessage": "All statuses",
+    "description": "Placeholder for the MCP registry status filter"
+  },
   "N/Svk+": {
     "defaultMessage": "Guidelines",
     "description": "LLM template option"
@@ -5046,6 +5818,10 @@
   "N0r4Ab": {
     "defaultMessage": "Completeness",
     "description": "LLM template option"
+  },
+  "N1CW6i": {
+    "defaultMessage": "Description",
+    "description": "Section title for agent description"
   },
   "N1G2a5": {
     "defaultMessage": "Expected facts",
@@ -5087,6 +5863,14 @@
     "defaultMessage": "Search to find more users",
     "description": "Review queue: hint that more users are searchable for the owner"
   },
+  "NBBZPA": {
+    "defaultMessage": "Change status to {status}",
+    "description": "Header for the MCP server status-transition confirm modal"
+  },
+  "NCUpJU": {
+    "defaultMessage": "Pinned assets",
+    "description": "Column title for the count of skills and MCP servers the latest agent version pins"
+  },
   "NDEhn/": {
     "defaultMessage": "Configure chart",
     "description": "Experiment tracking > runs charts > cards > RunsChartsDifferenceChartCard > configure chart button"
@@ -5123,6 +5907,10 @@
     "defaultMessage": "Comparing {numRuns} Runs from 1 Experiment",
     "description": "Breadcrumb title for compare runs page with single experiment"
   },
+  "NO2/Wc": {
+    "defaultMessage": "Registered skills bundled in this plugin version. Click a skill to view its details.",
+    "description": "Plugin version pane members caption"
+  },
   "NPlcrl": {
     "defaultMessage": "Clear filters",
     "description": "Button to clear filters in the tags filter popover for experiments page search by tags"
@@ -5134,6 +5922,10 @@
   "NRNNnk": {
     "defaultMessage": "Click to expand",
     "description": "Tooltip for expandable session cell"
+  },
+  "NU1fuw": {
+    "defaultMessage": "Versions",
+    "description": "Column title for the version rail on the MCP server detail page"
   },
   "NU5iHM": {
     "defaultMessage": "Value",
@@ -5247,9 +6039,17 @@
     "defaultMessage": "Off",
     "description": "Runs charts > line chart > display points > off setting label"
   },
+  "NuRyN2": {
+    "defaultMessage": "Declared capabilities ({count})",
+    "description": "Agent version pane > A2A declared skills heading"
+  },
   "NwNrl4": {
     "defaultMessage": "Amount of time that has passed since the first metric value was logged",
     "description": "A tooltip line chart configuration for the step function of relative time"
+  },
+  "NyXHXX": {
+    "defaultMessage": "Are you sure you want to delete \"{pluginName}\" and all of its versions? This action cannot be undone.",
+    "description": "Content of the delete plugin confirmation modal"
   },
   "NyzPHY": {
     "defaultMessage": "Expand description",
@@ -5270,6 +6070,10 @@
   "O+hq1Q": {
     "defaultMessage": "Create Workspace",
     "description": "Title for create workspace modal"
+  },
+  "O1DgNJ": {
+    "defaultMessage": "Endpoints",
+    "description": "Column title for the access-endpoint count in the MCP registry list"
   },
   "O1K7/e": {
     "defaultMessage": "Feedback",
@@ -5363,6 +6167,10 @@
     "defaultMessage": "Value",
     "description": "Add new key-value tag modal > Value input label"
   },
+  "OSmTai": {
+    "defaultMessage": "Tags",
+    "description": "Skills registry > skill page > tags label"
+  },
   "OUPWd8": {
     "defaultMessage": "View chat session",
     "description": "Tooltip for the session id tag"
@@ -5370,6 +6178,10 @@
   "OUR8+0": {
     "defaultMessage": "Permissions",
     "description": "Tab trigger for the user's permissions"
+  },
+  "OVeo0o": {
+    "defaultMessage": "MCP Servers",
+    "description": "MCP registry breadcrumb root"
   },
   "OW3pF8": {
     "defaultMessage": "Show {count} more intermediate {count, plural, =1 {step} other {steps}}",
@@ -5447,6 +6259,10 @@
     "defaultMessage": "Running",
     "description": "Run page > Overview > Run status cell > Value for running state"
   },
+  "OnUYqp": {
+    "defaultMessage": "Search MCP servers",
+    "description": "Placeholder for the MCP registry search box"
+  },
   "OnZkIA": {
     "defaultMessage": "{count, plural, =1 {API key} other {API keys}}",
     "description": "Label for endpoint API key(s)"
@@ -5454,6 +6270,10 @@
   "OneX+E": {
     "defaultMessage": "Add expectation",
     "description": "Label for the button to add a new expectation"
+  },
+  "Oudiog": {
+    "defaultMessage": "Name",
+    "description": "Section title for the server name"
   },
   "OvkqyX": {
     "defaultMessage": "Add Tag",
@@ -5487,6 +6307,10 @@
     "defaultMessage": "Workspace Manager",
     "description": "Admin page title shown when the URL is scoped to a single workspace via ?workspace=…"
   },
+  "P1srOP": {
+    "defaultMessage": "The immutable canonical Agent Plugins manifest for this version.",
+    "description": "Plugin version pane manifest caption"
+  },
   "P31kXd": {
     "defaultMessage": "Cost breakdown",
     "description": "Header for span cost breakdown"
@@ -5502,6 +6326,10 @@
   "PBeZnP": {
     "defaultMessage": "You can start logging traces to this logged model by calling {code} first:",
     "description": "Introductory text for the code example for logging traces to an existing logged model. The code contains reference to \"mlflow.set_active_model\" function call"
+  },
+  "PCDzfw": {
+    "defaultMessage": "Select...",
+    "description": "Compare view > picker placeholder"
   },
   "PDAMaL": {
     "defaultMessage": "Model version alias deleted",
@@ -5547,13 +6375,29 @@
     "defaultMessage": "Dataset records",
     "description": "Region label for the V2 dataset records table — wraps the table and pagination"
   },
+  "PLQJ72": {
+    "defaultMessage": "This removes the server from the list view. Its versions are not deleted.",
+    "description": "Extra warning shown when the target status is deleted"
+  },
   "PMaJHI": {
     "defaultMessage": "Used by ({count})",
     "description": "Gateway > Bindings using key drawer > Title"
   },
+  "PNLnSV": {
+    "defaultMessage": "Are you sure you want to delete version {version}? This action cannot be undone.",
+    "description": "Content of the delete version confirmation modal"
+  },
+  "PNZPSI": {
+    "defaultMessage": "Create",
+    "description": "Submit button on the create skill screen"
+  },
   "PNfcez": {
     "defaultMessage": "Add row",
     "description": "Experiment page > artifact compare view > add new row button"
+  },
+  "PNksyM": {
+    "defaultMessage": "Latest version",
+    "description": "Column title for the latest plugin version in the agent plugins list"
   },
   "PP5HZf": {
     "defaultMessage": "Created at",
@@ -5566,6 +6410,10 @@
   "PRCcZe": {
     "defaultMessage": "Select ({count})",
     "description": "Confirm button in the select traces modal showing number of selected traces"
+  },
+  "PRXSmr": {
+    "defaultMessage": "rh-team/my-skill",
+    "description": "Placeholder for the skill name input"
   },
   "PRe/8y": {
     "defaultMessage": "None",
@@ -5639,6 +6487,10 @@
     "defaultMessage": "Model configuration",
     "description": "Label for model configuration section"
   },
+  "PsLuce": {
+    "defaultMessage": "plugin.json",
+    "description": "Plugin version pane manifest heading"
+  },
   "PtjdJS": {
     "defaultMessage": "Graph",
     "description": "Label for the graph toggle button in the trace explorer."
@@ -5650,6 +6502,10 @@
   "PuXTcZ": {
     "defaultMessage": "Welcome to MLflow",
     "description": "Workspace landing page title"
+  },
+  "PvMjf2": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button on the create skill screen"
   },
   "PvgihY": {
     "defaultMessage": "Session assessments{count, plural, =0 {} other { (#)}}",
@@ -5683,6 +6539,10 @@
     "defaultMessage": "Not an issue",
     "description": "Issue severity tag label for not an issue"
   },
+  "Q1InIf": {
+    "defaultMessage": "Agent card",
+    "description": "Section title for agent card JSON"
+  },
   "Q1t+2P": {
     "defaultMessage": "Run judge",
     "description": "Button text for running a single judge from the run evaluation modal"
@@ -5703,6 +6563,10 @@
     "defaultMessage": "Hide finished runs",
     "description": "Menu option for hiding all finished runs in the evaluation runs table"
   },
+  "Q8xjmH": {
+    "defaultMessage": "LLMs this agent version depends on — reasoning, embedding, classification, etc.",
+    "description": "Hint for model dependencies section"
+  },
   "QBYbF3": {
     "defaultMessage": "Prompts",
     "description": "Sidebar link for prompts tab"
@@ -5718,6 +6582,10 @@
   "QEL+JO": {
     "defaultMessage": "This assessment is the root cause of the overall evaluation failure.",
     "description": "Root cause assessment hint that explains that this assessment is causing the overall assessment to fail."
+  },
+  "QF+PXj": {
+    "defaultMessage": "The registry surfaces this summary. Full per-case results, individual traces, and scorer details live in experiment tracking — use the buttons above to view them.",
+    "description": "Contract > click-through note"
   },
   "QGiy9C": {
     "defaultMessage": "About this run",
@@ -5738,6 +6606,10 @@
   "QK/Qyx": {
     "defaultMessage": "Total",
     "description": "Label for total token usage"
+  },
+  "QLNoA9": {
+    "defaultMessage": "Select two versions to compare their composition — skills, MCP servers, and metadata.",
+    "description": "Compare view > caption"
   },
   "QLRaAz": {
     "defaultMessage": "Select all rows on this page",
@@ -5794,6 +6666,10 @@
   "Qb78hE": {
     "defaultMessage": "Messages",
     "description": "Subsection header listing messages of the selected prompt version on the playground prompt-registry picker modal"
+  },
+  "QbCUyw": {
+    "defaultMessage": "Add version",
+    "description": "Submit button on the add version screen"
   },
   "QcEYpD": {
     "defaultMessage": "Add to evaluation dataset",
@@ -5863,9 +6739,17 @@
     "defaultMessage": "Next unreviewed",
     "description": "Review focused view: jump to the next pending trace"
   },
+  "R+KUbf": {
+    "defaultMessage": "Add version",
+    "description": "Page title for the add agent version screen"
+  },
   "R/4/8G": {
     "defaultMessage": "Metric",
     "description": "Label for the metric column in the logged model details metrics table"
+  },
+  "R0ZCfr": {
+    "defaultMessage": "Description",
+    "description": "Section title for skill description"
   },
   "R1FeSE": {
     "defaultMessage": "Advanced settings (optional)",
@@ -5894,6 +6778,10 @@
   "R6dCZ5": {
     "defaultMessage": "View your traces",
     "description": "Step 3 title for traces onboarding"
+  },
+  "R7S7oG": {
+    "defaultMessage": "Path: {path}",
+    "description": "Skill version pane source path"
   },
   "R7s1xC": {
     "defaultMessage": "Provider is required",
@@ -5931,6 +6819,10 @@
     "defaultMessage": "Create prompt version",
     "description": "Label for the create prompt action on the registered prompt details page"
   },
+  "RKqekD": {
+    "defaultMessage": "Source:",
+    "description": "Skill version pane metadata label"
+  },
   "RQ80MZ": {
     "defaultMessage": "You're not assigned to this queue, so you can't submit reviews here.",
     "description": "Review focused view: viewing a queue the reviewer is not assigned to"
@@ -5966,6 +6858,10 @@
   "RaGnOQ": {
     "defaultMessage": "Compare",
     "description": "String for the compare button to compare experiment runs to find an ideal model"
+  },
+  "RcA6LW": {
+    "defaultMessage": "No agent named {agentName} is registered.",
+    "description": "Agent registry > agent not found description"
   },
   "ReQ01f": {
     "defaultMessage": "Do retrieved documents contain all necessary information?",
@@ -6095,6 +6991,10 @@
     "defaultMessage": "Stage",
     "description": "Guardrail stage label"
   },
+  "SAbwXM": {
+    "defaultMessage": "Source repository",
+    "description": "Section title for the plugin source repository"
+  },
   "SAxj6I": {
     "defaultMessage": "Create budget policy",
     "description": "Gateway > Budgets page > Create budget policy button"
@@ -6102,6 +7002,10 @@
   "SCYMXw": {
     "defaultMessage": "Cancel",
     "description": "Cancel button text for creating model in the model registry"
+  },
+  "SDn8wp": {
+    "defaultMessage": "(was {oldModel})",
+    "description": "Agent version diff > model change indicator"
   },
   "SFfu70": {
     "defaultMessage": "Select a version",
@@ -6135,6 +7039,10 @@
     "defaultMessage": "No questions configured for this queue.",
     "description": "Review focused view: empty questions state"
   },
+  "SL8Wz3": {
+    "defaultMessage": "Required",
+    "description": "Required field qualifier"
+  },
   "SLHSXV": {
     "defaultMessage": "Search parameters",
     "description": "Run page > Overview > Parameters table > Filter input placeholder"
@@ -6163,6 +7071,10 @@
     "defaultMessage": "Evaluating traces: ON",
     "description": "Status label for active scorer"
   },
+  "SSsKx0": {
+    "defaultMessage": "Metadata",
+    "description": "Agent version diff > metadata heading"
+  },
   "SSwoap": {
     "defaultMessage": "Select a workspace to start experiments",
     "description": "Home page workspaces section subtitle"
@@ -6187,6 +7099,10 @@
     "defaultMessage": "Select a prompt",
     "description": "Placeholder for the prompt picker on the playground prompt-registry modal"
   },
+  "SZ4Wjv": {
+    "defaultMessage": "Registered MCP servers are versioned assets: each version pins an immutable server.json and its tool surface, and access endpoints publish a reachable address for a version or alias.",
+    "description": "MCP registry list page subtitle"
+  },
   "SZQjTs": {
     "defaultMessage": "Result",
     "description": "Result column header"
@@ -6194,6 +7110,10 @@
   "SaJbyH": {
     "defaultMessage": "Copy share link",
     "description": "Label for the button that copies a saved view share link"
+  },
+  "Sb+cvE": {
+    "defaultMessage": "Move to deprecated",
+    "description": "MCP registry > status-transition menu item"
   },
   "Sb+wLa": {
     "defaultMessage": "Model configuration stores the LLM settings associated with this prompt.",
@@ -6226,6 +7146,10 @@
   "SlD6nO": {
     "defaultMessage": "Reviewed",
     "description": "Review queue status: complete"
+  },
+  "SlQiQY": {
+    "defaultMessage": "Status",
+    "description": "Column title for the agent version status in the agents-using-skill table"
   },
   "Sm0bXt": {
     "defaultMessage": "None",
@@ -6267,6 +7191,10 @@
     "defaultMessage": "Resolve",
     "description": "Button to resolve an issue"
   },
+  "Su3bDR": {
+    "defaultMessage": "Version",
+    "description": "Section title for the new version number"
+  },
   "SuVsDp": {
     "defaultMessage": "Custom code judge feedback",
     "description": "Tooltip content for custom code judge feedback"
@@ -6274,6 +7202,14 @@
   "SwvkMI": {
     "defaultMessage": "Is the summary faithful, complete, and concise?",
     "description": "Hint for Summarization template"
+  },
+  "SxOP1s": {
+    "defaultMessage": "No results. Try using a different keyword or filter.",
+    "description": "MCP registry table > no results after filtering"
+  },
+  "SzSxoL": {
+    "defaultMessage": "Register agent",
+    "description": "Agent registry list page > register agent button"
   },
   "SzapEm": {
     "defaultMessage": "Your models will appear here once you log them using newest version of MLflow. <link>Learn more</link>.",
@@ -6294,6 +7230,14 @@
   "T/UYwm": {
     "defaultMessage": "Raw Schema JSON:",
     "description": "Label for the raw schema JSON in the experiment run dataset schema"
+  },
+  "T/c8/k": {
+    "defaultMessage": "Status",
+    "description": "Column title for the server status in the MCP registry list"
+  },
+  "T0YYR8": {
+    "defaultMessage": "Status",
+    "description": "Column title for the latest version's publish state in the skills registry list"
   },
   "T1sd79": {
     "defaultMessage": "Go to model",
@@ -6326,6 +7270,14 @@
   "TCkOxn": {
     "defaultMessage": "Positive label",
     "description": "Pass/Fail positive label input"
+  },
+  "TEg02u": {
+    "defaultMessage": "Add version",
+    "description": "Label for the add agent version button"
+  },
+  "TIf8o8": {
+    "defaultMessage": "My Server",
+    "description": "Placeholder for the display name input"
   },
   "TKtJIK": {
     "defaultMessage": "Page not found",
@@ -6387,9 +7339,17 @@
     "defaultMessage": "Git branch",
     "description": "Usage overview > metrics filter > git branch column option label"
   },
+  "TYcd0T": {
+    "defaultMessage": "No server named {serverName} is registered.",
+    "description": "MCP registry > server not found description"
+  },
   "TannO5": {
     "defaultMessage": "Retrieved {sampledCount} out of {totalCount} total logs ({percentage}%)",
     "description": "Evaluation review > evaluations list > sample info tooltip"
+  },
+  "TbBT47": {
+    "defaultMessage": "Output schema",
+    "description": "MCP tool detail > output schema label"
   },
   "TbI+lg": {
     "defaultMessage": "Dataset record inputs",
@@ -6402,6 +7362,10 @@
   "TcXjUy": {
     "defaultMessage": "Eval",
     "description": "Type pill text for a regular evaluation run in the evaluation runs table"
+  },
+  "Td2Pcu": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button on the add version screen"
   },
   "TeN9hs": {
     "defaultMessage": "Traces",
@@ -6479,6 +7443,10 @@
     "defaultMessage": "An error occurred while updating the budget policy. Please try again.",
     "description": "Generic error message for budget policy update"
   },
+  "U09GLn": {
+    "defaultMessage": "Skill not found",
+    "description": "Skills registry > skill not found title"
+  },
   "U0joaT": {
     "defaultMessage": "Select traces",
     "description": "Title for the select traces modal"
@@ -6503,6 +7471,10 @@
     "defaultMessage": "Show more",
     "description": "Button to expand alert description"
   },
+  "U7HYth": {
+    "defaultMessage": "Organization:",
+    "description": "Plugin version pane metadata label"
+  },
   "U82iv6": {
     "defaultMessage": "Registered Models",
     "description": "Text for registered model link in the title for model comparison page"
@@ -6510,6 +7482,10 @@
   "UCQwvo": {
     "defaultMessage": "Registered prompts",
     "description": "Run page > Overview > Run prompts section label"
+  },
+  "UCsdoO": {
+    "defaultMessage": "Tags",
+    "description": "Column title for tags in the MCP registry list"
   },
   "UEDu0c": {
     "defaultMessage": "MLflow UI automatically fetches metric histories for active runs and updates the metrics plot with a {interval} second interval.",
@@ -6538,6 +7514,10 @@
   "UP/Atk": {
     "defaultMessage": "Preview how the questions will appear for the human reviewer.",
     "description": "Queue settings: question preview section hint"
+  },
+  "UPTt2k": {
+    "defaultMessage": "(was {oldVersion})",
+    "description": "Agent version diff > MCP version change indicator"
   },
   "UQhorr": {
     "defaultMessage": "Edit",
@@ -6599,6 +7579,10 @@
     "defaultMessage": "Deleted dataset \"{name}\"",
     "description": "Success toast after deleting a V2 evaluation dataset"
   },
+  "Ue8+b/": {
+    "defaultMessage": "Agent",
+    "description": "Column title for the agent name in the agents-using-skill table"
+  },
   "Uf0z53": {
     "defaultMessage": "Cancel",
     "description": "Cancel button in unified trace tag assignment modal"
@@ -6610,6 +7594,10 @@
   "UhdPmo": {
     "defaultMessage": "Transition to",
     "description": "Text for transitioning a model version to a different stage under\n                 dropdown menu in model version page"
+  },
+  "UjIa+w": {
+    "defaultMessage": "Input",
+    "description": "Traces table > input header"
   },
   "UkVgwL": {
     "defaultMessage": "Create endpoint",
@@ -6719,6 +7707,10 @@
     "defaultMessage": "Explore MLflow's core features with pre-populated sample data including traces, evaluations, and prompts.",
     "description": "Demo banner description"
   },
+  "VC6BcV": {
+    "defaultMessage": "Name",
+    "description": "Column title for the skill name in the skills registry list"
+  },
   "VDf1X1": {
     "defaultMessage": "Quality Summary",
     "description": "Title for the quality summary table section"
@@ -6791,6 +7783,10 @@
     "defaultMessage": "Automatic evaluation is not available for judges that use expectations.",
     "description": "Hint text explaining why automatic evaluation is disabled for judges with expectations"
   },
+  "VTUaTZ": {
+    "defaultMessage": "Same-input latency comparison",
+    "description": "Compare view > paired trace heading"
+  },
   "VTePPP": {
     "defaultMessage": "Create your first experiment",
     "description": "Home page experiments empty state title"
@@ -6831,9 +7827,17 @@
     "defaultMessage": "No views match your search",
     "description": "Empty state shown in the saved views dropdown when the search matches nothing"
   },
+  "VdVjNu": {
+    "defaultMessage": "Agent",
+    "description": "Section title for the parent agent"
+  },
   "VfGJFc": {
     "defaultMessage": "Deleted traces cannot be restored. Are you sure you want to proceed?",
     "description": "Experiment page > traces view controls > Delete traces modal > Confirmation message"
+  },
+  "Vi8MHZ": {
+    "defaultMessage": "Register server",
+    "description": "MCP registry list page > register server button"
   },
   "ViqP7B": {
     "defaultMessage": "Traces",
@@ -6895,9 +7899,17 @@
     "defaultMessage": "Low",
     "description": "Issue severity tag label for low severity"
   },
+  "VweaHy": {
+    "defaultMessage": "A security/compliance scan result is attached and kept current per version.",
+    "description": "Governance roadmap panel > certification track description"
+  },
   "VwxvII": {
     "defaultMessage": "forecasting",
     "description": "A short label for experiments focused on time series forecasting"
+  },
+  "VxaL0o": {
+    "defaultMessage": "New versions register against the plugin's existing repository.",
+    "description": "Hint for the locked source repository field on the add version screen"
   },
   "W+aLXo": {
     "defaultMessage": "Manage webhooks to receive HTTP notifications when events occur in MLflow.",
@@ -6987,6 +7999,10 @@
     "defaultMessage": "Please enter a name",
     "description": "Error message for empty assessment name in a creation form"
   },
+  "WHkBNg": {
+    "defaultMessage": "No MCP servers registered",
+    "description": "MCP registry grid > empty state title"
+  },
   "WHwU2F": {
     "defaultMessage": "Tokens per Request",
     "description": "Title for the token stats chart in gateway"
@@ -6998,6 +8014,10 @@
   "WJF+wY": {
     "defaultMessage": "Z-axis:",
     "description": "Label text for z-axis in contour plot comparison in MLflow"
+  },
+  "WJVIaC": {
+    "defaultMessage": "Commit message",
+    "description": "Section title for the new version commit message"
   },
   "WJgUr7": {
     "defaultMessage": "Select or create questions",
@@ -7038,6 +8058,10 @@
   "WcHytj": {
     "defaultMessage": "Total Cost",
     "description": "Subtitle for the cost over time chart total"
+  },
+  "Wd3WiT": {
+    "defaultMessage": "Delete",
+    "description": "Confirm button in the delete agent modal"
   },
   "Wd8Tga": {
     "defaultMessage": "No schema. See <link>MLflow docs</link> for how to include input and output schema with your model.",
@@ -7103,6 +8127,10 @@
     "defaultMessage": "Groundedness",
     "description": "Evaluation results > known type of evaluation result assessment > groundedness assessment. Used to indicate if the result is grounded in context of LLMs evaluation. Label displayed if user provided custom value, e.g. \"Groundedness: moderately grounded\""
   },
+  "WsBam8": {
+    "defaultMessage": "Governance roadmap (not yet in MLflow)",
+    "description": "Governance roadmap panel title"
+  },
   "WtTgz+": {
     "defaultMessage": "Tool",
     "description": "Column header for tool name"
@@ -7110,6 +8138,10 @@
   "WtUqxc": {
     "defaultMessage": "Error",
     "description": "Title for error fallback component in experiment datasets UI"
+  },
+  "WtZloC": {
+    "defaultMessage": "Remove",
+    "description": "Remove tag button"
   },
   "Wum+Hu": {
     "defaultMessage": "<link>Learn more about budget time windows.</link>",
@@ -7167,6 +8199,10 @@
     "defaultMessage": "No Artifacts Recorded",
     "description": "Empty state string when there are no artifacts record for the experiment"
   },
+  "X3Suik": {
+    "defaultMessage": "Last updated",
+    "description": "Column title for the last-updated timestamp in the MCP registry list"
+  },
   "X3TpSa": {
     "defaultMessage": "Couldn't load this dataset",
     "description": "Heading shown when the V2 evaluation dataset detail page fails to fetch its dataset"
@@ -7174,6 +8210,10 @@
   "X3Uuiw": {
     "defaultMessage": "Off",
     "description": "Usage tracking disabled state"
+  },
+  "X52BI1": {
+    "defaultMessage": "Name",
+    "description": "Column title for the server name in the MCP registry list"
   },
   "X6P8tX": {
     "defaultMessage": "No models found",
@@ -7198,6 +8238,10 @@
   "XBtNVo": {
     "defaultMessage": "Experiments",
     "description": "Breadcrumb nav item to link to the list of experiments page"
+  },
+  "XBuT7v": {
+    "defaultMessage": "Remove",
+    "description": "Remove skill button"
   },
   "XC1Pro": {
     "defaultMessage": "JSON",
@@ -7247,6 +8291,10 @@
     "defaultMessage": "Create prompt version",
     "description": "A header for the create prompt version modal in the prompt management UI"
   },
+  "XMwgkz": {
+    "defaultMessage": "Version detail",
+    "description": "Agent page > detail view toggle"
+  },
   "XOUsyq": {
     "defaultMessage": "Loading model definitions...",
     "description": "Loading message for model definitions"
@@ -7287,6 +8335,10 @@
     "defaultMessage": "Prompt alias deleted",
     "description": "Webhook event label"
   },
+  "Xf7IGg": {
+    "defaultMessage": "Experiment Tracking owns",
+    "description": "Contract ownership > experiment tracking heading"
+  },
   "XfsPd4": {
     "defaultMessage": "Save prompt",
     "description": "Label for the playground top-bar button that opens the save-prompt-version modal"
@@ -7303,9 +8355,21 @@
     "defaultMessage": "Direct access to Anthropic's Messages API with Claude-specific features.",
     "description": "Anthropic passthrough description"
   },
+  "XnnWpI": {
+    "defaultMessage": "Must be an inline data URI (data:image/png;base64,...) — remote icon URLs are not accepted.",
+    "description": "MCP registry > create server > invalid icon data URI error"
+  },
   "XpiGwc": {
     "defaultMessage": "Select a queue to get started",
     "description": "Review queue: empty state title when no queue selected"
+  },
+  "XqaDLV": {
+    "defaultMessage": "Input schema",
+    "description": "MCP tool detail > input schema label"
+  },
+  "XrbJh3": {
+    "defaultMessage": "Enter a semantic version, e.g. 1.0.0.",
+    "description": "MCP registry > create server > invalid version error"
   },
   "Xs1oJm": {
     "defaultMessage": "Search metric charts",
@@ -7318,6 +8382,10 @@
   "XuzIWs": {
     "defaultMessage": "Some traces are hidden by your time range filter: \"{filterLabel}\"",
     "description": "Message shown when traces are hidden by time filter"
+  },
+  "XvjmbH": {
+    "defaultMessage": "Search for a skill, MCP server, or model name to find which agents depend on it across all registered versions.",
+    "description": "Dependency query description"
   },
   "XvzXs3": {
     "defaultMessage": "The parallel coordinates chart shows runs with columns that are either numbers or strings. If a column has string entries, the runs corresponding to the 30 most recent unique values will be shown. Only runs with all relevant metrics and/or parameters will be displayed.",
@@ -7359,6 +8427,10 @@
     "defaultMessage": "{label}: {behavior}",
     "description": "Helper text under the log-level slider explaining how the currently selected level filters the trace view."
   },
+  "Y/cQfl": {
+    "defaultMessage": "Delete version",
+    "description": "Label for the delete version button"
+  },
   "Y1eg9D": {
     "defaultMessage": "In progress",
     "description": "Model trace header > status label > in progress"
@@ -7387,6 +8459,10 @@
     "defaultMessage": "Input",
     "description": "Label for the input tokens in the tooltip for the tokens cell."
   },
+  "Y9Z1Qt": {
+    "defaultMessage": "Models ({count})",
+    "description": "Agent version pane > models heading"
+  },
   "Y9ZFyN": {
     "defaultMessage": "Download artifact",
     "description": "Link to download the artifact of the experiment"
@@ -7414,6 +8490,10 @@
   "YHOEuf": {
     "defaultMessage": "Share queue",
     "description": "Review queue header: share queue button aria label"
+  },
+  "YHvHG6": {
+    "defaultMessage": "Are you sure you want to delete \"{skillName}\" and all of its versions? This action cannot be undone.",
+    "description": "Content of the delete skill confirmation modal"
   },
   "YI2Zai": {
     "defaultMessage": "Analyzing {count, plural, one {1 trace} other {# traces}}. We'll notify you here when it completes.",
@@ -7447,6 +8527,10 @@
     "defaultMessage": "Register model",
     "description": "Button text to register the model for deployment"
   },
+  "YQsF8d": {
+    "defaultMessage": "Alias references",
+    "description": "Skills registry > skill page > alias URI chips label"
+  },
   "YRBURU": {
     "defaultMessage": "Sort: {sortBy}",
     "description": "Label for the filter button in the logged model list page. sortBy is the name of the column by which the table is currently sorted."
@@ -7466,6 +8550,10 @@
   "YV6xFB": {
     "defaultMessage": "Start:",
     "description": "Label for the start time of a span"
+  },
+  "YYTfga": {
+    "defaultMessage": "Inline data URI only — no remote image URLs.",
+    "description": "Hint for the server icon input"
   },
   "YYqxG3": {
     "defaultMessage": "No matching users",
@@ -7494,6 +8582,14 @@
   "YeCF5P": {
     "defaultMessage": "Human feedback",
     "description": "Label for the button to add human feedback to the trace"
+  },
+  "YeQjva": {
+    "defaultMessage": "Create",
+    "description": "Agent plugins list page > create plugin button"
+  },
+  "Ygzi55": {
+    "defaultMessage": "Registered agent versions that pin this exact skill version. Deprecating or changing it affects everything listed here.",
+    "description": "Skill version pane > agents using this skill caption"
   },
   "Yhydp3": {
     "defaultMessage": "Relevance",
@@ -7535,6 +8631,14 @@
     "defaultMessage": "Follow these steps to create a custom code judge using your own code. {link}",
     "description": "Brief instructions for custom code judge creation"
   },
+  "Ys4bQe": {
+    "defaultMessage": "1.0.0",
+    "description": "Placeholder for the new version input"
+  },
+  "Yt+tVw": {
+    "defaultMessage": "A skill named \"{name}\" is already registered.",
+    "description": "Skills registry > create skill > duplicate name inline error"
+  },
   "YuYnxd": {
     "defaultMessage": "Delete",
     "description": "Text for delete button on the experiment view page header"
@@ -7550,6 +8654,10 @@
   "Yx79Vd": {
     "defaultMessage": "Confirm",
     "description": "A label for the confirmation button in the modal displayed when the experiment type could not be inferred"
+  },
+  "Yxqvui": {
+    "defaultMessage": "by {actor} at {time}",
+    "description": "Lifecycle history > transition detail"
   },
   "Yy18iD": {
     "defaultMessage": "Add a custom expectation to this session.",
@@ -7567,6 +8675,10 @@
     "defaultMessage": "Safety",
     "description": "Issue category title for safety"
   },
+  "Z/WJkG": {
+    "defaultMessage": "Are you sure you want to delete version \"{version}\"? This action cannot be undone.",
+    "description": "Content of the delete version confirmation modal"
+  },
   "Z/lxEb": {
     "defaultMessage": "Exit review",
     "description": "Review focused view: exit review button"
@@ -7574,6 +8686,10 @@
   "Z4cZMo": {
     "defaultMessage": "by {user}",
     "description": "Created by user"
+  },
+  "Z5CdtT": {
+    "defaultMessage": "Search agents",
+    "description": "Placeholder for the agent registry search box"
   },
   "Z5en2d": {
     "defaultMessage": "Versions",
@@ -7647,6 +8763,10 @@
     "defaultMessage": "just now",
     "description": "Indicates a time duration that just passed"
   },
+  "ZQLtwG": {
+    "defaultMessage": "No dependencies registered.",
+    "description": "Dependency query > no deps"
+  },
   "ZQpc2w": {
     "defaultMessage": "Enter dataset name",
     "description": "Dataset name placeholder"
@@ -7655,6 +8775,10 @@
     "defaultMessage": "Install MLflow 3:",
     "description": "Instruction for installing MLflow from mlflow-3 branch in log MLflow 3 models"
   },
+  "ZRYRC7": {
+    "defaultMessage": "Viewing version {version}",
+    "description": "Title of the agent detail pane for the currently selected version"
+  },
   "ZXKIdt": {
     "defaultMessage": "Dataset record details",
     "description": "Aria label for the dataset record edit side panel"
@@ -7662,6 +8786,10 @@
   "ZXUtU8": {
     "defaultMessage": "Click to see more",
     "description": "Run page > Overview > Tags cell > Tag"
+  },
+  "ZXx7ut": {
+    "defaultMessage": "All versions",
+    "description": "Traces tab > all versions filter"
   },
   "ZYBoeF": {
     "defaultMessage": "Transition to",
@@ -7719,6 +8847,10 @@
     "defaultMessage": "Cancel",
     "description": "A label for the cancel button in the delete prompt modal"
   },
+  "ZmUcHK": {
+    "defaultMessage": "+ Add skill reference",
+    "description": "Button to add a new skill reference row"
+  },
   "ZoBXpz": {
     "defaultMessage": "Model attributes",
     "description": "Header title for the model attributes section of the logged model list table"
@@ -7767,6 +8899,10 @@
     "defaultMessage": "No tables selected",
     "description": "Experiment page > artifact compare view > empty state for no tables selected > title"
   },
+  "Zw8Tn2": {
+    "defaultMessage": "Namespace and slug are both required.",
+    "description": "MCP registry > create server > required name error"
+  },
   "ZwAzmu": {
     "defaultMessage": "Create Model",
     "description": "Create button to register a new model"
@@ -7774,6 +8910,10 @@
   "ZwyDx6": {
     "defaultMessage": "Users",
     "description": "Admin users tab"
+  },
+  "ZyDX3x": {
+    "defaultMessage": "Add skill",
+    "description": "Add skill button"
   },
   "a+uNeX": {
     "defaultMessage": "Next",
@@ -7790,6 +8930,10 @@
   "a1liZ7": {
     "defaultMessage": "Export",
     "description": "Export traces to dataset modal action button"
+  },
+  "a2KCdo": {
+    "defaultMessage": "This registry records what an agent is and what it pins. The operational questions below depend on live cluster state that the registry does not hold, so they are answered by the platform that runs the agent — every row here is inert.",
+    "description": "Runtime boundary panel caption"
   },
   "a3G5A7": {
     "defaultMessage": "Provider",
@@ -7835,6 +8979,10 @@
     "defaultMessage": "Usage breakdown",
     "description": "Header for token usage breakdown"
   },
+  "aI9GcM": {
+    "defaultMessage": "With logged_model_id set, this section surfaces eval metrics, trace stats, and scorer results from the LoggedModel in experiment tracking — no data duplication, just a pointer. Full traces and evaluations live in experiment tracking.",
+    "description": "Contract panel > unlinked explanation"
+  },
   "aIP7Kb": {
     "defaultMessage": "Cancel",
     "description": "Cancel button text for confirmation pop-up to delete a tag from\n                     table in MLflow"
@@ -7859,6 +9007,10 @@
     "defaultMessage": "See {mlflowLink} for more details.",
     "description": "Link to MLflow prompt optimization documentation"
   },
+  "aMpMYL": {
+    "defaultMessage": "Source:",
+    "description": "MCP version pane metadata label"
+  },
   "aNnPar": {
     "defaultMessage": "Time (Relative)",
     "description": "Radio button option to choose the time relative control option for the X-axis for metric graph on the experiment runs"
@@ -7870,6 +9022,10 @@
   "aOW396": {
     "defaultMessage": "{timeSince, plural, =1 {1 hour} other {# hours}} ago",
     "description": "Text for time in hours since given date for MLflow views"
+  },
+  "aPIjWa": {
+    "defaultMessage": "Created by:",
+    "description": "Skill version pane metadata label"
   },
   "aQxQIF": {
     "defaultMessage": "(empty)",
@@ -7959,6 +9115,10 @@
     "defaultMessage": "{count} {count, plural, one {minute} other {minutes}}",
     "description": "Formatted trace archival retention in minutes"
   },
+  "ah8LCi": {
+    "defaultMessage": "Delete",
+    "description": "Confirm button in the delete plugin modal"
+  },
   "akmaST": {
     "defaultMessage": "Irrelevant",
     "description": "Evaluation results > retrieval relevancy assessment > negative value label. Displayed if evaluation result is considered as irrelevant to the query."
@@ -7966,6 +9126,10 @@
   "an4yfn": {
     "defaultMessage": "Your changes will be lost if you leave this panel without saving.",
     "description": "Body text for the discard-unsaved-changes prompt on the dataset record side panel"
+  },
+  "an7k9n": {
+    "defaultMessage": "Latency",
+    "description": "Traces table > latency header"
   },
   "ap/pp3": {
     "defaultMessage": "Up to {max} options.",
@@ -7978,6 +9142,10 @@
   "arFT1W": {
     "defaultMessage": "Tags",
     "description": "Title for the tags section on the run details page"
+  },
+  "asUPiR": {
+    "defaultMessage": "Commit: {revision}",
+    "description": "Plugin version pane source revision"
   },
   "atcZM5": {
     "defaultMessage": "Status",
@@ -8003,6 +9171,10 @@
     "defaultMessage": "Full Path:",
     "description": "Label to display the full path of where the artifact of the experiment runs is located"
   },
+  "ayUiiR": {
+    "defaultMessage": "Last updated:",
+    "description": "MCP version pane metadata label"
+  },
   "b0KTgh": {
     "defaultMessage": "Add/edit alias for prompt version {version}",
     "description": "Title for the edit aliases modal on the registered prompt details page"
@@ -8014,6 +9186,14 @@
   "b1yfI9": {
     "defaultMessage": "Run details",
     "description": "Run page > Overview > Run details section heading"
+  },
+  "b21QFW": {
+    "defaultMessage": "No agent named {agentName} is registered.",
+    "description": "Agent registry > add version > agent not found description"
+  },
+  "b4P0U0": {
+    "defaultMessage": "MCP servers",
+    "description": "Accessible label for the MCP server card grid"
   },
   "b5Aw4a": {
     "defaultMessage": "Delete{count, select, 0 {} other { ({count})}}",
@@ -8034,6 +9214,14 @@
   "bCdY2j": {
     "defaultMessage": "Add \"{label}\"",
     "description": "Evaluation review > assessments > add new custom value element"
+  },
+  "bCf/od": {
+    "defaultMessage": "SKILL.md",
+    "description": "Skill version pane manifest preview heading"
+  },
+  "bG9M1O": {
+    "defaultMessage": "Which agents use...?",
+    "description": "Dependency query > reverse query label"
   },
   "bGHzui": {
     "defaultMessage": "Custom judge",
@@ -8182,6 +9370,10 @@
   "buuQsF": {
     "defaultMessage": "A tag value is required",
     "description": "Key-value tag editor modal > Value required error message"
+  },
+  "bxZufc": {
+    "defaultMessage": "Create an agent plugin to bundle and version related skills together.",
+    "description": "Agent plugins table > empty state description"
   },
   "by+x8N": {
     "defaultMessage": "Type",
@@ -8359,6 +9551,14 @@
     "defaultMessage": "{count, plural, one {# custom queue} other {# custom queues}}",
     "description": "Manage review questions: count of custom queues using the question being deleted"
   },
+  "cdq/wI": {
+    "defaultMessage": "Composition timeline",
+    "description": "Agent page > timeline view toggle"
+  },
+  "cfA8DB": {
+    "defaultMessage": "A reviewer signs off before a server is discoverable org-wide.",
+    "description": "Governance roadmap panel > approval track description"
+  },
   "cfzQMh": {
     "defaultMessage": "baseline run",
     "description": "Placeholder text shown when no baseline run is selected for comparison"
@@ -8411,6 +9611,10 @@
     "defaultMessage": "About tool definitions",
     "description": "Aria label for the info popover next to the Tools section header"
   },
+  "ctxD0b": {
+    "defaultMessage": "Tools ({count})",
+    "description": "MCP version pane tools heading"
+  },
   "cv/bGM": {
     "defaultMessage": "Trace ID",
     "description": "Column label for trace ID"
@@ -8419,9 +9623,17 @@
     "defaultMessage": "Account",
     "description": "Account page title"
   },
+  "cwBu7+": {
+    "defaultMessage": "Registered at:",
+    "description": "Skill version pane metadata label"
+  },
   "cy9EfG": {
     "defaultMessage": "Attributes",
     "description": "Experiment page > group by runs control > attributes section label"
+  },
+  "d/oisX": {
+    "defaultMessage": "No tools recorded for this version yet.",
+    "description": "MCP version pane tools empty state"
   },
   "d00egE": {
     "defaultMessage": "No span with type RETRIEVER found in trace.",
@@ -8475,6 +9687,10 @@
     "defaultMessage": "You don't own any queues yet.",
     "description": "Review queue sidebar: empty state for the My-queues filter"
   },
+  "dATpJG": {
+    "defaultMessage": "Agent version",
+    "description": "Column title for the agent version in the agents-using-skill table"
+  },
   "dDbfnY": {
     "defaultMessage": "{count} {count, plural, one {hour} other {hours}}",
     "description": "Formatted trace archival retention in hours"
@@ -8491,6 +9707,10 @@
     "defaultMessage": "Fetching traces failed",
     "description": "Error message for fetching traces failed"
   },
+  "dLb5l9": {
+    "defaultMessage": "Alias references",
+    "description": "Agent registry > agent page > alias URI chips label"
+  },
   "dMKo75": {
     "defaultMessage": "Search experiments",
     "description": "Placeholder text inside experiments search bar"
@@ -8503,6 +9723,10 @@
     "defaultMessage": "Created",
     "description": "Created column header"
   },
+  "dNn80R": {
+    "defaultMessage": "All statuses",
+    "description": "MCP registry status filter > all statuses option"
+  },
   "dPn3az": {
     "defaultMessage": "Tool",
     "description": "Display text for the 'tool' role in a GenAI chat message."
@@ -8510,6 +9734,10 @@
   "dQ3JME": {
     "defaultMessage": "API key name",
     "description": "Placeholder for API key name input"
+  },
+  "dQDs7+": {
+    "defaultMessage": "Vulnerability impact",
+    "description": "Runtime boundary panel > vulnerability impact title"
   },
   "dQawRm": {
     "defaultMessage": "Passthrough APIs",
@@ -8542,6 +9770,10 @@
   "dVh69l": {
     "defaultMessage": "Run name",
     "description": "Column label for run name"
+  },
+  "dVnDX4": {
+    "defaultMessage": "Skill members",
+    "description": "Section title for skill member references"
   },
   "dY1g+4": {
     "defaultMessage": "Optional character limit for the free-form text. Leave blank for no limit.",
@@ -8579,9 +9811,17 @@
     "defaultMessage": "No results match this search.",
     "description": "No results message in datasets drawer table"
   },
+  "dlTU95": {
+    "defaultMessage": "Traces",
+    "description": "Contract > traces heading"
+  },
   "dmN/nA": {
     "defaultMessage": "Name",
     "description": "Queue settings: name field label"
+  },
+  "doCgcO": {
+    "defaultMessage": "Description",
+    "description": "Section title for plugin description"
   },
   "dp7Jva": {
     "defaultMessage": "Cancel",
@@ -8607,6 +9847,10 @@
     "defaultMessage": "Are you sure you want to navigate away? Your pending text changes will be lost.",
     "description": "Prompt text for navigating away before saving changes in editable note in MLflow"
   },
+  "dwzYdU": {
+    "defaultMessage": "Versions",
+    "description": "Column title for the total version count in the MCP registry list"
+  },
   "dzIz7c": {
     "defaultMessage": "Name can only contain letters, numbers, underscores, hyphens, and dots. Spaces and special characters are not allowed.",
     "description": "Error message for invalid endpoint name format"
@@ -8623,6 +9867,10 @@
     "defaultMessage": "Zoom in",
     "description": "Tooltip for the button that zooms in on the graph"
   },
+  "e0bj2S": {
+    "defaultMessage": "What an agent is permitted to do at run time is decided and enforced by the runtime, not recorded here.",
+    "description": "Runtime boundary panel > policy description"
+  },
   "e2AObB": {
     "defaultMessage": "Value",
     "description": "Field label for assessment value in an edit form"
@@ -8635,6 +9883,10 @@
     "defaultMessage": "Grounded",
     "description": "Evaluation results > retrieval grounded assessment > positive value label. Displayed if evaluation result is considered as grounded."
   },
+  "e6JNlQ": {
+    "defaultMessage": "Skills",
+    "description": "Sidebar link for skills registry tab"
+  },
   "e6reUn": {
     "defaultMessage": "Failed",
     "description": "Label for upload failed state of a experiment logged model"
@@ -8646,6 +9898,10 @@
   "e7K2T3": {
     "defaultMessage": "Show all runs",
     "description": "Experiment page > compare runs tab > chart header > move down option"
+  },
+  "e8Oblq": {
+    "defaultMessage": "Delete",
+    "description": "Label for the delete skill kebab-menu action"
   },
   "e9qVjz": {
     "defaultMessage": "Cancel",
@@ -8686,6 +9942,10 @@
   "eEjDUQ": {
     "defaultMessage": "Destination",
     "description": "Label for the destination selector in the playground save-prompt-version modal"
+  },
+  "eFe7F0": {
+    "defaultMessage": "Role",
+    "description": "Label for model role column"
   },
   "eIM9PU": {
     "defaultMessage": "Open dataset record {recordId} — tags",
@@ -8731,6 +9991,14 @@
     "defaultMessage": "Last 7 days",
     "description": "Option for the start select dropdown to filter runs from the last 7 days"
   },
+  "eRqlWh": {
+    "defaultMessage": "Evaluation runs against this agent, surfaced from experiment tracking via the logged_model_id bridge. Compare scores across versions to track quality.",
+    "description": "Agent evals tab description"
+  },
+  "eSHcJ9": {
+    "defaultMessage": "Description",
+    "description": "Column title for the plugin description in the agent plugins list"
+  },
   "eSxQmg": {
     "defaultMessage": "Correct",
     "description": "Evaluation results > correctness assessment > positive value label. Displayed if evaluation result is considered as correct."
@@ -8774,6 +10042,10 @@
   "ea5zBl": {
     "defaultMessage": "Run page loading",
     "description": "Run page > Loading state"
+  },
+  "eaNBUU": {
+    "defaultMessage": "Provider: {oldOrg} → {newOrg}",
+    "description": "Agent version diff > provider change"
   },
   "eapsJa": {
     "defaultMessage": "Select a type",
@@ -8863,6 +10135,10 @@
     "defaultMessage": "Add traces",
     "description": "Review queue: button to navigate to Traces tab"
   },
+  "f2dnYg": {
+    "defaultMessage": "Registry name: {name}",
+    "description": "MCP registry > create server > live reverse-DNS name preview"
+  },
   "f3LAjV": {
     "defaultMessage": "Select ({count})",
     "description": "Confirm button in the select sessions modal showing number of selected sessions"
@@ -8870,6 +10146,10 @@
   "f3cOoh": {
     "defaultMessage": "Post-LLM Guardrails",
     "description": "Pipeline AFTER stage label"
+  },
+  "f4ByR3": {
+    "defaultMessage": "A skill's only remaining version can't be deleted.",
+    "description": "Tooltip explaining why the delete-version button is disabled"
   },
   "f4CfIz": {
     "defaultMessage": "(edited)",
@@ -8879,9 +10159,17 @@
     "defaultMessage": "Provide one or more function definitions the model can call. Choose how the model invokes them:",
     "description": "Intro line of the info popover next to the Tools section header"
   },
+  "f67dc/": {
+    "defaultMessage": "Add MCP server",
+    "description": "Add MCP server button"
+  },
   "f6B8LJ": {
     "defaultMessage": "Numeric",
     "description": "Review question input type: numeric"
+  },
+  "f8blId": {
+    "defaultMessage": "Register a server to version it and publish access endpoints.",
+    "description": "MCP registry table > empty state description"
   },
   "fCT8Fj": {
     "defaultMessage": "Saved to this experiment. Anyone with access can open this view from the link or the Views list.",
@@ -8947,6 +10235,10 @@
     "defaultMessage": "— model output conforms to the schema you provide.",
     "description": "Description of the JSON schema mode in the response_format info popover"
   },
+  "fXpyNj": {
+    "defaultMessage": "Provider",
+    "description": "Label for model provider column"
+  },
   "fYtbd8": {
     "defaultMessage": "An error occurred while rendering the chat session.",
     "description": "Generic error message for uncaught errors when rendering a single chat session in MLflow experiment page"
@@ -8966,6 +10258,10 @@
   "fcIHyN": {
     "defaultMessage": "Medium",
     "description": "Medium row size"
+  },
+  "fcgFhO": {
+    "defaultMessage": "Skill Members",
+    "description": "Plugin version pane members heading"
   },
   "fdfi96": {
     "defaultMessage": "Create judge",
@@ -9011,9 +10307,17 @@
     "defaultMessage": "New queue",
     "description": "Review queue: create-queue button"
   },
+  "fky+At": {
+    "defaultMessage": "Agents",
+    "description": "Agent registry list page title"
+  },
   "flJNTA": {
     "defaultMessage": "You need to provide values for all defined inputs",
     "description": "Experiment page > new run modal > invalid state - no prompt inputs provided"
+  },
+  "fmIPhE": {
+    "defaultMessage": "MCP server references",
+    "description": "Section title for editable MCP refs"
   },
   "fnKCv5": {
     "defaultMessage": "Cancel",
@@ -9039,6 +10343,10 @@
     "defaultMessage": "(must equal 100%)",
     "description": "Weight validation message"
   },
+  "fv/iCp": {
+    "defaultMessage": "Skill name is required.",
+    "description": "Skills registry > create skill > required name error"
+  },
   "fv7vQf": {
     "defaultMessage": "Rename",
     "description": "Menu item to rename an experiment run"
@@ -9054,6 +10362,10 @@
   "fwxkdN": {
     "defaultMessage": "The retrieval sufficiency LLM judge determines whether the retrieved context is sufficient to generate the expected response.",
     "description": "Evaluation results > known type of evaluation result assessment > retrieval sufficiency judge."
+  },
+  "fxf5Zf": {
+    "defaultMessage": "No results. Try using a different keyword.",
+    "description": "Agent registry table > no results after filtering"
   },
   "fyVs2o": {
     "defaultMessage": "Examples:",
@@ -9123,6 +10435,10 @@
     "defaultMessage": "Delete",
     "description": "Manage review questions: confirm delete"
   },
+  "gE369B": {
+    "defaultMessage": "Delete skill",
+    "description": "Header for the delete skill modal"
+  },
   "gF1WQp": {
     "defaultMessage": "Add message",
     "description": "Label for the button that appends a new chat message on the playground page"
@@ -9174,6 +10490,10 @@
   "gQB+Vs": {
     "defaultMessage": "{count, plural, =1 {1 second} other {# seconds}} ago",
     "description": "Time duration in seconds"
+  },
+  "gQQlmq": {
+    "defaultMessage": "No agent plugins registered",
+    "description": "Agent plugins table > empty state title"
   },
   "gRWU+A": {
     "defaultMessage": "Failed to copy to clipboard",
@@ -9259,6 +10579,10 @@
     "defaultMessage": "Link copied to clipboard.",
     "description": "Review queue: toast after copying a shareable queue link"
   },
+  "gguw4l": {
+    "defaultMessage": "All statuses",
+    "description": "Agent registry status filter > all statuses option"
+  },
   "ghgW69": {
     "defaultMessage": "Select traces",
     "description": "Button to open the trace selection modal from the run evaluation modal"
@@ -9295,6 +10619,14 @@
     "defaultMessage": "Assessment added by LLM-as-a-judge",
     "description": "Evaluation review > assessments > tooltip > assessment added by LLM-as-a-judge"
   },
+  "gpUMAL": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button on the register agent screen"
+  },
+  "gq1mzx": {
+    "defaultMessage": "Correctness",
+    "description": "Summary card > correctness label"
+  },
   "gq5QX+": {
     "defaultMessage": "New record",
     "description": "Heading at the top of the V2 dataset record side panel when composing a new record"
@@ -9327,6 +10659,10 @@
     "defaultMessage": "Instructions",
     "description": "Guardrail instructions label"
   },
+  "gvl4iV": {
+    "defaultMessage": "Org / Name",
+    "description": "Column title for the plugin name in the agent plugins list"
+  },
   "gy4ziK": {
     "defaultMessage": "Assign reviewers who should answer this queue's questions. They'll find it under “Feedback requested”.",
     "description": "Create review queue: reviewers field hint"
@@ -9334,6 +10670,10 @@
   "gzzFuZ": {
     "defaultMessage": "Select owner",
     "description": "Review queue: owner dropdown label"
+  },
+  "h/fcmn": {
+    "defaultMessage": "Approval",
+    "description": "Governance roadmap panel > approval track title"
   },
   "h0XfC3": {
     "defaultMessage": "Tags",
@@ -9407,6 +10747,10 @@
     "defaultMessage": "Provider",
     "description": "Secret provider label"
   },
+  "hKIP1M": {
+    "defaultMessage": "Commit: {revision}",
+    "description": "Skill version pane source revision"
+  },
   "hKQs4I": {
     "defaultMessage": "{count, plural, one {1 session selected} other {# sessions selected}}",
     "description": "Label for the number of sessions selected"
@@ -9479,6 +10823,10 @@
     "defaultMessage": "Issue detection canceled",
     "description": "Issue detection progress > Step label when canceled"
   },
+  "ha4LBC": {
+    "defaultMessage": "Keywords",
+    "description": "Section title for the plugin keywords"
+  },
   "hcDB9U": {
     "defaultMessage": "+∞",
     "description": "Label displaying positive infinity symbol displayed on a plot UI element"
@@ -9518,6 +10866,10 @@
   "hnhCDT": {
     "defaultMessage": "Error occurred",
     "description": "Run page > artifact view > logged table view > generic error empty state title"
+  },
+  "hnr8ir": {
+    "defaultMessage": "No access endpoint publishes this version.",
+    "description": "MCP version pane endpoints empty state"
   },
   "ho2T6B": {
     "defaultMessage": "Error",
@@ -9587,6 +10939,10 @@
     "defaultMessage": "Questions",
     "description": "Queue settings: questions field label"
   },
+  "i3Q21T": {
+    "defaultMessage": "Registered at:",
+    "description": "Plugin version pane metadata label"
+  },
   "i3T+JQ": {
     "defaultMessage": "Retry",
     "description": "Home page workspaces retry CTA"
@@ -9607,6 +10963,10 @@
     "defaultMessage": "Fit to view",
     "description": "Tooltip for the button that fits the graph to the viewport"
   },
+  "i6rkWm": {
+    "defaultMessage": "Beta",
+    "description": "MCP Registry beta feature tag"
+  },
   "i7UTwK": {
     "defaultMessage": "Correctness assessment is missing. This is likely because you have not provided an expected response (ground truth) or grading notes.",
     "description": "Evaluation results > known type of evaluation result assessment > correctness assessment. Used to indicate if the result is correct in context of LLMs evaluation. Label displayed if user provided custom value, e.g. \"Correctness: mostly yes, have gaps\""
@@ -9618,6 +10978,10 @@
   "i9OADf": {
     "defaultMessage": "Params",
     "description": "Experiment page > group by runs control > params section label"
+  },
+  "i9ezBI": {
+    "defaultMessage": "Stored on the version as manifest_content, so it can be previewed without downloading the artifact.",
+    "description": "Skill version pane manifest preview caption"
   },
   "iC2Owx": {
     "defaultMessage": "Stop sequences: {stopSequences}",
@@ -9643,6 +11007,10 @@
     "defaultMessage": "Judges",
     "description": "Section header for judge selection in the run evaluation modal"
   },
+  "iFvbCa": {
+    "defaultMessage": "Initial version",
+    "description": "Section title for the initial version"
+  },
   "iLEEpo": {
     "defaultMessage": "Assign reviewers who should answer this queue's questions. They'll find it under “Feedback requested”.",
     "description": "Queue settings: members field hint"
@@ -9651,6 +11019,10 @@
     "defaultMessage": "State",
     "description": "Filtering label to filter experiments based on state of active or deleted"
   },
+  "iMs3v2": {
+    "defaultMessage": "No results. Try using a different keyword.",
+    "description": "Agent plugins table > no results after filtering"
+  },
   "iN/n6b": {
     "defaultMessage": "Auth Type",
     "description": "Auth type label"
@@ -9658,6 +11030,10 @@
   "iNVXhw": {
     "defaultMessage": "{count} {count, plural, one {day} other {days}}",
     "description": "Formatted trace archival retention in days"
+  },
+  "iOuXal": {
+    "defaultMessage": "Agent not found",
+    "description": "Agent registry > add version > agent not found title"
   },
   "iPTAj8": {
     "defaultMessage": "Retrieval",
@@ -9699,6 +11075,10 @@
     "defaultMessage": "Minimum",
     "description": "Experiment page > group by runs control > minimum aggregate function"
   },
+  "iTx16p": {
+    "defaultMessage": "Initial version",
+    "description": "Placeholder for the initial version commit message input"
+  },
   "iVeCOa": {
     "defaultMessage": "My webhook",
     "description": "Webhook name placeholder"
@@ -9730,6 +11110,10 @@
   "iZm6YQ": {
     "defaultMessage": "<link>Learn more</link>",
     "description": "Learn more link on the form for creating model in the model registry"
+  },
+  "iaGcfj": {
+    "defaultMessage": "Agent plugins are versioned bundles of related skills. Each version stores a canonical plugin.json manifest and references registered skills as members.",
+    "description": "Agent plugins list page subtitle"
   },
   "iaomsd": {
     "defaultMessage": "collapse {title}",
@@ -9819,6 +11203,10 @@
     "defaultMessage": "Last Modified",
     "description": "Label name for the last modified time under details tab on the model view page"
   },
+  "j1SV7v": {
+    "defaultMessage": "Select two different versions to see changes.",
+    "description": "Compare view > same version selected"
+  },
   "j1ddWI": {
     "defaultMessage": "Categorical",
     "description": "Review question input type: categorical"
@@ -9826,6 +11214,10 @@
   "j25Ttg": {
     "defaultMessage": "Model metrics",
     "description": "Run details page > tab selector > Model metrics tab"
+  },
+  "j27oJW": {
+    "defaultMessage": "Experiment Tracking",
+    "description": "Experiment tracking contract panel title"
   },
   "j2cg1p": {
     "defaultMessage": "Used by {count, plural, one {# queue} other {# queues}}:",
@@ -9939,6 +11331,10 @@
     "defaultMessage": "All runs are hidden. Select at least one run to view charts.",
     "description": "Experiment tracking > runs charts > indication displayed when no runs are selected for comparison"
   },
+  "jaWLnd": {
+    "defaultMessage": "Move to active",
+    "description": "MCP registry > status-transition menu item"
+  },
   "jcGdSy": {
     "defaultMessage": "Queue",
     "description": "Review queue sidebar: queue-name column"
@@ -10002,6 +11398,10 @@
   "js4/Y8": {
     "defaultMessage": "You can also <link>register it to the model registry</link> to version control",
     "description": "Sub text to tell the users where one can go to register the model artifact"
+  },
+  "jtJ8x5": {
+    "defaultMessage": "from LoggedModel.metrics",
+    "description": "Contract > eval metrics source"
   },
   "jwALGI": {
     "defaultMessage": "Cancel",
@@ -10067,6 +11467,10 @@
     "defaultMessage": "Create webhook",
     "description": "Create webhook button"
   },
+  "k8GiAK": {
+    "defaultMessage": "Registered at:",
+    "description": "Agent version pane metadata label"
+  },
   "kA+QJr": {
     "defaultMessage": "Overview",
     "description": "Run details page > tab selector > overview tab"
@@ -10094,6 +11498,10 @@
   "kD2Vww": {
     "defaultMessage": "The model decides whether to call one or more tools.",
     "description": "Hint shown under the tool choice selector when Auto is selected"
+  },
+  "kDB0rd": {
+    "defaultMessage": "Status:",
+    "description": "Skill version pane metadata label"
   },
   "kEmVw4": {
     "defaultMessage": "Trace Archival Retention",
@@ -10126,6 +11534,10 @@
   "kItpVi": {
     "defaultMessage": "About response formats",
     "description": "Aria label for the info popover next to the Response format section header"
+  },
+  "kKf30B": {
+    "defaultMessage": "Commit: {revision}",
+    "description": "Agent version pane source revision"
   },
   "kMCvRi": {
     "defaultMessage": "Evaluate traces",
@@ -10167,6 +11579,10 @@
     "defaultMessage": "Params",
     "description": "Label for 'params' option group in the compare runs chart configure modal"
   },
+  "kZTYOz": {
+    "defaultMessage": "Optional",
+    "description": "Optional field qualifier"
+  },
   "kZaBMS": {
     "defaultMessage": "trace.status = 'OK'",
     "description": "Placeholder example for filter string input"
@@ -10207,6 +11623,10 @@
     "defaultMessage": "1. Configure experiment and tracking URI",
     "description": "Section title for configuring experiment and tracking URI before logging traces"
   },
+  "klwFf/": {
+    "defaultMessage": "Register a skill to version and share it with your team.",
+    "description": "Skills registry table > empty state description"
+  },
   "km8vtM": {
     "defaultMessage": "Logged models ({length})",
     "description": "A header for a table of logged models displayed on the run page. The 'length' variable is being replaced with the number of displayed logged models."
@@ -10214,6 +11634,14 @@
   "kmtWGf": {
     "defaultMessage": "{count, plural, one { # trace } other { # traces }} will be deleted.",
     "description": "Experiment page > traces view controls > Delete traces modal > Confirmation message title"
+  },
+  "kmui9o": {
+    "defaultMessage": "Eval Metrics",
+    "description": "Contract > eval metrics heading"
+  },
+  "kmzeLV": {
+    "defaultMessage": "MCP servers",
+    "description": "Agent version diff > MCP heading"
   },
   "knEhQp": {
     "defaultMessage": "When enabled, all requests to this endpoint will be logged as traces. This allows you to monitor usage, debug issues, and analyze performance.",
@@ -10226,6 +11654,10 @@
   "ktiuki": {
     "defaultMessage": "Get Link",
     "description": "Title text for get-link modal"
+  },
+  "kwQePI": {
+    "defaultMessage": "Status",
+    "description": "Column title for the agent lifecycle status in the agent registry list"
   },
   "kwqwaU": {
     "defaultMessage": "View starter code",
@@ -10243,9 +11675,17 @@
     "defaultMessage": "No matching questions",
     "description": "Review queue: no questions match the search"
   },
+  "l3Wcl+": {
+    "defaultMessage": "Dataset",
+    "description": "Evals table > dataset header"
+  },
   "l427IF": {
     "defaultMessage": "Tool calls",
     "description": "Accessible label for the expandable summary row of a run of assistant tool calls"
+  },
+  "l6FfmJ": {
+    "defaultMessage": "All teams",
+    "description": "Placeholder for the agent registry team filter"
   },
   "l8Z2nP": {
     "defaultMessage": "Remove filter",
@@ -10266,6 +11706,10 @@
   "lCp+DF": {
     "defaultMessage": "Cached {cached} tokens, reused conversation context billed at a reduced rate",
     "description": "Portion of input tokens re-read from the provider's prompt cache across turns"
+  },
+  "lDAUVS": {
+    "defaultMessage": "Traces",
+    "description": "Agent page > traces view toggle"
   },
   "lDGQGa": {
     "defaultMessage": "Toggle detailed view",
@@ -10359,6 +11803,10 @@
     "defaultMessage": "Delete \"{name}\"? This can't be undone.",
     "description": "Body of the confirmation dialog for deleting a saved experiment view"
   },
+  "lYxlj/": {
+    "defaultMessage": "View traces",
+    "description": "Contract > view traces button"
+  },
   "lZPbxb": {
     "defaultMessage": "Hide charts with no data",
     "description": "Experiment page > control bar > label for a checkbox toggle button that hides chart cards with no corresponding data"
@@ -10398,6 +11846,10 @@
   "llVQ2r": {
     "defaultMessage": "Outputs ({numOutputs})",
     "description": "Input section header for schema table in model version page"
+  },
+  "ln3pzw": {
+    "defaultMessage": "Display name",
+    "description": "Section title for display name"
   },
   "lnxy2u": {
     "defaultMessage": "Workspace",
@@ -10451,9 +11903,21 @@
     "defaultMessage": "Save",
     "description": "Evaluation review > assessments > save button"
   },
+  "m3iKbs": {
+    "defaultMessage": "Last modified",
+    "description": "Column title for the last modified timestamp in the agent registry list"
+  },
   "m4159e": {
     "defaultMessage": "Metrics ({length})",
     "description": "Run page > Overview > Metrics table > Section title"
+  },
+  "m454vc": {
+    "defaultMessage": "Parsed: {packages} package(s), {remotes} remote(s), {tools} tool(s).",
+    "description": "MCP registry > create server > server_json parsed preview"
+  },
+  "m4hF3n": {
+    "defaultMessage": "Auditable record of every lifecycle transition — who changed it, when, and from what state.",
+    "description": "Agent version pane > lifecycle history caption"
   },
   "m8ztHR": {
     "defaultMessage": "Edited {timeSince} by {source}.",
@@ -10462,6 +11926,10 @@
   "m9e01X": {
     "defaultMessage": "No tags to display.",
     "description": "Text shown when there are no tags to display"
+  },
+  "m9eDb2": {
+    "defaultMessage": "Access endpoints ({count})",
+    "description": "MCP version pane endpoints heading"
   },
   "mBgoBC": {
     "defaultMessage": "Frequency penalty",
@@ -10507,6 +11975,10 @@
     "defaultMessage": "Learn more.",
     "description": "Link text for learning more about feedback"
   },
+  "mMG5KV": {
+    "defaultMessage": "Has access endpoint",
+    "description": "MCP registry list page > has-endpoints filter toggle"
+  },
   "mMR/YQ": {
     "defaultMessage": "Select a provider to configure your API key",
     "description": "Placeholder message when no provider selected"
@@ -10539,6 +12011,10 @@
     "defaultMessage": "Agent successfully completes actions (tool calls, API steps)",
     "description": "Issue category description for execution"
   },
+  "mR/H62": {
+    "defaultMessage": "Skills",
+    "description": "Skills registry breadcrumb root"
+  },
   "mRc7MY": {
     "defaultMessage": "Expand rows",
     "description": "Label for the expand rows button above the experiment runs table"
@@ -10558,6 +12034,10 @@
   "mY6f0y": {
     "defaultMessage": "Params",
     "description": "Header for parameter columns in the evaluation runs table column configuration"
+  },
+  "mYOWwT": {
+    "defaultMessage": "Commit message:",
+    "description": "Agent version pane metadata label"
   },
   "mYcueV": {
     "defaultMessage": "The Overview tab requires a SQL-based tracking store for full functionality, file-based backend is not supported.",
@@ -10659,9 +12139,21 @@
     "defaultMessage": "Flexible, governed deployments with the new Model Registry UI",
     "description": "Model registry > OSS Promo modal for model version aliases > modal title"
   },
+  "mu00Yj": {
+    "defaultMessage": "Compare versions",
+    "description": "Compare view > heading"
+  },
+  "muRHAH": {
+    "defaultMessage": "What this skill does and when to use it.",
+    "description": "Placeholder for the skill description input"
+  },
   "mv6CY3": {
     "defaultMessage": "Yes, save and close",
     "description": "Key-value tag editor modal > Unsaved tag message > Yes, save and close button"
+  },
+  "mwXEnW": {
+    "defaultMessage": "Search skills",
+    "description": "Placeholder for the skills registry search box"
   },
   "mzmlq2": {
     "defaultMessage": "Detects personally identifiable information such as names, emails, and phone numbers.",
@@ -10710,6 +12202,10 @@
   "nBKx6U": {
     "defaultMessage": "Edit endpoint name",
     "description": "Tooltip for edit endpoint name button"
+  },
+  "nBymzx": {
+    "defaultMessage": "Aliases:",
+    "description": "Plugin version pane metadata label"
   },
   "nC54Nf": {
     "defaultMessage": "Tags",
@@ -10895,6 +12391,10 @@
     "defaultMessage": "Total",
     "description": "Label for total cost"
   },
+  "o3ElwT": {
+    "defaultMessage": "Create",
+    "description": "Submit button on the create agent plugin screen"
+  },
   "o5AS8R": {
     "defaultMessage": "Custom code judge",
     "description": "Menu item text to create a new custom code judge"
@@ -11039,6 +12539,14 @@
     "defaultMessage": "Model",
     "description": "Section title for model configuration"
   },
+  "olu3Mw": {
+    "defaultMessage": "SemVer version for the initial plugin version. Defaults to 0.1.0.",
+    "description": "Hint for the plugin version input"
+  },
+  "on/rEb": {
+    "defaultMessage": "Runtime state and health",
+    "description": "Runtime boundary panel > runtime state title"
+  },
   "opUoF8": {
     "defaultMessage": "Retrieval relevance",
     "description": "Evaluation results > known type of evaluation result assessment > retrieval relevance assessment. Used to indicate if the result is relevant to source data chunk in context of LLMs evaluation. Label displayed if user provided custom value, e.g. \"Retrieval relevance: moderate\""
@@ -11070,6 +12578,10 @@
   "owr9l2": {
     "defaultMessage": "No group by columns selected",
     "description": "Experiment page > artifact compare view > empty state for no group by columns selected > title"
+  },
+  "oxOWGl": {
+    "defaultMessage": "Source:",
+    "description": "Plugin version pane metadata label"
   },
   "oy2LTl": {
     "defaultMessage": "Filter",
@@ -11143,6 +12655,10 @@
     "defaultMessage": "Clear filters",
     "description": "Label for a button that clears all filters, visible on a experiment runs page next to a empty state when all runs have been filtered out"
   },
+  "pIF2m3": {
+    "defaultMessage": "How this agent's models, skills, and MCP servers evolved across versions.",
+    "description": "Agent composition timeline > caption"
+  },
   "pJ57zV": {
     "defaultMessage": "Link to \"{name}\" copied — anyone with access can open this view.",
     "description": "Confirmation toast shown after copying a saved experiment view share link"
@@ -11151,9 +12667,17 @@
     "defaultMessage": "Download {contentType} ({size})",
     "description": "Download link for media content that exceeds the rendering size limit"
   },
+  "pNZZNa": {
+    "defaultMessage": "Correctness score from the latest eval run per version",
+    "description": "Evals tab > score trend caption"
+  },
   "pOqgMC": {
     "defaultMessage": "Weight",
     "description": "Label for traffic split weight input"
+  },
+  "pOrzaA": {
+    "defaultMessage": "Name",
+    "description": "Section title for skill name"
   },
   "pPo8Le": {
     "defaultMessage": "Preview",
@@ -11207,9 +12731,17 @@
     "defaultMessage": "See details",
     "description": "Evaluation review > assessments > see details button"
   },
+  "pivInG": {
+    "defaultMessage": "Used by agents ({count})",
+    "description": "Skill version pane > agents using this skill heading"
+  },
   "pjCmlG": {
     "defaultMessage": "Usage",
     "description": "Section title for endpoint usage"
+  },
+  "pjYZBQ": {
+    "defaultMessage": "Create",
+    "description": "Skills registry list page > create skill button"
   },
   "pjlcSc": {
     "defaultMessage": "Metric",
@@ -11375,6 +12907,10 @@
     "defaultMessage": "Register model",
     "description": "Register model modal title to register the model for deployment"
   },
+  "qTSk0e": {
+    "defaultMessage": "Are you sure you want to delete \"{agentName}\" and all of its versions? This action cannot be undone.",
+    "description": "Content of the delete agent confirmation modal"
+  },
   "qTjYVU": {
     "defaultMessage": "Hide run",
     "description": "A tooltip for the visibility icon button in the runs table next to the visible run"
@@ -11415,6 +12951,10 @@
     "defaultMessage": "Copied to clipboard",
     "description": "Success message after copying trace link"
   },
+  "qgbot1": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button in the status-transition modal"
+  },
   "qhOwHa": {
     "defaultMessage": "Endpoints",
     "description": "Sidebar link for gateway endpoints"
@@ -11422,6 +12962,14 @@
   "qkRBUr": {
     "defaultMessage": "Line smoothing",
     "description": "Runs charts > line chart > configuration > label for line smoothing slider control. The control allows changing data trace line smoothness from 1 to 100, where 1 is the original data trace and 100 is the smoothest trace. Line smoothing helps eliminate noise in the data."
+  },
+  "qkjkoj": {
+    "defaultMessage": "Versions",
+    "description": "Column title for the version rail on the agent detail page"
+  },
+  "qmTDL0": {
+    "defaultMessage": "Delete",
+    "description": "Confirm button in the delete skill modal"
   },
   "qmTNy1": {
     "defaultMessage": "Failed to delete sessions. Error: {error}",
@@ -11527,6 +13075,10 @@
     "defaultMessage": "Save",
     "description": "Save button in unified trace tag assignment modal"
   },
+  "r86dHJ": {
+    "defaultMessage": "Version \"{version}\" already exists.",
+    "description": "Agent plugins > add version > duplicate version error"
+  },
   "r91Gz/": {
     "defaultMessage": "Duplicate",
     "description": "Gateway > Endpoints list > Duplicate button"
@@ -11570,6 +13122,10 @@
   "rFT5e1": {
     "defaultMessage": "Run judge on trace",
     "description": "Title for run judge modal in traces view"
+  },
+  "rHN/ri": {
+    "defaultMessage": "Revision & path",
+    "description": "Section title for the source revision and path"
   },
   "rJWzb6": {
     "defaultMessage": "Request",
@@ -11619,9 +13175,17 @@
     "defaultMessage": "Execution time (ms)",
     "description": "Column label for execution time with the unit suffix"
   },
+  "rTUz51": {
+    "defaultMessage": "Time",
+    "description": "Traces table > timestamp header"
+  },
   "rY00Iw": {
     "defaultMessage": "Add filter",
     "description": "Button to add a new filter in the tags filter popover for experiments page search by tags"
+  },
+  "rYMCQm": {
+    "defaultMessage": "A2A agent card JSON. The card's declared skills are separate from the BOM entries above.",
+    "description": "Hint for the agent card JSON field"
   },
   "rZyNgx": {
     "defaultMessage": "Violates global guidelines",
@@ -11642,6 +13206,14 @@
   "rdrvCs": {
     "defaultMessage": "Created",
     "description": "Secret created label"
+  },
+  "rewQeo": {
+    "defaultMessage": "Description is required.",
+    "description": "Agent registry > create agent > required description error"
+  },
+  "rfVAx9": {
+    "defaultMessage": "Status",
+    "description": "Column title for the latest version's publish state in the agent plugins list"
   },
   "rgSaFx": {
     "defaultMessage": "Span type",
@@ -11687,6 +13259,10 @@
     "defaultMessage": "Masked Key:",
     "description": "Masked API key label"
   },
+  "rwBGVA": {
+    "defaultMessage": "Delete agent",
+    "description": "Header for the delete agent modal"
+  },
   "rwkyYE": {
     "defaultMessage": "Password cannot be empty",
     "description": "Validation error when the new-password field is empty"
@@ -11703,6 +13279,10 @@
     "defaultMessage": "You are exceeding a limit of {limit} aliases assigned to the single model version",
     "description": "Alias editor > Warning about exceeding aliases limit"
   },
+  "s0qdPp": {
+    "defaultMessage": "Commit message:",
+    "description": "Skill version pane metadata label"
+  },
   "s29iQg": {
     "defaultMessage": "Session",
     "description": "Usage overview > metrics filter > session column option label"
@@ -11714,6 +13294,10 @@
   "s2L+xL": {
     "defaultMessage": "Error loading shared view state: share key \"{viewStateShareKey}\" does not exist",
     "description": "Experiment page > share viewstate > error > share key does not exist"
+  },
+  "s2Phnp": {
+    "defaultMessage": "Version is required — the agent card declares it.",
+    "description": "Agent registry > add version > required version error"
   },
   "s35HDG": {
     "defaultMessage": "Used by {runNames} {hasMore, select, true {and other runs} other {}}",
@@ -11799,6 +13383,10 @@
     "defaultMessage": "Version {version}",
     "description": "Label for the version of a registered prompt in the registered prompts table"
   },
+  "sNJPt4": {
+    "defaultMessage": "Eval score comparison",
+    "description": "Compare view > eval heading"
+  },
   "sNSyZl": {
     "defaultMessage": "Disabled fields are fixed after creation.",
     "description": "Review question edit-mode notice explaining why some fields are disabled"
@@ -11806,6 +13394,10 @@
   "sOQcFW": {
     "defaultMessage": "None",
     "description": "Label for the button disabling grouping in the logged model list page"
+  },
+  "sOa/In": {
+    "defaultMessage": "Not set — this version has no link to experiment tracking",
+    "description": "Contract bridge field empty state"
   },
   "sS3GBl": {
     "defaultMessage": "Trace LLM applications for debugging and monitoring.",
@@ -11887,6 +13479,10 @@
     "defaultMessage": "Use workspace settings",
     "description": "Label for a radio button that configures the x-axis on a line chart. This option is for using global workspace settings."
   },
+  "srsbrs": {
+    "defaultMessage": "Latest version",
+    "description": "Column title for the latest agent version in the agent registry list"
+  },
   "ss//L4": {
     "defaultMessage": "{subMessage}, go back to <link>the home page.</link>",
     "description": "Default error message for error views in MLflow"
@@ -11931,6 +13527,10 @@
     "defaultMessage": "Allow rationale",
     "description": "Review question rationale section title"
   },
+  "t03B86": {
+    "defaultMessage": "Add tag",
+    "description": "Add tag button on the create MCP server screen"
+  },
   "t0Qkuc": {
     "defaultMessage": "Value",
     "description": "Run page > Overview > Metrics table > Value column header"
@@ -11939,6 +13539,10 @@
     "defaultMessage": "Last updated by",
     "description": "Column selector label for the last-updated-by column"
   },
+  "t2F09T": {
+    "defaultMessage": "No agent plugin named \"{pluginName}\" is registered.",
+    "description": "Agent plugins > plugin not found description"
+  },
   "t3mHNt": {
     "defaultMessage": "Errors",
     "description": "Title for the errors chart"
@@ -11946,6 +13550,10 @@
   "t4yUI0": {
     "defaultMessage": "Conversational role adherence",
     "description": "LLM template option"
+  },
+  "t5VWT1": {
+    "defaultMessage": "Name",
+    "description": "Section title for plugin name"
   },
   "t7XeYe": {
     "defaultMessage": "Cancel",
@@ -11978,6 +13586,10 @@
   "tE/dvG": {
     "defaultMessage": "Failed to save record",
     "description": "Generic fallback save-error text for the dataset record side panel (edit mode)"
+  },
+  "tEMaUs": {
+    "defaultMessage": "Comma-separated skill references as name/version. Defaults to the previous version's members if left empty.",
+    "description": "Hint for the skill members input on the add version screen"
   },
   "tEW/jO": {
     "defaultMessage": "Save the current playground messages as a new prompt version in the registry.",
@@ -12023,6 +13635,10 @@
     "defaultMessage": "An API key with this name already exists. Please choose a different name.",
     "description": "Error message for duplicate key name"
   },
+  "tPUnny": {
+    "defaultMessage": "Traces",
+    "description": "Agent traces tab heading"
+  },
   "tQrhZ8": {
     "defaultMessage": "An error occurred while rendering this component.",
     "description": "Description for default error message in experiment evaluation runs UI"
@@ -12042,6 +13658,10 @@
   "tUgCAM": {
     "defaultMessage": "Prompt",
     "description": "Label for the prompt picker on the playground prompt-registry modal"
+  },
+  "tZJHHo": {
+    "defaultMessage": "Created by:",
+    "description": "Plugin version pane metadata label"
   },
   "ta42Qe": {
     "defaultMessage": "Active",
@@ -12107,6 +13727,14 @@
     "defaultMessage": "Name",
     "description": "Header for the name column in the registered prompts table"
   },
+  "u/WVeI": {
+    "defaultMessage": "Models",
+    "description": "Section title for model refs"
+  },
+  "u/lw08": {
+    "defaultMessage": "No agents registered",
+    "description": "Agent registry table > empty state title"
+  },
   "u13xKF": {
     "defaultMessage": "Custom judge",
     "description": "LLM judge option for creating a custom judge"
@@ -12118,6 +13746,10 @@
   "u5B9TA": {
     "defaultMessage": "Load prompt",
     "description": "Label for the playground top-bar button that opens the registered prompt picker"
+  },
+  "u66ZZB": {
+    "defaultMessage": "Register",
+    "description": "Submit button on the register agent screen"
   },
   "u9ZeuA": {
     "defaultMessage": "State",
@@ -12139,6 +13771,10 @@
     "defaultMessage": "Prompt Template",
     "description": "Experiment page > new run modal > prompt template input label"
   },
+  "uEQw5V": {
+    "defaultMessage": "LLMs this agent version depends on, and the role each plays — reasoning, embedding, classification, etc.",
+    "description": "Agent version pane > models caption"
+  },
   "uFM4rv": {
     "defaultMessage": "Digest",
     "description": "Label for the digest field in the V2 evaluation dataset metadata modal"
@@ -12155,6 +13791,10 @@
     "defaultMessage": "Max value",
     "description": "Numeric max value input"
   },
+  "uH6mxS": {
+    "defaultMessage": "Remove",
+    "description": "Remove MCP server button"
+  },
   "uHzRht": {
     "defaultMessage": "Total aggregate scores",
     "description": "Label for assessment score distribution chart"
@@ -12162,6 +13802,10 @@
   "uIY1qq": {
     "defaultMessage": "Learn More",
     "description": "Link to MLflow documentation for more information on MLflow tracing"
+  },
+  "uIffh3": {
+    "defaultMessage": "Delete",
+    "description": "Label for the delete agent kebab-menu action"
   },
   "uPG7mJ": {
     "defaultMessage": "Guardrail: {name}",
@@ -12175,6 +13819,14 @@
     "defaultMessage": "Breadcrumb",
     "description": "Aria label for the V2 evaluation datasets breadcrumb navigation landmark"
   },
+  "uU6Aqe": {
+    "defaultMessage": "Pick a base version and a version to compare with.",
+    "description": "Compare view > no versions selected"
+  },
+  "uUxxlH": {
+    "defaultMessage": "Agents",
+    "description": "Agent registry breadcrumb root"
+  },
   "uW5+ph": {
     "defaultMessage": "Pass the function directly to {evaluate}, just like other predefined or LLM-based judges.",
     "description": "Step 2 description for running the judge"
@@ -12186,6 +13838,10 @@
   "uX2XCM": {
     "defaultMessage": "Edit Model Configuration",
     "description": "Title for the edit model config modal"
+  },
+  "uXG2kE": {
+    "defaultMessage": "Locked",
+    "description": "Locked field qualifier"
   },
   "uXW7SK": {
     "defaultMessage": "Iterate on quality with offline evaluations and comparisons.",
@@ -12235,6 +13891,10 @@
     "defaultMessage": "Description",
     "description": "Run page > Overview > Description section > Section title"
   },
+  "ujJpsJ": {
+    "defaultMessage": "Registered by:",
+    "description": "Agent version pane metadata label"
+  },
   "ujm55z": {
     "defaultMessage": "Finished",
     "description": "Run page > Overview > Run status cell > Value for finished state"
@@ -12247,9 +13907,17 @@
     "defaultMessage": "Latest",
     "description": "Column title for the column displaying the latest metric values for a metric"
   },
+  "unIez+": {
+    "defaultMessage": "Aliases:",
+    "description": "MCP version pane metadata label"
+  },
   "uoJWOm": {
     "defaultMessage": "Overall",
     "description": "Evaluation results > known type of evaluation result assessment > overall assessment."
+  },
+  "uonUMC": {
+    "defaultMessage": "These tracks describe where a distribution's governance layer would attach on top of the upstream registry entities — they are deferred, not implemented, and every row below is inert.",
+    "description": "Governance roadmap panel caption"
   },
   "up3hbr": {
     "defaultMessage": "Receive HTTP notifications when events occur in MLflow.",
@@ -12303,9 +13971,17 @@
     "defaultMessage": "Delete",
     "description": "Bulk-delete button on the roles table (no rows selected)"
   },
+  "vABRQb": {
+    "defaultMessage": "Source",
+    "description": "Section title for the agent source"
+  },
   "vBKFgp": {
     "defaultMessage": "X axis",
     "description": "Label for X axis in scatter chart configurator in compare runs chart config modal"
+  },
+  "vC52Uy": {
+    "defaultMessage": "Move to deleted",
+    "description": "MCP registry > status-transition menu item"
   },
   "vCUglz": {
     "defaultMessage": "Suggested actions",
@@ -12367,9 +14043,21 @@
     "defaultMessage": "Save the current column layout, filters, sort and charts as a named view, then share it by link.",
     "description": "Explanation shown in the save-and-share-view modal describing what a saved view captures"
   },
+  "vRRhFp": {
+    "defaultMessage": "(was v{oldVersion})",
+    "description": "Agent version diff > version change indicator"
+  },
   "vSI23W": {
     "defaultMessage": "Provider cannot be changed. Create a new key if a different provider is needed.",
     "description": "Tooltip explaining why provider field is disabled in drawer edit"
+  },
+  "vShyOQ": {
+    "defaultMessage": "Search agent plugins",
+    "description": "Placeholder for the agent plugins search box"
+  },
+  "vT2adl": {
+    "defaultMessage": "MCP servers ({count})",
+    "description": "Agent version pane > pinned MCP servers heading"
   },
   "vVSm7w": {
     "defaultMessage": "This column contains all models logged or evaluated by the run. Click into an individual run to see more detailed information about all models associated with it.",
@@ -12379,6 +14067,10 @@
     "defaultMessage": "Processing",
     "description": "Processing indicator while Assistant is streaming a response"
   },
+  "vaATG/": {
+    "defaultMessage": "Trace comparison",
+    "description": "Compare view > trace heading"
+  },
   "vaJYHp": {
     "defaultMessage": "At least one form field has incorrect value. Please correct and try again.",
     "description": "Generic error message for an invalid form input"
@@ -12386,6 +14078,10 @@
   "vaeS94": {
     "defaultMessage": "Platform Admin",
     "description": "Admin page title shown when the URL has no ?workspace=… (cross-workspace platform-admin view)"
+  },
+  "vbG0WR": {
+    "defaultMessage": "Skill Registry entries this version pins, at exact versions. Skill versions are integers because the Skill Registry assigns them.",
+    "description": "Agent version pane > pinned skills caption"
   },
   "vbRrqF": {
     "defaultMessage": "Add question",
@@ -12427,6 +14123,10 @@
     "defaultMessage": "Add description",
     "description": "Run page > Overview > Description section > Add description button"
   },
+  "vof83E": {
+    "defaultMessage": "key",
+    "description": "Placeholder for a tag key input"
+  },
   "vqWexj": {
     "defaultMessage": "Back to experiment list",
     "description": "Tooltip for experiments button"
@@ -12434,6 +14134,10 @@
   "vtQvcd": {
     "defaultMessage": "Save version",
     "description": "Confirm-button label on the playground save-prompt-version modal"
+  },
+  "vtaLMM": {
+    "defaultMessage": "pr-workflow",
+    "description": "Placeholder for the plugin name input"
   },
   "vwD2zW": {
     "defaultMessage": "Unified APIs",
@@ -12459,9 +14163,25 @@
     "defaultMessage": "Enter an expectation name",
     "description": "Placeholder for the expectation name typeahead"
   },
+  "w+s6Kz": {
+    "defaultMessage": "Source repository is required.",
+    "description": "Agent registry > create agent > required source error"
+  },
   "w/sljb": {
     "defaultMessage": "Sort descending",
     "description": "Label for the sort descending button in the logged model list page"
+  },
+  "w19OB3": {
+    "defaultMessage": "Current version is {version}. The agent card declares its own version, so this is supplied rather than assigned.",
+    "description": "Hint for the new agent version input"
+  },
+  "w1TMqE": {
+    "defaultMessage": "Latest version",
+    "description": "Column title for the latest skill version in the skills registry list"
+  },
+  "w1W0HG": {
+    "defaultMessage": "No results. Try using a different keyword.",
+    "description": "Skills registry table > no results after filtering"
   },
   "w2+rkp": {
     "defaultMessage": "Search metrics",
@@ -12559,6 +14279,10 @@
     "defaultMessage": "Budget exceeded: {spend} of {limit} spent",
     "description": "Tooltip shown when current spend exceeds the budget limit"
   },
+  "wPMcDc": {
+    "defaultMessage": "MCP Registry entries this version pins. Versions are semver from server.json.",
+    "description": "Hint for MCP server references section"
+  },
   "wT28RL": {
     "defaultMessage": "Owner",
     "description": "Review queue sidebar: queue-owner column"
@@ -12598,6 +14322,10 @@
   "weYjQS": {
     "defaultMessage": "Constrain how the model formats its output:",
     "description": "Intro line in the info popover next to the Response format section header"
+  },
+  "wfFagN": {
+    "defaultMessage": "Endpoint: {oldUrl} → {newUrl}",
+    "description": "Agent version diff > endpoint change"
   },
   "wh+Eos": {
     "defaultMessage": "Create prompt",
@@ -12691,6 +14419,10 @@
     "defaultMessage": "Are you sure you want to delete the prompt version?",
     "description": "A content for the delete prompt version confirmation modal"
   },
+  "x3nI9y": {
+    "defaultMessage": "Aliases:",
+    "description": "Agent version pane metadata label"
+  },
   "x5IuGA": {
     "defaultMessage": "Loaded {name} v{version}",
     "description": "Success toast shown on the playground after loading a prompt version that did not include stored settings"
@@ -12711,6 +14443,10 @@
     "defaultMessage": "The model must call at least one tool.",
     "description": "Hint shown under the tool choice selector when Required is selected"
   },
+  "xA0Vf1": {
+    "defaultMessage": "Delete version",
+    "description": "Label for the delete MCP version button"
+  },
   "xBIlD4": {
     "defaultMessage": "Expectation",
     "description": "Review question type: expectation"
@@ -12726,6 +14462,10 @@
   "xDQZlj": {
     "defaultMessage": "{count, plural, one {# reviewer} other {# reviewers}} selected",
     "description": "Create review queue: reviewers dropdown selected-count summary"
+  },
+  "xDlhxf": {
+    "defaultMessage": "No evaluation runs found. Eval runs appear when the agent version has a logged_model_id linking to experiment tracking.",
+    "description": "Evals tab > empty state"
   },
   "xEr8Gl": {
     "defaultMessage": "Set spending limits and control costs across your endpoints.",
@@ -12823,6 +14563,10 @@
     "defaultMessage": "Dataset name",
     "description": "Dataset name label"
   },
+  "xgJNes": {
+    "defaultMessage": "Immutable once the version is registered — there is no editor for it here, only a read-only preview.",
+    "description": "MCP version pane server_json caption"
+  },
   "xgbeVS": {
     "defaultMessage": "Large",
     "description": "Large row size"
@@ -12859,6 +14603,14 @@
     "defaultMessage": "Run on all future traces",
     "description": "Label for toggle to enable automatic evaluation"
   },
+  "xjaBi+": {
+    "defaultMessage": "Unregistered agent detection",
+    "description": "Runtime boundary panel > unregistered agents title"
+  },
+  "xk+7XU": {
+    "defaultMessage": "Move to draft",
+    "description": "MCP registry > status-transition menu item"
+  },
   "xmPKKq": {
     "defaultMessage": "Model Version:",
     "description": "Text for model version row header in the main table in the model\n                comparison page"
@@ -12883,6 +14635,10 @@
     "defaultMessage": "Logs",
     "description": "Tab label for trace logs"
   },
+  "xvjmmI": {
+    "defaultMessage": "Cases",
+    "description": "Evals table > case count header"
+  },
   "xxWBKh": {
     "defaultMessage": "Created by",
     "description": "Metadata label for the dataset record author"
@@ -12894,6 +14650,14 @@
   "xyQFjH": {
     "defaultMessage": "Prompt Caching",
     "description": "Filter option for prompt caching support"
+  },
+  "xzeyvS": {
+    "defaultMessage": "Versions",
+    "description": "Column title for the version rail on the skill detail page"
+  },
+  "y+rHhC": {
+    "defaultMessage": "Which running workloads a new advisory affects. The pins recorded here are what makes that query answerable, but the query itself needs live image and deployment data.",
+    "description": "Runtime boundary panel > vulnerability impact description"
   },
   "y2oQyU": {
     "defaultMessage": "Model name",
@@ -12939,9 +14703,17 @@
     "defaultMessage": "View all",
     "description": "Home page experiments view all link"
   },
+  "yE9uPY": {
+    "defaultMessage": "Registered skills are versioned, immutable SKILL.md bundles that agents can pull by version or by alias.",
+    "description": "Skills registry list page subtitle"
+  },
   "yFl8nB": {
     "defaultMessage": "This model will be deprecated on {date}",
     "description": "Deprecation warning in modal footer"
+  },
+  "yHO9BI": {
+    "defaultMessage": "Remove",
+    "description": "Remove tag button on the create MCP server screen"
   },
   "yHbOpe": {
     "defaultMessage": "Original logged model: {originalName}",
@@ -12967,9 +14739,25 @@
     "defaultMessage": "Enter current password",
     "description": "Placeholder for the current-password input"
   },
+  "yOY6CS": {
+    "defaultMessage": "Version",
+    "description": "Section title for the agent version"
+  },
+  "yOoBJj": {
+    "defaultMessage": "Dependencies",
+    "description": "Agent page > dependencies view toggle"
+  },
+  "yOolY7": {
+    "defaultMessage": "Carried over from v{version} — edit to change",
+    "description": "Subtitle for editable MCP refs section"
+  },
   "yPdr5F": {
     "defaultMessage": "Does app's response directly address the user's input?",
     "description": "Hint for RelevanceToQuery template"
+  },
+  "yPzFyZ": {
+    "defaultMessage": "Agent Registry owns",
+    "description": "Contract ownership > registry heading"
   },
   "yQkV88": {
     "defaultMessage": "No endpoints are using this key",
@@ -12987,6 +14775,10 @@
     "defaultMessage": "State",
     "description": "Column label for state"
   },
+  "yUAm7L": {
+    "defaultMessage": "Description",
+    "description": "Section title for the server description"
+  },
   "yWRwlk": {
     "defaultMessage": "Traces show you how your LLM calls behave: what they cost, how they perform, and where things go wrong. Get started in a few minutes.",
     "description": "Subtitle for the empty state when no traces are recorded"
@@ -12998,6 +14790,14 @@
   "ye3pSE": {
     "defaultMessage": "About message roles",
     "description": "Aria label for the info popover that explains chat roles on the playground page"
+  },
+  "yg4ttD": {
+    "defaultMessage": "Delete version",
+    "description": "Header for the delete version modal"
+  },
+  "yiZJW6": {
+    "defaultMessage": "Aliases:",
+    "description": "Skill version pane metadata label"
   },
   "yjerKR": {
     "defaultMessage": "<link>Version {versionNumber}</link>",
@@ -13067,9 +14867,17 @@
     "defaultMessage": "View stack trace",
     "description": "Link to view the stack trace for an assessment error"
   },
+  "z0fLxv": {
+    "defaultMessage": "Registered at:",
+    "description": "MCP version pane metadata label"
+  },
   "z0hCh+": {
     "defaultMessage": "— model's natural-language response.",
     "description": "Description of the Text mode in the response_format info popover"
+  },
+  "z2GEQv": {
+    "defaultMessage": "Organization",
+    "description": "Section title for plugin organization"
   },
   "z2Gyuw": {
     "defaultMessage": "MLflow Model",
@@ -13087,9 +14895,17 @@
     "defaultMessage": "Discard",
     "description": "Confirm-button text for the discard-unsaved-changes prompt"
   },
+  "z4hqtp": {
+    "defaultMessage": "No composition changes between {oldVersion} and {newVersion}.",
+    "description": "Agent version diff > no changes"
+  },
   "z6K3IC": {
     "defaultMessage": "Create an AI Gateway endpoint in AI Gateway → Endpoints tab to reuse it here",
     "description": "Tooltip suggesting to create an endpoint for reuse"
+  },
+  "z6N3jB": {
+    "defaultMessage": "Delete agent plugin",
+    "description": "Kebab menu item to delete an agent plugin"
   },
   "z6QxDs": {
     "defaultMessage": "Issue detection",
@@ -13151,6 +14967,10 @@
     "defaultMessage": "Error",
     "description": "Label for an assessment with an error"
   },
+  "zHWF6v": {
+    "defaultMessage": "Create agent plugin",
+    "description": "Page title for the create agent plugin screen"
+  },
   "zIXqYZ": {
     "defaultMessage": "Workspace: {workspace}",
     "description": "Subtitle on the admin page identifying the active workspace when the URL is per-workspace scoped"
@@ -13199,6 +15019,10 @@
     "defaultMessage": "Expectations",
     "description": "Label for expectations variable option"
   },
+  "zWBoGa": {
+    "defaultMessage": "Reference URIs:",
+    "description": "Agent version pane metadata label"
+  },
   "zWGmon": {
     "defaultMessage": "Positive infinity ({metricKey})",
     "description": "Label indicating positive infinity used as a hover text in a plot UI element"
@@ -13214,6 +15038,14 @@
   "zZlPwp": {
     "defaultMessage": "Categories",
     "description": "Run page > Overview > Issue categories being detected"
+  },
+  "zbSLg3": {
+    "defaultMessage": "Cancel",
+    "description": "Cancel button in the delete plugin modal"
+  },
+  "zcRQwz": {
+    "defaultMessage": "Model dependencies",
+    "description": "Section title for editable model refs"
   },
   "zcnCPF": {
     "defaultMessage": "Issues",
@@ -13255,6 +15087,10 @@
     "defaultMessage": "An error occurred while rendering this component.",
     "description": "Description for default error message in prompts management UI"
   },
+  "zmmVQj": {
+    "defaultMessage": "What changed in this version",
+    "description": "Placeholder for the version commit message input"
+  },
   "znEC5M": {
     "defaultMessage": "Adherence",
     "description": "Issue category title for adherence"
@@ -13266,6 +15102,10 @@
   "zt66ty": {
     "defaultMessage": "About sampling parameters",
     "description": "Aria label for the info popover next to the Parameters section header"
+  },
+  "ztYivY": {
+    "defaultMessage": "This agent's dependencies (latest version)",
+    "description": "Dependency query > current agent deps heading"
   },
   "zuEXrI": {
     "defaultMessage": "e.g., openai, anthropic, gemini",
@@ -13290,6 +15130,10 @@
   "zyPq2R": {
     "defaultMessage": "An error occurred while attempting to delete traces. Please refresh the page and try again.",
     "description": "Experiment page > traces view controls > Delete traces modal > Error message"
+  },
+  "zz7wau": {
+    "defaultMessage": "No results. Try using a different keyword or filter.",
+    "description": "MCP registry grid > no results after filtering"
   },
   "zzuzri": {
     "defaultMessage": "Description",

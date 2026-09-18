@@ -6,8 +6,13 @@ import {
   CloudModelIcon,
   DropdownMenu,
   GearIcon,
+  GridIcon,
   HomeIcon,
+  McpIcon,
   ModelsIcon,
+  PlugIcon,
+  PuzzleIcon,
+  RobotIcon,
   TextBoxIcon,
   Typography,
   useDesignSystemTheme,
@@ -21,7 +26,12 @@ import type { Location } from '../utils/RoutingUtils';
 import { Link, matchPath, useLocation, useNavigate, useParams, useSearchParams } from '../utils/RoutingUtils';
 import ExperimentTrackingRoutes from '../../experiment-tracking/routes';
 import { ModelRegistryRoutes } from '../../model-registry/routes';
+import { SkillsRegistryRoutes } from '../../skills-registry/routes';
+
 import GatewayRoutes from '../../gateway/routes';
+import MCPRegistryRoutes from '../../mcp-registry/routes';
+import { AgentRegistryRoutes } from '../../agent-registry/routes';
+import { AgentPluginsRoutes } from '../../agent-plugins/routes';
 import AccountRoutes from '../../account/routes';
 import AdminRoutes from '../../admin/routes';
 import { useCurrentUserIsAdmin, useCurrentUserQuery, useIsBasicAuth } from '../../account/hooks';
@@ -51,6 +61,11 @@ const isExperimentsActive = (location: Location) =>
   );
 const isModelsActive = (location: Location) => Boolean(matchPath('/models/*', location.pathname));
 const isPromptsActive = (location: Location) => Boolean(matchPath('/prompts/*', location.pathname));
+const isSkillsActive = (location: Location) => Boolean(matchPath('/skills/*', location.pathname));
+
+const isMCPRegistryActive = (location: Location) => Boolean(matchPath('/mcp-registry/*', location.pathname));
+const isAgentsActive = (location: Location) => Boolean(matchPath('/agents/*', location.pathname));
+const isAgentPluginsActive = (location: Location) => Boolean(matchPath('/agent-plugins/*', location.pathname));
 const isGatewayActive = (location: Location) => Boolean(matchPath('/gateway/*', location.pathname));
 const isSettingsActive = (location: Location) =>
   Boolean(
@@ -205,6 +220,73 @@ export function MlflowSidebar({
                 children: <FormattedMessage defaultMessage="Prompts" description="Sidebar link for prompts tab" />,
               },
               componentId: 'mlflow.sidebar.prompts_tab_link',
+            },
+          ]
+        : []),
+      ...(shouldShowGenAIFeatures(enableWorkflowBasedNavigation, workflowType) && !showNestedExperimentItems
+        ? [
+            {
+              key: 'skills',
+              icon: <PuzzleIcon />,
+              linkProps: {
+                to: SkillsRegistryRoutes.skillListPageRoute,
+                isActive: isSkillsActive,
+                children: (
+                  <FormattedMessage defaultMessage="Skills" description="Sidebar link for skills registry tab" />
+                ),
+              },
+              componentId: 'mlflow.sidebar.skills_tab_link',
+            },
+          ]
+        : []),
+      ...(shouldShowGenAIFeatures(enableWorkflowBasedNavigation, workflowType) && !showNestedExperimentItems
+        ? [
+            {
+              key: 'mcp_registry',
+              icon: <McpIcon />,
+              linkProps: {
+                to: MCPRegistryRoutes.mcpRegistryPageRoute,
+                isActive: isMCPRegistryActive,
+                children: (
+                  <FormattedMessage defaultMessage="MCP Servers" description="Sidebar link for MCP registry tab" />
+                ),
+              },
+              componentId: 'mlflow.sidebar.mcp_registry_tab_link',
+            },
+          ]
+        : []),
+      ...(shouldShowGenAIFeatures(enableWorkflowBasedNavigation, workflowType) && !showNestedExperimentItems
+        ? [
+            {
+              key: 'agent_plugins',
+              icon: <PlugIcon />,
+              linkProps: {
+                to: AgentPluginsRoutes.pluginListPageRoute,
+                isActive: isAgentPluginsActive,
+                children: (
+                  <FormattedMessage
+                    defaultMessage="Agent Plugins"
+                    description="Sidebar link for agent plugins registry tab"
+                  />
+                ),
+              },
+              componentId: 'mlflow.sidebar.agent_plugins_tab_link',
+            },
+          ]
+        : []),
+      ...(shouldShowGenAIFeatures(enableWorkflowBasedNavigation, workflowType) && !showNestedExperimentItems
+        ? [
+            {
+              key: 'agents',
+              icon: <RobotIcon />,
+              linkProps: {
+                to: AgentRegistryRoutes.agentListPageRoute,
+                isActive: isAgentsActive,
+                children: (
+                  <FormattedMessage defaultMessage="Agents" description="Sidebar link for agent registry tab" />
+                ),
+              },
+              componentId: 'mlflow.sidebar.agents_tab_link',
             },
           ]
         : []),
@@ -364,9 +446,20 @@ export function MlflowSidebar({
           >
             <span css={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
               <FormattedMessage defaultMessage="Docs" description="Sidebar link for docs page" />
-              <NewWindowIcon css={{ fontSize: theme.typography.fontSizeBase }} />
             </span>
           </MlflowSidebarLink>
+          {process.env['NODE_ENV'] === 'development' && (
+            <MlflowSidebarLink
+              css={{ paddingBlock: theme.spacing.sm }}
+              to="/page-composer"
+              componentId="mlflow.sidebar.page_composer_link"
+              isActive={(loc) => loc.pathname === '/page-composer'}
+              icon={<GridIcon />}
+              collapsed={!showSidebar}
+            >
+              Composer
+            </MlflowSidebarLink>
+          )}
           {showWorkspaceMenuItems && !showNestedSettingsItems && (
             <MlflowSidebarLink
               css={{ paddingBlock: theme.spacing.sm }}

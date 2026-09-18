@@ -18,8 +18,18 @@ export interface ModelListFiltersProps {
 
 export const ModelSearchInputHelpTooltip = ({
   exampleEntityName = 'my_model_name',
+  leadIn,
 }: {
   exampleEntityName?: string;
+  /**
+   * A sentence placed above the syntax explanation, naming what this particular list can be
+   * narrowed by before the popover gets into how.
+   *
+   * Optional and unset by default, so the model and prompt lists are unaffected. It follows
+   * the precedent `exampleEntityName` already set: the popover is shared across registries,
+   * and the per-registry parts arrive as props rather than by forking the component.
+   */
+  leadIn?: React.ReactNode;
 }) => {
   const { formatMessage } = useIntl();
   const tooltipIntroMessage = defineMessage({
@@ -41,6 +51,13 @@ export const ModelSearchInputHelpTooltip = ({
       </Popover.Trigger>
       <Popover.Content align="start">
         <div>
+          {leadIn && (
+            <>
+              {leadIn}
+              <br />
+              <br />
+            </>
+          )}
           <FormattedMessage {...tooltipIntroMessage} values={{ newline: <br />, whereBold: <b>WHERE</b> }} />{' '}
           <FormattedMessage
             defaultMessage="<link>Learn more</link>"

@@ -1,0 +1,85 @@
+# Builds the MLflow frontend statically and publishes it to GitHub Pages.
+#
+# The asset registry prototypes (Skills, MCP Servers, Agent Plugins, Agents) are
+# mock-backed and fully functional here. The rest of MLflow talks to a tracking
+# server, which static hosting does not provide, so those pages show empty or
+# error states.
+name: Deploy prototypes to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 45
+    env:
+      NODE_OPTIONS: --max-old-space-size=8192
+      # The MCP registry calls the real API unless this is set; with no server
+      # behind static hosting it serves an in-memory fixture instead.
+      REACT_APP_MCP_REGISTRY_MOCKS: 'true'
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+
+      - name: Install dependencies
+        working-directory: mlflow/server/js
+        run: |
+          corepack enable
+          yarn install --immutable
+
+      - name: Build
+        working-directory: mlflow/server/js
+        run: yarn build
+
+      # MLflow serves index.html at the root and the build under /static-files/,
+      # and the webpack publicPath is the relative "static-files/", so the site
+      # works from the /<repo>/ sub-path unchanged.
+      - name: Assemble site
+        run: |
+          mkdir _site
+          cp mlflow/server/js/build/index.html _site/index.html
+          cp mlflow/server/js/build/favicon.ico _site/ 2>/dev/null || true
+          mv mlflow/server/js/build _site/static-files
+          # Open on the Skills registry when no route is given.
+          cat > /tmp/landing.html <<'HTML'
+          <script>
+            if (window.location.hash === '' || window.location.hash === '#/') {
+              window.location.hash = '#/skills';
+            }
+          </script>
+          HTML
+          awk '/<\/body>/ { system("cat /tmp/landing.html") } { print }' _site/index.html > _site/index.tmp
+          mv _site/index.tmp _site/index.html
+          cp _site/index.html _site/404.html
+          touch _site/.nojekyll
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4

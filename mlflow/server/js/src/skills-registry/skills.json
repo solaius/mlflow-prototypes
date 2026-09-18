@@ -1,0 +1,89 @@
+{
+  "root": { "props": {} },
+  "content": [
+    {
+      "type": "FlexRow",
+      "props": {
+        "id": "title-row",
+        "gap": 8,
+        "justifyContent": "flex-start",
+        "alignItems": "center",
+        "content": [
+          {
+            "type": "IconLabel",
+            "props": { "id": "icon-label", "text": "Skills", "icon": "gear" }
+          }
+        ]
+      }
+    },
+    { "type": "DuBoisSpacer", "props": { "id": "spacer-1", "size": "xs" } },
+    {
+      "type": "DuBoisTypography",
+      "props": {
+        "id": "subtitle",
+        "text": "Registered skills are versioned, immutable SKILL.md bundles that Claude Code agents can discover and invoke.",
+        "variant": "paragraph",
+        "color": "secondary"
+      }
+    },
+    { "type": "DuBoisSpacer", "props": { "id": "spacer-2", "size": "md" } },
+    {
+      "type": "FlexRow",
+      "props": {
+        "id": "filter-bar",
+        "gap": 8,
+        "justifyContent": "space-between",
+        "alignItems": "flex-end",
+        "content": [
+          {
+            "type": "DuBoisInput",
+            "props": {
+              "id": "search-input",
+              "placeholder": "Filter skills...",
+              "label": "",
+              "required": false,
+              "disabled": false
+            }
+          },
+          {
+            "type": "DuBoisButton",
+            "props": {
+              "id": "btn-create",
+              "label": "Create",
+              "icon": "plus",
+              "type": "primary",
+              "size": "middle",
+              "danger": false,
+              "disabled": false
+            }
+          }
+        ]
+      }
+    },
+    { "type": "DuBoisSpacer", "props": { "id": "spacer-3", "size": "md" } },
+    {
+      "type": "DuBoisTable",
+      "props": {
+        "id": "skills-table",
+        "columns": [
+          { "header": "Name" },
+          { "header": "Description" },
+          { "header": "Latest version" },
+          { "header": "Status" },
+          { "header": "Last modified" }
+        ],
+        "rows": 5,
+        "size": "default"
+      }
+    },
+    { "type": "DuBoisSpacer", "props": { "id": "spacer-4", "size": "sm" } },
+    {
+      "type": "DuBoisPagination",
+      "props": {
+        "id": "pagination",
+        "hasNextPage": true,
+        "hasPreviousPage": false
+      }
+    }
+  ]
+}

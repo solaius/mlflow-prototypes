@@ -23,8 +23,12 @@ import { useWorkspacesEnabled } from './experiment-tracking/hooks/useServerInfo'
 // Route definition imports:
 import { getRouteDefs as getExperimentTrackingRouteDefs } from './experiment-tracking/route-defs';
 import { getRouteDefs as getModelRegistryRouteDefs } from './model-registry/route-defs';
+import { getRouteDefs as getSkillsRegistryRouteDefs } from './skills-registry/route-defs';
+import { getRouteDefs as getAgentPluginsRouteDefs } from './agent-plugins/route-defs';
 import { getRouteDefs as getCommonRouteDefs } from './common/route-defs';
 import { getGatewayRouteDefs } from './gateway/route-defs';
+import { getMCPRegistryRouteDefs } from './mcp-registry/route-defs';
+import { getRouteDefs as getAgentRegistryRouteDefs } from './agent-registry/route-defs';
 import { getAccountRouteDefs } from './account/route-defs';
 import { getAdminRouteDefs } from './admin/route-defs';
 import { DEV_USER_SWITCHER_ENABLED } from './admin/DevUserSwitcher';
@@ -47,7 +51,7 @@ import { useWorkspaces } from './workspaces/hooks/useWorkspaces';
 // Lazy-load so the switcher (which stores plaintext passwords in
 // localStorage and manipulates auth cookies) doesn't get pulled into the
 // production bundle. ``DEV_USER_SWITCHER_ENABLED`` is also gated at build
-// time on ``process.env.NODE_ENV === 'development'``, so the import never
+// time on ``process.env['NODE_ENV'] === 'development'``, so the import never
 // fires in production.
 const LazyDevUserSwitcher = React.lazy(() =>
   import('./admin/DevUserSwitcher').then((m) => ({ default: m.DevUserSwitcher })),
@@ -235,9 +239,22 @@ export const MlflowRouter = () => {
     () => [
       ...getExperimentTrackingRouteDefs(),
       ...getModelRegistryRouteDefs(),
+      ...getSkillsRegistryRouteDefs(),
+      ...getAgentPluginsRouteDefs(),
       ...getGatewayRouteDefs(),
+      ...getMCPRegistryRouteDefs(),
+      ...getAgentRegistryRouteDefs(),
       ...getAccountRouteDefs(),
       ...getAdminRouteDefs(),
+      ...(process.env['NODE_ENV'] === 'development'
+        ? [
+            {
+              path: '/page-composer',
+              element: createLazyRouteElement(() => import('./page-composer/PageComposer')),
+              pageId: 'mlflow.dev.page-composer',
+            },
+          ]
+        : []),
       ...getCommonRouteDefs(),
     ],
     [],

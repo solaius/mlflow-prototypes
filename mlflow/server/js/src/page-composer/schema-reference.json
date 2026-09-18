@@ -1,0 +1,591 @@
+{
+  "$comment": "Reference for AI agents generating MLflow Page Composer layouts. Paste output into Import JSON at /#/page-composer. Available only in dev mode.",
+  "format": {
+    "root": { "props": {} },
+    "content": [{ "type": "ComponentName", "props": { "id": "unique-id (required)", "...": "component props" } }],
+    "slotNote": "Slot props (like 'content', 'left', 'right', 'buttons') are arrays of nested component objects."
+  },
+  "iconOptions": [
+    "none",
+    "plus",
+    "trash",
+    "pencil",
+    "search",
+    "gear",
+    "play",
+    "lightning",
+    "copy",
+    "danger",
+    "arrow",
+    "user"
+  ],
+  "components": {
+    "Columns": {
+      "description": "Equal-width column grid layout (1–6 columns)",
+      "props": {
+        "count": { "type": "number", "min": 1, "max": 6, "default": 2 },
+        "gap": { "type": "spacing", "default": "md" },
+        "col1": { "type": "slot" },
+        "col2": { "type": "slot" },
+        "col3": { "type": "slot" },
+        "col4": { "type": "slot" },
+        "col5": { "type": "slot" },
+        "col6": { "type": "slot" }
+      }
+    },
+    "FlexRow": {
+      "description": "Horizontal flex container",
+      "props": {
+        "gap": { "type": "number", "default": 8 },
+        "justifyContent": {
+          "type": "enum",
+          "options": ["flex-start", "center", "flex-end", "space-between", "space-around"],
+          "default": "flex-start"
+        },
+        "alignItems": {
+          "type": "enum",
+          "options": ["flex-start", "center", "flex-end", "stretch"],
+          "default": "center"
+        },
+        "content": { "type": "slot" }
+      }
+    },
+    "FlexColumn": {
+      "description": "Vertical flex container",
+      "props": { "gap": { "type": "number", "default": 8 }, "content": { "type": "slot" } }
+    },
+    "Section": {
+      "description": "Padded section with optional background color",
+      "props": {
+        "padding": { "type": "number", "default": 16 },
+        "background": { "type": "enum", "options": ["none", "surface", "secondary"], "default": "none" },
+        "content": { "type": "slot" }
+      }
+    },
+    "DuBoisSpacer": {
+      "description": "Vertical spacing between elements",
+      "props": { "size": { "type": "enum", "options": ["xs", "sm", "md", "lg"], "default": "md" } }
+    },
+    "Divider": { "description": "Horizontal line separator using theme.colors.borderDecorative", "props": {} },
+    "DuBoisHeader": {
+      "description": "Page header with title, breadcrumbs, title add-ons, and action buttons",
+      "props": {
+        "title": { "type": "string", "required": true },
+        "breadcrumbs": { "type": "slot" },
+        "titleAddOns": { "type": "slot" },
+        "buttons": { "type": "slot", "description": "Rendered as flex row with gap" }
+      }
+    },
+    "DuBoisBreadcrumb": {
+      "description": "Breadcrumb navigation trail",
+      "props": {
+        "items": { "type": "array", "items": { "label": "string" } },
+        "includeTrailingCaret": { "type": "boolean", "default": true }
+      }
+    },
+    "DuBoisPagination": {
+      "description": "Cursor-based pagination (Previous/Next)",
+      "props": {
+        "hasNextPage": { "type": "boolean", "default": true },
+        "hasPreviousPage": { "type": "boolean", "default": false }
+      }
+    },
+    "DuBoisTypography": {
+      "description": "Text element — title, paragraph, or inline text",
+      "props": {
+        "text": { "type": "string" },
+        "variant": { "type": "enum", "options": ["title", "text", "paragraph"], "default": "title" },
+        "level": { "type": "enum", "options": [1, 2, 3, 4], "default": 2 },
+        "bold": { "type": "boolean", "default": false },
+        "color": {
+          "type": "enum",
+          "options": ["", "primary", "secondary", "error", "success", "warning", "info"],
+          "default": ""
+        }
+      }
+    },
+    "DuBoisTag": {
+      "description": "Colored tag/badge label",
+      "props": {
+        "label": { "type": "string" },
+        "color": {
+          "type": "enum",
+          "options": [
+            "default",
+            "brown",
+            "coral",
+            "charcoal",
+            "indigo",
+            "lemon",
+            "lime",
+            "pink",
+            "purple",
+            "teal",
+            "turquoise"
+          ],
+          "default": "default"
+        },
+        "closable": { "type": "boolean", "default": false }
+      }
+    },
+    "DuBoisAvatar": {
+      "description": "User or entity avatar circle",
+      "props": {
+        "label": { "type": "string" },
+        "type": { "type": "enum", "options": ["entity", "user"], "default": "entity" },
+        "size": { "type": "enum", "options": ["xs", "sm", "md", "lg", "xl"], "default": "md" }
+      }
+    },
+    "DuBoisEmpty": {
+      "description": "Empty state placeholder",
+      "props": { "title": { "type": "string" }, "description": { "type": "string" } }
+    },
+    "DuBoisSpinner": {
+      "description": "Loading spinner",
+      "props": {
+        "label": { "type": "string", "default": "Loading..." },
+        "size": { "type": "enum", "options": ["small", "default", "large"], "default": "default" }
+      }
+    },
+    "DuBoisTableSkeleton": {
+      "description": "Skeleton loading placeholder for tables",
+      "props": { "lines": { "type": "number", "default": 5 } }
+    },
+    "DuBoisProgress": {
+      "description": "Progress bar indicator",
+      "props": { "value": { "type": "number", "default": 65 }, "max": { "type": "number", "default": 100 } }
+    },
+    "DuBoisStepper": {
+      "description": "Multi-step wizard progress indicator",
+      "props": {
+        "steps": {
+          "type": "array",
+          "items": { "title": "string", "status": "completed|loading|upcoming|error|warning" }
+        },
+        "currentStepIndex": { "type": "number", "default": 0 },
+        "direction": { "type": "enum", "options": ["horizontal", "vertical"], "default": "horizontal" }
+      }
+    },
+    "DuBoisHoverCard": {
+      "description": "Hover-triggered info card",
+      "props": {
+        "triggerText": { "type": "string" },
+        "contentText": { "type": "string" },
+        "side": { "type": "enum", "options": ["top", "right", "bottom", "left"], "default": "bottom" }
+      }
+    },
+    "IconLabel": {
+      "description": "Icon in colored square + bold text (section header pattern)",
+      "props": {
+        "text": { "type": "string" },
+        "icon": {
+          "type": "enum",
+          "options": ["gear", "user", "search", "play", "plus", "lightning", "copy", "pencil", "trash", "danger"],
+          "default": "gear"
+        }
+      }
+    },
+    "LinkText": { "description": "Clickable link-styled text", "props": { "text": { "type": "string" } } },
+    "KeyValueGrid": {
+      "description": "Two-column grid for metadata (label: value pairs)",
+      "props": {
+        "rows": { "type": "array", "items": { "label": "string", "value": "string" } },
+        "labelWidth": { "type": "number", "default": 120 }
+      }
+    },
+    "DuBoisAlert": {
+      "description": "Alert banner",
+      "props": {
+        "message": { "type": "string" },
+        "description": { "type": "string" },
+        "type": { "type": "enum", "options": ["success", "info", "warning", "error"], "default": "info" },
+        "closable": { "type": "boolean", "default": false },
+        "size": { "type": "enum", "options": ["small", "large"], "default": "small" }
+      }
+    },
+    "DuBoisBanner": {
+      "description": "Full-width page-level banner",
+      "props": {
+        "message": { "type": "string" },
+        "description": { "type": "string" },
+        "level": { "type": "enum", "options": ["info", "warning", "error"], "default": "info" },
+        "closable": { "type": "boolean", "default": false }
+      }
+    },
+    "DuBoisTooltip": {
+      "description": "Tooltip wrapping child content",
+      "props": {
+        "text": { "type": "string" },
+        "placement": { "type": "enum", "options": ["top", "right", "bottom", "left"], "default": "top" },
+        "content": { "type": "slot" }
+      }
+    },
+    "DuBoisModal": {
+      "description": "Modal dialog frame (inline in composer)",
+      "props": {
+        "title": { "type": "string" },
+        "size": { "type": "enum", "options": ["normal", "wide", "extraWide"], "default": "normal" },
+        "okText": { "type": "string", "default": "OK" },
+        "cancelText": { "type": "string", "default": "Cancel" },
+        "content": { "type": "slot" }
+      }
+    },
+    "DuBoisButton": {
+      "description": "Button with optional icon",
+      "props": {
+        "label": { "type": "string", "default": "Click me" },
+        "icon": {
+          "type": "enum",
+          "options": [
+            "none",
+            "plus",
+            "trash",
+            "pencil",
+            "search",
+            "gear",
+            "play",
+            "lightning",
+            "copy",
+            "danger",
+            "arrow",
+            "user"
+          ],
+          "default": "none"
+        },
+        "type": { "type": "enum", "options": ["", "primary", "link", "tertiary"], "default": "" },
+        "size": { "type": "enum", "options": ["middle", "small"], "default": "middle" },
+        "danger": { "type": "boolean", "default": false },
+        "disabled": { "type": "boolean", "default": false }
+      }
+    },
+    "DuBoisInput": {
+      "description": "Text input with optional label",
+      "props": {
+        "placeholder": { "type": "string", "default": "Enter text..." },
+        "label": { "type": "string", "default": "Label" },
+        "required": { "type": "boolean", "default": false },
+        "disabled": { "type": "boolean", "default": false }
+      }
+    },
+    "DuBoisSimpleSelect": {
+      "description": "Dropdown select",
+      "props": {
+        "label": { "type": "string" },
+        "placeholder": { "type": "string", "default": "Choose..." },
+        "options": { "type": "array", "items": { "label": "string", "value": "string" } }
+      }
+    },
+    "DuBoisSwitch": {
+      "description": "Toggle switch",
+      "props": {
+        "label": { "type": "string" },
+        "checkedDefault": { "type": "boolean", "default": false },
+        "disabled": { "type": "boolean", "default": false }
+      }
+    },
+    "DuBoisCheckbox": {
+      "description": "Checkbox with label",
+      "props": {
+        "label": { "type": "string" },
+        "checkedDefault": { "type": "boolean", "default": false },
+        "disabled": { "type": "boolean", "default": false }
+      }
+    },
+    "DuBoisRadioGroup": {
+      "description": "Radio button group",
+      "props": {
+        "name": { "type": "string", "required": true },
+        "options": { "type": "array", "items": { "label": "string", "value": "string" } },
+        "layout": { "type": "enum", "options": ["vertical", "horizontal"], "default": "vertical" },
+        "defaultValue": { "type": "string" }
+      }
+    },
+    "DuBoisSegmentedControl": {
+      "description": "Toggle button group for view switching",
+      "props": {
+        "name": { "type": "string", "required": true },
+        "options": { "type": "array", "items": { "label": "string", "value": "string" } },
+        "defaultValue": { "type": "string" }
+      }
+    },
+    "DuBoisSlider": {
+      "description": "Range slider input",
+      "props": {
+        "label": { "type": "string" },
+        "min": { "type": "number", "default": 0 },
+        "max": { "type": "number", "default": 100 },
+        "step": { "type": "number", "default": 1 },
+        "defaultValue": { "type": "number", "default": 50 }
+      }
+    },
+    "DuBoisToggleButton": {
+      "description": "Toggle on/off button",
+      "props": { "label": { "type": "string" }, "defaultPressed": { "type": "boolean", "default": false } }
+    },
+    "DuBoisDropdownMenu": {
+      "description": "Dropdown menu with action items",
+      "props": {
+        "triggerLabel": { "type": "string", "default": "Actions" },
+        "items": { "type": "array", "items": { "label": "string", "danger": "boolean", "separator": "boolean" } }
+      }
+    },
+    "OverflowMenu": {
+      "description": "Dot menu with dropdown items",
+      "props": {
+        "items": { "type": "array", "items": { "label": "string", "danger": "boolean", "separator": "boolean" } }
+      }
+    },
+    "DuBoisCard": {
+      "description": "Card container",
+      "props": {
+        "width": { "type": "string", "default": "100%" },
+        "padding": { "type": "enum", "options": ["default", "none", "sm", "lg"], "default": "default" },
+        "disableHover": { "type": "boolean", "default": true },
+        "content": { "type": "slot" }
+      }
+    },
+    "DuBoisTabs": {
+      "description": "Tabbed content area",
+      "props": {
+        "tabs": { "type": "array", "items": { "label": "string", "value": "string", "content": "string" } },
+        "defaultValue": { "type": "string" }
+      }
+    },
+    "DuBoisTable": {
+      "description": "Static data table with placeholder rows",
+      "props": {
+        "columns": { "type": "array", "items": { "header": "string" } },
+        "rows": { "type": "number", "default": 3 },
+        "size": { "type": "enum", "options": ["default", "small"], "default": "default" }
+      }
+    },
+    "DuBoisFormField": {
+      "description": "Labeled form field with hint, required, and error",
+      "props": {
+        "label": { "type": "string" },
+        "hint": { "type": "string", "default": "" },
+        "required": { "type": "boolean", "default": false },
+        "errorMessage": { "type": "string", "default": "" },
+        "input": { "type": "slot" }
+      }
+    },
+    "DuBoisAccordion": {
+      "description": "Collapsible content sections",
+      "props": {
+        "panels": { "type": "array", "items": { "header": "string", "content": "string" } },
+        "displayMode": { "type": "enum", "options": ["single", "multiple"], "default": "single" }
+      }
+    },
+    "DuBoisDrawer": {
+      "description": "Slide-out side panel (inline in composer)",
+      "props": {
+        "title": { "type": "string" },
+        "width": { "type": "number", "default": 400 },
+        "position": { "type": "enum", "options": ["right", "left"], "default": "right" },
+        "content": { "type": "slot" }
+      }
+    },
+    "DuBoisPreviewCard": {
+      "description": "Rich preview card",
+      "props": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "size": { "type": "enum", "options": ["default", "large"], "default": "default" },
+        "content": { "type": "slot" }
+      }
+    },
+    "DuBoisPopover": {
+      "description": "Click-triggered popover",
+      "props": { "triggerLabel": { "type": "string" }, "content": { "type": "slot" } }
+    },
+    "ListDetailLayout": {
+      "description": "Two-panel: fixed list + detail with borderLeft divider",
+      "props": {
+        "listWidth": { "type": "number", "default": 320 },
+        "list": { "type": "slot" },
+        "detail": { "type": "slot" }
+      }
+    },
+    "ListItem": {
+      "description": "Selectable list item with title, subtitle, chevron",
+      "props": {
+        "title": { "type": "string" },
+        "subtitle": { "type": "string" },
+        "selected": { "type": "boolean", "default": false },
+        "showChevron": { "type": "boolean", "default": true }
+      }
+    },
+    "CodeBlock": {
+      "description": "Monospace code block",
+      "props": {
+        "code": { "type": "string" },
+        "language": {
+          "type": "enum",
+          "options": ["python", "json", "javascript", "sql", "yaml", "text"],
+          "default": "python"
+        }
+      }
+    }
+  },
+  "templates": {
+    "List Page": "Header + search/filter bar + data table + cursor pagination",
+    "Detail Page": "Breadcrumb in header + title with status tag + action buttons + tabbed content",
+    "Dashboard": "Header + stat cards row + two-column chart/activity layout",
+    "Settings Page": "Section headers + cards with toggle setting rows + danger zone",
+    "Form / Create Page": "Breadcrumb + title + divider + labeled form fields + submit/cancel buttons"
+  },
+  "examples": {
+    "simpleDetailPage": {
+      "root": { "props": {} },
+      "content": [
+        {
+          "type": "DuBoisHeader",
+          "props": {
+            "id": "h1",
+            "title": "Model Details",
+            "breadcrumbs": [
+              {
+                "type": "DuBoisBreadcrumb",
+                "props": {
+                  "id": "bc",
+                  "items": [{ "label": "Models" }, { "label": "my-model" }],
+                  "includeTrailingCaret": true
+                }
+              }
+            ],
+            "titleAddOns": [
+              {
+                "type": "DuBoisTag",
+                "props": { "id": "t1", "label": "Production", "color": "lime", "closable": false }
+              }
+            ],
+            "buttons": [
+              {
+                "type": "DuBoisButton",
+                "props": {
+                  "id": "b1",
+                  "label": "Edit",
+                  "icon": "pencil",
+                  "type": "",
+                  "size": "middle",
+                  "danger": false,
+                  "disabled": false
+                }
+              },
+              {
+                "type": "OverflowMenu",
+                "props": {
+                  "id": "om",
+                  "items": [
+                    { "label": "Rename", "danger": false, "separator": false },
+                    { "label": "Delete", "danger": true, "separator": true }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        { "type": "DuBoisSpacer", "props": { "id": "s1", "size": "sm" } },
+        {
+          "type": "KeyValueGrid",
+          "props": {
+            "id": "kv",
+            "rows": [
+              { "label": "Created:", "value": "2026-07-18 15:00" },
+              { "label": "Owner:", "value": "ml-team" },
+              { "label": "Version:", "value": "3" }
+            ],
+            "labelWidth": 100
+          }
+        },
+        { "type": "DuBoisSpacer", "props": { "id": "s2", "size": "md" } },
+        {
+          "type": "DuBoisTabs",
+          "props": {
+            "id": "tabs",
+            "defaultValue": "overview",
+            "tabs": [
+              { "label": "Overview", "value": "overview", "content": "Model overview and metrics" },
+              { "label": "Versions", "value": "versions", "content": "Version history" }
+            ]
+          }
+        }
+      ]
+    },
+    "formPage": {
+      "root": { "props": {} },
+      "content": [
+        {
+          "type": "DuBoisBreadcrumb",
+          "props": { "id": "bc", "items": [{ "label": "Home" }, { "label": "Create" }], "includeTrailingCaret": true }
+        },
+        { "type": "DuBoisSpacer", "props": { "id": "s1", "size": "sm" } },
+        {
+          "type": "DuBoisTypography",
+          "props": { "id": "title", "text": "Create Experiment", "variant": "title", "level": 2, "bold": false }
+        },
+        { "type": "DuBoisSpacer", "props": { "id": "s1b", "size": "sm" } },
+        { "type": "Divider", "props": { "id": "div1" } },
+        { "type": "DuBoisSpacer", "props": { "id": "s2", "size": "md" } },
+        {
+          "type": "DuBoisFormField",
+          "props": {
+            "id": "f1",
+            "label": "Name",
+            "hint": "Unique experiment name",
+            "required": true,
+            "errorMessage": "",
+            "input": [
+              {
+                "type": "DuBoisInput",
+                "props": {
+                  "id": "i1",
+                  "placeholder": "my-experiment",
+                  "label": "",
+                  "required": false,
+                  "disabled": false
+                }
+              }
+            ]
+          }
+        },
+        { "type": "DuBoisSpacer", "props": { "id": "s3", "size": "md" } },
+        {
+          "type": "FlexRow",
+          "props": {
+            "id": "btns",
+            "gap": 8,
+            "justifyContent": "flex-end",
+            "alignItems": "center",
+            "content": [
+              {
+                "type": "DuBoisButton",
+                "props": {
+                  "id": "cancel",
+                  "label": "Cancel",
+                  "icon": "none",
+                  "type": "",
+                  "size": "middle",
+                  "danger": false,
+                  "disabled": false
+                }
+              },
+              {
+                "type": "DuBoisButton",
+                "props": {
+                  "id": "submit",
+                  "label": "Create",
+                  "icon": "plus",
+                  "type": "primary",
+                  "size": "middle",
+                  "danger": false,
+                  "disabled": false
+                }
+              }
+            ]
+          }
+        }
+      ]
+    }
+  }
+}
