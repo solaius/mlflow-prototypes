@@ -1,7 +1,8 @@
 > **This is a UI prototype snapshot, not the MLflow project.** It adds clickable
 > prototypes of the Skills, Agent Plugins, Agents and MCP Servers registries.
 > Live preview: https://solaius.github.io/mlflow-prototypes/ -- details in
-> [PROTOTYPES.md](PROTOTYPES.md). The upstream project is
+> [PROTOTYPES.md](PROTOTYPES.md). Skills-only snapshot:
+> https://solaius.github.io/mlflow-prototypes/skills-registry-rfc/. The upstream project is
 > [mlflow/mlflow](https://github.com/mlflow/mlflow).
 
 <h1 align="center" style="border-bottom: none">

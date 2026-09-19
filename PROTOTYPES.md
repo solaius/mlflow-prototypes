@@ -12,6 +12,11 @@ MLflow frontend so they use its real shell, navigation and design system.
 | Agents | [#/agents](https://solaius.github.io/mlflow-prototypes/#/agents) | [RFC-0011](https://github.com/mlflow/rfcs/pull/39) (draft) |
 | MCP Servers | [#/mcp-registry](https://solaius.github.io/mlflow-prototypes/#/mcp-registry) | MLflow MCP server registry |
 
+A frozen snapshot of the skills-registry-only branch (skills v8, 2026-09-18)
+is published beside it at
+https://solaius.github.io/mlflow-prototypes/skills-registry-rfc/, built from the
+`skills-registry-rfc` branch of this repository.
+
 ## What works
 
 The preview is a static build with no tracking server behind it. The four

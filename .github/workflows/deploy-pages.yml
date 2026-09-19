@@ -23,7 +23,7 @@ concurrency:
 jobs:
   build:
     runs-on: ubuntu-latest
-    timeout-minutes: 45
+    timeout-minutes: 75
     env:
       NODE_OPTIONS: --max-old-space-size=8192
       # The MCP registry calls the real API unless this is set; with no server
@@ -32,30 +32,32 @@ jobs:
     steps:
       - uses: actions/checkout@v4
 
+      # Frozen single-registry snapshots, each published under /<branch>/.
+      - uses: actions/checkout@v4
+        with:
+          ref: skills-registry-rfc
+          path: _src/skills-registry-rfc
+
       - uses: actions/setup-node@v4
         with:
           node-version: '22'
 
-      - name: Install dependencies
-        working-directory: mlflow/server/js
+      # MLflow serves index.html at the root and the build under /static-files/,
+      # and the webpack publicPath is the relative "static-files/", so each build
+      # works from any sub-path unchanged. With no route given, open on Skills.
+      - name: Build and assemble site
         run: |
           corepack enable
-          yarn install --immutable
-
-      - name: Build
-        working-directory: mlflow/server/js
-        run: yarn build
-
-      # MLflow serves index.html at the root and the build under /static-files/,
-      # and the webpack publicPath is the relative "static-files/", so the site
-      # works from the /<repo>/ sub-path unchanged.
-      - name: Assemble site
-        run: |
-          mkdir _site
-          cp mlflow/server/js/build/index.html _site/index.html
-          cp mlflow/server/js/build/favicon.ico _site/ 2>/dev/null || true
-          mv mlflow/server/js/build _site/static-files
-          # Open on the Skills registry when no route is given.
+          build() {
+            src="$1"; dest="$2"
+            (cd "$src/mlflow/server/js" && yarn install --immutable && yarn build)
+            mkdir -p "$dest"
+            cp "$src/mlflow/server/js/build/index.html" "$dest/index.html"
+            cp "$src/mlflow/server/js/build/favicon.ico" "$dest/" 2>/dev/null || true
+            mv "$src/mlflow/server/js/build" "$dest/static-files"
+            awk '/<\/body>/ { system("cat /tmp/landing.html") } { print }' "$dest/index.html" > "$dest/index.tmp"
+            mv "$dest/index.tmp" "$dest/index.html"
+          }
           cat > /tmp/landing.html <<'HTML'
           <script>
             if (window.location.hash === '' || window.location.hash === '#/') {
@@ -63,8 +65,8 @@ jobs:
             }
           </script>
           HTML
-          awk '/<\/body>/ { system("cat /tmp/landing.html") } { print }' _site/index.html > _site/index.tmp
-          mv _site/index.tmp _site/index.html
+          build . _site
+          build _src/skills-registry-rfc _site/skills-registry-rfc
           cp _site/index.html _site/404.html
           touch _site/.nojekyll
 
