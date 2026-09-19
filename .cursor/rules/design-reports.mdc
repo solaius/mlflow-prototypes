@@ -1,0 +1,79 @@
+---
+description: Records design changes in .design/ -- a change report entry per design change plus a brief design-history line, so a designer's work can be replayed into the other registries instead of only merged as code.
+globs: "mlflow/server/js/src/**/*.{ts,tsx,js,jsx}"
+alwaysApply: true
+---
+
+# Design reports
+
+## Purpose
+
+This fork keeps its design record in `.design/` (format and rules:
+[.design/README.md](.design/README.md)). Two layers: a per-session **change
+report** carrying each change's intent, and a brief per-feature
+**design-history.md**. The report is what lets a change be carried into the
+sibling registries later, and what ties it back to the conversation that asked
+for it.
+
+## When this applies
+
+You changed what a user sees or does in a registry UI under
+`mlflow/server/js/src/` (layout, copy, a control, a flow, a default, an empty or
+disabled state). It does not apply to refactors, type or lint fixes, file moves,
+or test-only changes.
+
+## Rule
+
+1. **Find the feature.** Look your changed path up in
+   [.design/feature-mapping.md](.design/feature-mapping.md) (`skills-registry`,
+   `agent-plugins`, `agent-registry`, `mcp-registry`). Shared components under
+   `common/` have no feature of their own.
+
+2. **This session's change report** lives at
+   `.design/changes/YYYY-MM-DD-<handle>-<slug>.md`, where the handle is your
+   first initial plus surname, lowercase (e.g. `dwarner`). Create it on your
+   first design change of the session with the frontmatter and `## Narrative`
+   from the README, then append one entry per change, numbered in order:
+
+```markdown
+### 3. Dim cards whose latest version is not active
+- **Type:** Update
+- **Intent:** A card whose latest live version is not active recedes: icon at
+  half opacity, text and action in secondary grey, action still clickable.
+- **Why:** Match the MCP server cards (S1).
+- **Replay:** agent-plugins, agent-registry
+- **Supersedes:** none
+- **Files:** SkillCard.tsx
+- **Notes:** optional, free-form, runs to the next entry.
+```
+
+   - **Intent** states the rule with no file or component names, so another
+     registry can follow it.
+   - **Why** cites a source id from the frontmatter's `sources:`, in
+     parentheses, e.g. `(S1)`.
+   - **Replay** names the other features that should follow, or `none` when the
+     change only makes sense on this screen (a shared-component change that
+     reaches every registry through the merge is `none`; say so in Why).
+
+3. **Add one brief line** to `.design/features/<feature>/design-history.md`
+   under today's date, in the format the README shows, ending with the entry
+   reference in parentheses, e.g. `(2026-09-07-dwarner-skills-demo-prep#3)`.
+   History entries are one or two sentences about user-visible impact, with no
+   component or file names, and may cover several report entries at once.
+
+4. **Never edit an earlier entry**, including your own from an earlier session.
+   Reverse it with a new entry carrying `Supersedes: <ref>`. Reports are
+   append-only, which is what keeps them mergeable across branches.
+
+5. **Validate before you hand the branch over.** From a clone of the
+   `rhoai-agentic-hub` repo:
+   `python .claude/skills/hub.prototype/scripts/design_reports.py check <this-repo>/.design`
+   must report `0 problem(s)`. Without that checkout, re-read
+   [.design/README.md](.design/README.md) and check the grammar by eye.
+
+## Reference
+
+- Format, field grammar and merge rules: [.design/README.md](.design/README.md)
+- Feature mapping: [.design/feature-mapping.md](.design/feature-mapping.md)
+- The same rule for Claude Code sessions:
+  [.claude/rules/design-reports.md](.claude/rules/design-reports.md)

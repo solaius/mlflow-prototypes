@@ -1,4 +1,5 @@
 import { PrismLight as SyntaxHighlighter } from 'react-syntax-highlighter';
+import bash from 'react-syntax-highlighter/dist/cjs/languages/prism/bash';
 import go from 'react-syntax-highlighter/dist/cjs/languages/prism/go';
 import java from 'react-syntax-highlighter/dist/cjs/languages/prism/java';
 import javascript from 'react-syntax-highlighter/dist/cjs/languages/prism/javascript';
@@ -11,6 +12,7 @@ import lightStyle from './theme/databricks-light';
 import type { CSSProperties, ReactNode } from 'react';
 import { pick } from 'lodash';
 
+SyntaxHighlighter.registerLanguage('bash', bash);
 SyntaxHighlighter.registerLanguage('sql', sql);
 SyntaxHighlighter.registerLanguage('java', java);
 SyntaxHighlighter.registerLanguage('python', python);
@@ -30,7 +32,7 @@ const themesStyles: Record<CodeSnippetTheme, any> = {
   duotoneDark: duotoneDarkStyle,
 };
 
-export type CodeSnippetLanguage = 'sql' | 'java' | 'python' | 'javascript' | 'go' | 'yaml' | 'text' | 'json';
+export type CodeSnippetLanguage = 'bash' | 'sql' | 'java' | 'python' | 'javascript' | 'go' | 'yaml' | 'text' | 'json';
 
 export interface CodeSnippetProps {
   /**

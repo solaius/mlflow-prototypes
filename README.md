@@ -1,3 +1,11 @@
+> **This is a UI prototype snapshot, not the MLflow project.** It is the
+> skills-registry-only branch of the MLflow asset registry prototypes (skills v8,
+> 2026-09-18). Live preview:
+> https://solaius.github.io/mlflow-prototypes/skills-registry-rfc/ -- the full set
+> (Skills, Agent Plugins, Agents, MCP Servers) is on the `main` branch and at
+> https://solaius.github.io/mlflow-prototypes/. The upstream project is
+> [mlflow/mlflow](https://github.com/mlflow/mlflow).
+
 <h1 align="center" style="border-bottom: none">
     <a href="https://mlflow.org/">
         <img alt="MLflow logo" src="https://raw.githubusercontent.com/mlflow/mlflow/refs/heads/master/assets/logo.svg" width="200" />

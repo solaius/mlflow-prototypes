@@ -6,8 +6,10 @@ import {
   CloudModelIcon,
   DropdownMenu,
   GearIcon,
+  GridIcon,
   HomeIcon,
   ModelsIcon,
+  PuzzleIcon,
   TextBoxIcon,
   Typography,
   useDesignSystemTheme,
@@ -21,6 +23,7 @@ import type { Location } from '../utils/RoutingUtils';
 import { Link, matchPath, useLocation, useNavigate, useParams, useSearchParams } from '../utils/RoutingUtils';
 import ExperimentTrackingRoutes from '../../experiment-tracking/routes';
 import { ModelRegistryRoutes } from '../../model-registry/routes';
+import { SkillsRegistryRoutes } from '../../skills-registry/routes';
 import GatewayRoutes from '../../gateway/routes';
 import AccountRoutes from '../../account/routes';
 import AdminRoutes from '../../admin/routes';
@@ -51,6 +54,7 @@ const isExperimentsActive = (location: Location) =>
   );
 const isModelsActive = (location: Location) => Boolean(matchPath('/models/*', location.pathname));
 const isPromptsActive = (location: Location) => Boolean(matchPath('/prompts/*', location.pathname));
+const isSkillsActive = (location: Location) => Boolean(matchPath('/skills/*', location.pathname));
 const isGatewayActive = (location: Location) => Boolean(matchPath('/gateway/*', location.pathname));
 const isSettingsActive = (location: Location) =>
   Boolean(
@@ -205,6 +209,22 @@ export function MlflowSidebar({
                 children: <FormattedMessage defaultMessage="Prompts" description="Sidebar link for prompts tab" />,
               },
               componentId: 'mlflow.sidebar.prompts_tab_link',
+            },
+          ]
+        : []),
+      ...(shouldShowGenAIFeatures(enableWorkflowBasedNavigation, workflowType) && !showNestedExperimentItems
+        ? [
+            {
+              key: 'skills',
+              icon: <PuzzleIcon />,
+              linkProps: {
+                to: SkillsRegistryRoutes.skillListPageRoute,
+                isActive: isSkillsActive,
+                children: (
+                  <FormattedMessage defaultMessage="Skills" description="Sidebar link for skills registry tab" />
+                ),
+              },
+              componentId: 'mlflow.sidebar.skills_tab_link',
             },
           ]
         : []),
@@ -364,9 +384,20 @@ export function MlflowSidebar({
           >
             <span css={{ display: 'flex', alignItems: 'center', gap: theme.spacing.sm }}>
               <FormattedMessage defaultMessage="Docs" description="Sidebar link for docs page" />
-              <NewWindowIcon css={{ fontSize: theme.typography.fontSizeBase }} />
             </span>
           </MlflowSidebarLink>
+          {process.env['NODE_ENV'] === 'development' && (
+            <MlflowSidebarLink
+              css={{ paddingBlock: theme.spacing.sm }}
+              to="/page-composer"
+              componentId="mlflow.sidebar.page_composer_link"
+              isActive={(loc) => loc.pathname === '/page-composer'}
+              icon={<GridIcon />}
+              collapsed={!showSidebar}
+            >
+              Composer
+            </MlflowSidebarLink>
+          )}
           {showWorkspaceMenuItems && !showNestedSettingsItems && (
             <MlflowSidebarLink
               css={{ paddingBlock: theme.spacing.sm }}
